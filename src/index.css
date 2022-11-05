@@ -2,73 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 400;
-
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;
-}
-
-a {
-	font-weight: 500;
-	color: #646cff;
-	text-decoration: inherit;
-}
-a:hover {
-	color: #535bf2;
-}
-
 body {
 	margin: 0;
-	display: flex;
-	place-items: center;
-	min-width: 320px;
+	overflow-x: hidden;
+	font-family: "taviraj";
+	background-image: url("./images/cryo1.jpg");
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container {
+	padding: 0;
+	margin: 0;
 	min-height: 100vh;
+	width: 100vw;
 }
 
-h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
+.h1 {
+	position: relative;
+	top: 6rem;
+	font-size: 4.5rem;
+	text-align: center;
 }
 
-button {
-	border-radius: 8px;
-	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	background-color: #1a1a1a;
-	cursor: pointer;
-	transition: border-color 0.25s;
-}
-button:hover {
-	border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
+.h1 span {
+	position: relative;
+	color: #111;
+	animation: glowing 2.7s linear forwards;
 }
 
-@media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
+@keyframes glowing {
+	0%,
+	100% {
+		color: #fff;
+		text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 30px #00b3ff,
+			0 0 60px #00b3ff, 0 0 20px #00b3ff;
 	}
-	a:hover {
-		color: #747bff;
+	5%,
+	95% {
+		color: black;
+		text-shadow: none;
 	}
-	button {
-		background-color: #f9f9f9;
-	}
+}
+
+.h1 span:nth-child(1) {
+	animation-delay: 1s;
+}
+
+.h1 span:nth-child(2) {
+	animation-delay: 1.25s;
+}
+
+.h1 span:nth-child(3) {
+	animation-delay: 1.5s;
+}
+
+.h1 span:nth-child(4) {
+	animation-delay: 1.75s;
+}
+
+.h1 span:nth-child(5) {
+	animation-delay: 2s;
+}
+
+.h1 span:nth-child(6) {
+	animation-delay: 2.25s;
+}
+
+.h1 span:nth-child(7) {
+	animation-delay: 2.5s;
+}
+
+.h1 span:nth-child(8) {
+	animation-delay: 2.75s;
+}
+.h1 span:nth-child(10) {
+	animation-delay: 3s;
+}
+.h1 span:nth-child(11) {
+	animation-delay: 3.25s;
+}
+.h1 span:nth-child(12) {
+	animation-delay: 3.5s;
+}
+.h1 span:nth-child(13) {
+	animation-delay: 3.75s;
 }
