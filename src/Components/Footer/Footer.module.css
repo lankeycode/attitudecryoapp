@@ -1,0 +1,78 @@
+.span1,
+.span2 {
+	cursor: pointer;
+	color: #000;
+	display: block;
+}
+.span1 {
+}
+
+.span2 {
+}
+.span:hover {
+	color: var(--skyblue);
+}
+
+.twitter,
+.facebook,
+.instagram {
+	font-size: 1.8rem;
+	margin: 0 0.7rem;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+@media screen and (max-width: 1280px) {
+	.twitter {
+		color: #1da1f2;
+	}
+	.facebook {
+		color: #4267b2;
+	}
+
+	.instagram {
+		background: linear-gradient(
+			to bottom,
+			#405de6 0%,
+			#5b51d8,
+			#833ab4,
+			#e1306c,
+			#fd1d1d,
+			#f56040,
+			#fcaf45,
+			#ffdc80 100%
+		);
+		border-radius: 10px;
+	}
+}
+
+/************* RESPONSIVE ************/
+
+@media screen and (min-width: 1280px) {
+	.twitter:hover,
+	.facebook:hover,
+	.instagram:hover {
+		transform: translateY(-30%);
+	}
+
+	.twitter:hover {
+		color: #1da1f2;
+	}
+	.facebook:hover {
+		color: #4267b2;
+	}
+
+	.instagram:hover {
+		background: linear-gradient(
+			to bottom,
+			#405de6 0%,
+			#5b51d8,
+			#833ab4,
+			#e1306c,
+			#fd1d1d,
+			#f56040,
+			#fcaf45,
+			#ffdc80 100%
+		);
+		border-radius: 10px;
+	}
+}
