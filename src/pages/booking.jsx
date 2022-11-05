@@ -1,18 +1,12 @@
-import Head from "next/head";
 import React from "react";
 import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navigation/Navbar";
-import ParticlesBackgroundBook from "components/Animation/ParticlesBackgroundBook";
-import Link from "next/link";
+
+// import ParticlesBackgroundBook from "components/Animation/ParticlesBackgroundBook";
 
 function Booking() {
 	return (
 		<div className="min-h-full font-taviraj animate__animated animate__fadeIn animate__slower ">
-			<Head>
-				<title>Réservation</title>
-				<meta name="description" content="" />
-			</Head>
-			<Navbar className="mb-80" />
+			{/* <Navbar className="mb-80" /> */}
 			<div className=" h-[100vh] w-screen">
 				<p className="relative top-[20rem] text-center text-3xl text-blue font-bold ">
 					Le système de réservation en ligne sera très prochainement
@@ -22,11 +16,11 @@ function Booking() {
 					{" "}
 					Une question ? Une information...{" "}
 				</p>
-				<Link href={"/contact"}>
-					<a className=" relative flex w-60 h-16 mx-auto justify-center items-center text-center bg-blue top-[25rem] shadow-md shadow-black hover:bg-skyblue hover:text-blue hover:font-bold ">
-						Vous pouvez nous contacter
-					</a>
-				</Link>
+				{/* <Link href={"/contact"}> */}
+				<a className=" relative flex w-60 h-16 mx-auto justify-center items-center text-center bg-blue top-[25rem] shadow-md shadow-black hover:bg-skyblue hover:text-blue hover:font-bold ">
+					Vous pouvez nous contacter
+				</a>
+				{/* </Link> */}
 				<ParticlesBackgroundBook />
 			</div>
 			{/* <iframe

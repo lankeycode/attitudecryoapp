@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import style from "./home.module.css";
 
 import { motion } from "framer-motion";
+import Footer from "../Components/Layout/Footer/Footer";
 
 function Home() {
 	return (
@@ -24,21 +24,21 @@ function Home() {
 				<span>o</span>
 			</h1>
 			<div className={style.home}>
-				{/* <Link to="/cryo/cryotherapie"> */}
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 1.5, delay: 3.75 }}
-					className={style.cryotherapie}
-				>
-					<h2 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl text-blue">
-						CRYO
-					</h2>
-					<span className="absolute top-[70%] -translate-x-14 xs:text-xl sm:text-2xl text-skyblue  ">
-						Cryotherapie
-					</span>
-				</motion.div>
-				{/* </Link> */}
+				<Link to="/cryo/cryotherapie">
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ duration: 1.5, delay: 3.75 }}
+						className={style.cryotherapie}
+					>
+						<h2 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl text-blue">
+							CRYO
+						</h2>
+						<span className="absolute top-[70%] -translate-x-14 xs:text-xl sm:text-2xl text-skyblue  ">
+							Cryotherapie
+						</span>
+					</motion.div>
+				</Link>
 				{/* <Link href={"/infra/infratherapie"} passHref> */}
 				<motion.div
 					initial={{ opacity: 0 }}
@@ -70,6 +70,7 @@ function Home() {
 				</motion.div>
 				{/* </Link> */}
 			</div>
+			<Footer />
 		</div>
 	);
 }

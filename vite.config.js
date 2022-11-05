@@ -15,9 +15,9 @@ export default defineConfig({
 			google: {
 				families: ["Taviraj"],
 			},
+			server: {
+				open: true,
+			},
 		}),
 	],
-	define: {
-		"process.env.NODE_ENV": `"${mode}"`,
-	},
 });

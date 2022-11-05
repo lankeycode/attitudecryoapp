@@ -28,7 +28,7 @@ function Footer({
 			}}
 		>
 			<div className="ml-5 relative -top-5">
-				<Image
+				<img
 					src="/attitudeLogo.svg"
 					width="120"
 					height="120"
@@ -57,14 +57,14 @@ function Footer({
 
 			<div className="relative flex w-screen  items-center mb-4">
 				<div className=" relative    text-end mr-5 w-1/2">
-					<Link href={"/mentions"}>
-						<a className={Styles.span1}>Mentions légales</a>
-					</Link>
+					{/* <Link href={"/mentions"}> */}
+					<a className={Styles.span1}>Mentions légales</a>
+					{/* </Link> */}
 				</div>
 				<div className="relative text-start mr-5 w-1/2 ">
-					<Link href={"/plan"}>
-						<a className={Styles.span2}>Plan du site</a>
-					</Link>
+					{/* <Link href={"/plan"}> */}
+					<a className={Styles.span2}>Plan du site</a>
+					{/* </Link> */}
 				</div>
 			</div>
 			<p className=" text-center text-black ">
