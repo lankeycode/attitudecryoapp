@@ -1,0 +1,18 @@
+.nav {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 15vh;
+	background-color: transparent;
+}
+
+.nav_ {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 15vh;
+	background-color: var(--bgFooter);
+	background-color: #4cc9f0;
+	border-bottom: 2px solid var(--blue);
+	z-index: 50;
+}

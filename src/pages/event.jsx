@@ -13,7 +13,7 @@ function event() {
 				<p className="relative top-[30vh] text-center xs:text-4xl sm:text-5xl md:text-6xl mdl:text-7xl text-skyblue font-taviraj">
 					Ouverture très prochainement de votre centre Attitude Cryo
 				</p>
-				<ParticlesBackground />
+				{/* <ParticlesBackground /> */}
 			</div>
 		</div>
 	);

@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "components/Footer/Footer";
+import Footer from "../Components/Layout/Footer/Footer";
 
 function mentions() {
 	return (

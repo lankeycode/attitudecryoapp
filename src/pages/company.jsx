@@ -1,7 +1,7 @@
 // import ButtonToUp from "components/Button/ButtonToUp";
-
+import { Link } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
-// import { useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { useAnimation } from "framer-motion";
 import { Parallax, Navigation, Pagination, A11y } from "swiper";
@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { transition } from "@chakra-ui/react";
 
-// import Styles from "../styles/company.module.css";
+import Styles from "./company.module.css";
 import "animate.css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -42,7 +42,7 @@ export default function Company() {
 		threshold: 0.9,
 	});
 
-	//BEHAVIORS
+	// //BEHAVIORS
 	useEffect(() => {
 		if (p1IsVisible) {
 			animationRight1.start({
@@ -185,15 +185,16 @@ export default function Company() {
 
 	return (
 		<div className=" font-taviraj bg-blue3 animate__animated animate__fadeIn animate__slower ">
+			{/* <div className={Styles.mainBis}> */}
 			<div className={Styles.mainBis}>
 				<img
-					src="/grenoble.jpg"
+					src="/images/grenoble.jpg"
 					layout="fill"
 					objectFit="cover"
 					alt=""
 				/>
 				<div className="companyH1  text-center py-3 px-4 md:py-6 md:px-12 justify-center  xs:left-[5rem] md:left-[40%] mdl:left-[45%] absolute xs:top-[5rem] sm:top-[10rem] md:top-[12rem] mdl:top-[15rem] xs:text-[2.5rem]  md:text-6xl mdl:text-7xl   font-taviraj font-bold ">
-					<h1 className="  ">
+					<h1 className={Styles.companyH1}>
 						<span></span>
 						<span></span>
 						<span></span>
@@ -208,11 +209,13 @@ export default function Company() {
 					</p>
 				</div>
 
+				{/* <div className={Styles.BlurBis}> */}
 				<div className={Styles.BlurBis}>
 					<p className=" relative top-[25%] animate-[fadeIn_4.5s_ease] text-skyblue ">
 						Infrathérapie
 					</p>
 				</div>
+				{/* <div className={Styles.BlurBis}> */}
 				<div className={Styles.BlurBis}>
 					<p className=" text-skyblue relative top-[25%]  animate-[fadeIn_4.5s_ease]  ">
 						TeslaFormer
@@ -367,12 +370,7 @@ export default function Company() {
 					<SwiperSlide>
 						<div className="" data-swiper-parallax="-300">
 							<div className="w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-								<Image
-									src="/relax.jpg"
-									layout="fill"
-									priority
-									alt=""
-								/>
+								<img src="/relax.jpg" layout="fill" priority alt="" />
 							</div>
 						</div>
 					</SwiperSlide>
