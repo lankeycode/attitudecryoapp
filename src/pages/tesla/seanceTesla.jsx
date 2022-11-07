@@ -6,11 +6,10 @@ import { Link } from "react-router-dom";
 import SeanceT from "../../Components/Seance/SeanceT";
 
 import styles from "./tesla.module.css";
-import "animate.css";
 
 function seanceTesla() {
 	return (
-		<div className="min-h-screen bg-blue1 w-screen  font-taviraj animate__animated animate__fadeIn animate__slow ">
+		<div className="min-h-screen bg-blue1 w-screen  font-taviraj">
 			{/* <Layout> */}
 			{/* <ButtonToUp /> */}
 

@@ -7,14 +7,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./cryotherapie.module.css";
-import "animate.css";
 
 function forWhoCryo() {
 	return (
-		<div className="bg-blue1 min-h-screen w-screen font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className="bg-blue1 min-h-screen w-screen font-taviraj ">
 			{/* <Layout> */}
 			<div className={styles.title}> Pour qui...</div>
-			{/* <div className=""> Pour qui...</div> */}
 			<p className="text-xl md:text-2xl xs:w-[80vw]  text-justify w-[40vw] mb-20 mx-auto">
 				La cryothérapie s’est démocratisée, au point d’être désormais
 				ouverte à toutes et à tous, et pour d’autres usages. Les

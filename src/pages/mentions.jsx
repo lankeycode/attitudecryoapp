@@ -3,7 +3,7 @@ import Footer from "../Components/Layout/Footer/Footer";
 
 function mentions() {
 	return (
-		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj">
 			<img
 				src="/attitudeLogo.svg"
 				width={150}

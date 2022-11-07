@@ -3,11 +3,10 @@ import React from "react";
 //import Layout from "components/Layout";
 
 import styles from "./tesla.module.css";
-import "animate.css";
 
 function talkingAboutTesla() {
 	return (
-		<div className="bg-blue1 min-h-screen w-screen font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className="bg-blue1 min-h-screen w-screen font-taviraj">
 			{/* <Layout> */}
 			<h1 className={styles.title}>On en parle</h1>
 			<p className="relative xs:top-48 sm:top-40 md:top-40 text-xl text-blue text-center font-bold">

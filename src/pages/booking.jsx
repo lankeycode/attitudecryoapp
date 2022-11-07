@@ -5,7 +5,7 @@ import Footer from "../components/Footer/Footer";
 
 function Booking() {
 	return (
-		<div className="min-h-full font-taviraj animate__animated animate__fadeIn animate__slower ">
+		<div className="min-h-full font-taviraj">
 			{/* <Navbar className="mb-80" /> */}
 			<div className=" h-[100vh] w-screen">
 				<p className="relative top-[20rem] text-center text-3xl text-blue font-bold ">

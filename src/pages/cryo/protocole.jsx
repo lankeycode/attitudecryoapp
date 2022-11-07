@@ -3,11 +3,10 @@ import React from "react";
 //import Layout from "components/Layout";
 
 import styles from "./cryotherapie.module.css";
-import "animate.css";
 
 function protocole() {
 	return (
-		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj">
 			{/* <Layout> */}
 			<h1 className={styles.title}>Protocole</h1>
 

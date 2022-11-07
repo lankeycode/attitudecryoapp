@@ -5,7 +5,6 @@ import { useState, useEffect, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 // import "react-toastify/dist/ReactToastify.css"; import Styles from "./contact.module.css";
-import "animate.css";
 import Styles from "./contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -39,7 +38,7 @@ export default function Contact() {
 	});
 
 	return (
-		<div className=" bg-blue1 w-screen  animate__animated animate__fadeIn">
+		<div className=" bg-blue1 w-screen">
 			<div className="fixed flex flex-col xs:-right-20 md:right-10  lg:right-5 sm:top-60 lg:top-32  ">
 				<FontAwesomeIcon
 					className={Styles.facebook}

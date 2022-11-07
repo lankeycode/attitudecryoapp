@@ -3,11 +3,10 @@ import React from "react";
 // import Layout from "components/Layout";
 // import ButtonToUp from "components/Button/ButtonToUp";
 import styles from "./infratherapie.module.css";
-import "animate.css";
 
 function talkingAboutInfra() {
 	return (
-		<div className=" min-h-screen w-screen font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className=" min-h-screen w-screen font-taviraj">
 			{/* <Layout> */}
 			{/* <ButtonToUp /> */}
 			<h1 className={styles.title}>On en parle</h1>

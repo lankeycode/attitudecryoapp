@@ -3,7 +3,7 @@ import {
 	BrowserRouter as Router,
 	Routes,
 	Route,
-	Link,
+	useLocation,
 } from "react-router-dom";
 // import {
 // 	ProSidebarProvider,
@@ -41,53 +41,73 @@ import Plan from "./pages/Plan";
 import NoPage from "./pages/NoPage";
 import Header from "./Components/Layout/Header/Header";
 import SidebarMenu from "./Components/Layout/Menu/SidebarMenu";
+import Layout from "./Components/Layout/Layout";
+import AnimatedRoutes from "./Components/Animation/AnimatedRoutes";
 
 function App() {
+	//STATE
+
 	return (
 		<div>
-			<Header />
-			<SidebarMenu />
-
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/le_centre" element={<Company />} />
-				<Route path="/nos_services" element={<Services />} />
-				<Route path="/cryo/cryotherapie" element={<Cryotherapie />} />
-				<Route path="/cryo/pour_qui" element={<ForWhoCryo />} />
-				<Route path="/cryo/seanceCryo" element={<SeanceCryo />} />
-				<Route path="/cryo/protocole" element={<Protocole />} />
-				<Route
-					path="/cryo/on_en_parle"
-					element={<TalkingAboutCryo />}
-				/>
-				<Route
-					path="/infra/infratherapie"
-					element={<Infratherapie />}
-				/>
-				<Route path="/infra/pour_qui" element={<ForWhoInfra />} />
-				<Route path="/infra/les_sportifs" element={<Sports />} />
-				<Route path="/infra/seanceInfra" element={<SeanceInfra />} />
-				<Route path="/infra/firemen" element={<Firemen />} />
-				<Route
-					path="/infra/on_en_parle"
-					element={<TalkingAboutInfra />}
-				/>
-				<Route path="/tesla/teslaFormer" element={<TeslaFormer />} />
-				<Route path="/tesla/pour_qui" element={<ForWhoTesla />} />
-				<Route path="/tesla/seanceTesla" element={<SeanceTesla />} />
-				<Route path="/tesla/le_périnée" element={<Perineum />} />
-				<Route
-					path="/tesla/on_en_parle"
-					element={<TalkingAboutTesla />}
-				/>
-				<Route path="/entreprise" element={<Work />} />
-				<Route path="/tarifs" element={<Price />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="/evenement" element={<Event />} />
-				<Route path="/mentions" element={<Mentions />} />
-				<Route path="/plan" element={<Plan />} />
-				<Route path="*" element={<NoPage />} />
-			</Routes>
+			<Router>
+				<Header />
+				<SidebarMenu />
+				<AnimatedRoutes />
+				{/* <Routes>
+					<AnimatedRoutes />
+					<Route path="/" element={<Home />} />
+					<Route path="/le_centre" element={<Company />} />
+					<Route path="/nos_services" element={<Services />} />
+					<Route
+						path="/cryo/cryotherapie"
+						element={<Cryotherapie />}
+					/>
+					<Route path="/cryo/pour_qui" element={<ForWhoCryo />} />
+					<Route path="/cryo/seanceCryo" element={<SeanceCryo />} />
+					<Route path="/cryo/protocole" element={<Protocole />} />
+					<Route
+						path="/cryo/on_en_parle"
+						element={<TalkingAboutCryo />}
+					/>
+					<Route
+						path="/infra/infratherapie"
+						element={<Infratherapie />}
+					/>
+					<Route path="/infra/pour_qui" element={<ForWhoInfra />} />
+					<Route path="/infra/les_sportifs" element={<Sports />} />
+					<Route
+						path="/infra/seanceInfra"
+						element={<SeanceInfra />}
+					/>
+					<Route path="/infra/firemen" element={<Firemen />} />
+					<Route
+						path="/infra/on_en_parle"
+						element={<TalkingAboutInfra />}
+					/>
+					<Route
+						path="/tesla/teslaFormer"
+						element={<TeslaFormer />}
+					/>
+					<Route path="/tesla/pour_qui" element={<ForWhoTesla />} />
+					<Route
+						path="/tesla/seanceTesla"
+						element={<SeanceTesla />}
+					/>
+					<Route path="/tesla/le_périnée" element={<Perineum />} />
+					<Route
+						path="/tesla/on_en_parle"
+						element={<TalkingAboutTesla />}
+					/>
+					<Route path="/entreprise" element={<Work />} />
+					<Route path="/tarifs" element={<Price />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/evenement" element={<Event />} />
+					<Route path="/mentions" element={<Mentions />} />
+					<Route path="/plan" element={<Plan />} />
+					<Route path="*" element={<NoPage />} />
+				</Routes> */}
+				<Layout />
+			</Router>
 		</div>
 	);
 }

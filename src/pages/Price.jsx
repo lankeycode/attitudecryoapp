@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 // import Footer from "../components/Footer/Footer";
 // import ButtonToUp from "components/Button/ButtonToUp";
 
-import "animate.css";
-
 function Price() {
 	const PriceCryo = [
 		{ nb: "1", title: " séance :", price: " 39€", total: "" },
@@ -73,7 +71,7 @@ function Price() {
 	];
 
 	return (
-		<div className="w-screen animate__animated animate__fadeIn animate__slow">
+		<div className="w-screen">
 			{/* <Navbar backgroundColor="#faedcd" /> */}
 			<main className="relative min-h-min w-full  pb-10 bg-[url('/images/bois7.jpg')]  bg-cover bg-no-repeat bg-fixed  ">
 				<h1 className="relative lg:sticky text-center top-40 text-6xl font-taviraj font-extrabold text-[#6c584c] pb-60">

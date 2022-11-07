@@ -3,11 +3,10 @@ import React from "react";
 //import Layout from "components/Layout";
 
 import styles from "./cryotherapie.module.css";
-import "animate.css";
 
 function talkingAboutCryo() {
 	return (
-		<div className="bg-blue1 min-h-screen w-screen font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className="bg-blue1 min-h-screen w-screen font-taviraj">
 			{/* <Layout> */}
 			<h1 className={styles.title}>On en parle</h1>
 

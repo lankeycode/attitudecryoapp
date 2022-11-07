@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function plan() {
 	return (
-		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj">
 			{/* <Navbar /> */}
 			<img
 				src="/attitudeLogo.svg"

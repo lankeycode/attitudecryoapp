@@ -21,25 +21,27 @@ function Footer({
 		<footer
 			style={{
 				width: "100%",
-				height,
+				height: "20rem",
 				position: "relative",
-				bottom,
-				borderTop,
-				backgroundColor,
+				bottom: "0px",
+				borderTop: "2px solid var(--blue)",
+				backgroundColor: "var(--bgFooter)",
 			}}
 		>
-			<div className="ml-5 relative top-2">
-				<img
-					src="/attitudeLogo.svg"
-					width="120"
-					height="120"
-					z="50"
-					alt="Logo Attitude Cryo"
-				/>
+			<img
+				className="ml-5 relative top-2"
+				src="/attitudeLogo.svg"
+				width="120"
+				height="120"
+				z="50"
+				alt="Logo Attitude Cryo"
+			/>
+			<div className=" relative ml-5 top-10">
 				<p> 37 Rue Monge</p>
 				<p>38100 Grenoble</p>
 				<p>07 66 54 46 13</p>
 			</div>
+
 			<div className={Styles.icones}>
 				<div className="relative lg:w-[10vw] md:w-[20vw] xs:w-[42vw] flex xs:h-6 sm:h-8 sm:-top-18 md:h-10  md:-top-20  left-1/2 -translate-x-1/2 ">
 					<FontAwesomeIcon

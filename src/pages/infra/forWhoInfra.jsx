@@ -3,11 +3,10 @@
 import React from "react";
 
 import styles from "./infratherapie.module.css";
-import "animate.css";
 
 function forWhoInfra() {
 	return (
-		<div className=" bg-blue1 min-h-screen w-screen font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className=" bg-blue1 min-h-screen w-screen font-taviraj">
 			{/* <Layout> */}
 			<h1 className={styles.title}>Pour qui...</h1>
 

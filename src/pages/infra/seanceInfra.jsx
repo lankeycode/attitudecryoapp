@@ -9,11 +9,10 @@ import { Link } from "react-router-dom";
 import SeanceI from "../../components/Seance/SeanceI";
 
 import styles from "./infratherapie.module.css";
-import "animate.css";
 
 function seanceInfra() {
 	return (
-		<div className="min-h-screen bg-blue1 w-screen  font-taviraj animate__animated animate__fadeIn animate__slow ">
+		<div className="min-h-screen bg-blue1 w-screen  font-taviraj">
 			{/* <Layout> */}
 			{/* <ButtonToUp /> */}
 

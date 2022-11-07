@@ -6,13 +6,12 @@ import SeanceC from "../../Components/Seance/SeanceC";
 import Security from "../../Components/Seance/Security";
 
 import styles from "./cryotherapie.module.css";
-import "animate.css";
 
 //
 
 function SeanceCryo() {
 	return (
-		<div className=" bg-blue1 min-h-screen w-screen font-taviraj animate__animated animate__fadeIn animate__slow ">
+		<div className=" bg-blue1 min-h-screen w-screen font-taviraj">
 			{/* <Layout> */}
 			{/* <ButtonToUp /> */}
 			<h1 className={styles.title}>Le déroulement de la séance</h1>

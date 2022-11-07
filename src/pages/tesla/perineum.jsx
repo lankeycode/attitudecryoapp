@@ -7,7 +7,7 @@ import styles from "./tesla.module.css";
 
 function perineum() {
 	return (
-		<div className="min-h-screen w-screen bg-blue1  font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className="min-h-screen w-screen bg-blue1  font-taviraj ">
 			{/* <Layout> */}
 			<h1 className={styles.title}>Périnée</h1>
 			{/* <ButtonToUp /> */}

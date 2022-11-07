@@ -16,6 +16,7 @@ module.exports = {
 			blue2: "#a2d6f9",
 			blue3: "#cae5ff",
 			skyblue: "#00A8F3",
+			bgfooter: "#4cc9f0",
 		},
 		fontFamilly: {
 			Taviraj: ["taviraj"],

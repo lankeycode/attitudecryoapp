@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 //import ButtonToUp from "components/Button/ButtonToUp";
 //import ButtonDownloadTesla from "components/Button/ButtonDownloadTesla";
 
-import "animate.css";
 import styles from "./tesla.module.css";
 
 const listAgainst = [
@@ -31,7 +30,7 @@ const listAgainst = [
 ];
 function TeslaFormer() {
 	return (
-		<div className="min-h-screen bg-blue1  font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className="min-h-screen bg-blue1  font-taviraj">
 			{/* <Layout> */}
 			<div className="wordH1 xs:relative sm:relative  xs:text-center top-40  md:top-52 text-blue  font-taviraj font-bold text-4xl  sm:text-5xl">
 				Tesla Former & Tesla Chair

@@ -38,7 +38,7 @@ const listOther = [
 
 function forWhoTesla() {
 	return (
-		<div className="min-h-screen bg-blue1  font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className="min-h-screen bg-blue1  font-taviraj ">
 			{/* <Layout> */}
 			<h1 className={styles.title}>Pour qui...</h1>
 			<div className="block mdl:flex">

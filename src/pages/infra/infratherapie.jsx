@@ -6,7 +6,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
 
-import "animate.css";
 //mport styles from "../../styles/infratherapie.module.css";
 //import ButtonDownload from "components/Button/ButtonDownload";
 
@@ -21,7 +20,7 @@ function Infratherapie() {
 		{ text: "Personnes ayant subit une transplantation" },
 	];
 	return (
-		<div className=" bg-blue1 font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className=" bg-blue1 font-taviraj">
 			{/* <Layout> */}
 			<div className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl ">
 				<span>INFRA</span>

@@ -2,13 +2,12 @@ import React from "react";
 
 //import Layout from "components/Layout";
 
-import "animate.css";
 import styles from "./infratherapie.module.css";
 //import ButtonDownload from "components/Button//ButtonDownload";
 
 function firmen() {
 	return (
-		<div className="min-h-screen  bg-blue1 font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className="min-h-screen  bg-blue1 font-taviraj">
 			{/* <Layout> */}
 			<h1 className={styles.title}>Les pompiers de New York</h1>
 			<p className="flex xs:text-2xl md:text-3xl text-blue xs:w-[85vw] md:w-[75vw] mdl:w-[60vw] font-bold mx-auto pl-5 text-center justify-center items-center sm:h-40 md:h-20 shadow-md shadow-blue">

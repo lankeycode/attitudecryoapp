@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 // import ButtonToUp from "components/Button/ButtonToUp";
 
 import Styles from "./work.module.css";
-import "animate.css";
 
 function work() {
 	return (
-		<div className=" bg-blue1 w-screen  font-taviraj animate__animated animate__fadeIn animate__slow ">
+		<div className=" bg-blue1 w-screen  font-taviraj">
 			<div className="relative flex flex-col justify-center items-center pt-[13rem] mb-28 font-taviraj   ">
 				<div className={Styles.words}>
 					<span>E</span>

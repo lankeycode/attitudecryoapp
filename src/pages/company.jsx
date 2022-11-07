@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { transition } from "@chakra-ui/react";
 
 import Styles from "./company.module.css";
-import "animate.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -185,7 +184,7 @@ export default function Company() {
 	//RENDER
 
 	return (
-		<div className=" font-taviraj bg-blue3 animate__animated animate__fadeIn animate__slower ">
+		<div className=" font-taviraj w-screen bg-blue3">
 			<div className={Styles.mainBis}>
 				<img
 					src="/images/grenoble.jpg"

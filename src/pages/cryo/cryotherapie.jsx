@@ -1,26 +1,16 @@
 //import { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 import React from "react";
 
 //import Layout from "components/Layout";
 
-// import { extendTheme } from "@chakra-ui/react";
-import "animate.css";
+//import "animate.css";
 
 //import ButtonToUp from "components/Button/ButtonToUp";
 
 //import ButtonDownload from "components/Button/ButtonDownload";
-
-// const breakpoints = {
-// 	xs: "280px",
-// 	sm: "350px",
-// 	md: "768px",
-// 	lg: "960px",
-// 	xl: "1200px",
-// 	xxl: "1536px",
-// };
-// const theme = extendTheme({ breakpoints });
 
 const listAbsolute = [
 	{ text: "Hypertension artérielle non soignée" },
@@ -65,7 +55,7 @@ function Cryotherapie() {
 	console.log(cryoP1IsVisible);
 
 	return (
-		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj animate__animated animate__fadeIn animate__slow ">
+		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj">
 			{/* <Layout> */}
 			<div className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl">
 				<span>CRYO</span>
@@ -286,9 +276,7 @@ function Cryotherapie() {
 			</div>
 
 			<button className="relative left-1/2 -translate-x-1/2  mb-5  w-44 h-12  text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
-				{/* <Link href={"/booking"}> */}
-				<a> RESERVER</a>
-				{/* </Link> */}
+				<Link to="/booking">RESERVER</Link>
 			</button>
 			{/* <ButtonDownload /> */}
 			{/* </Layout> */}

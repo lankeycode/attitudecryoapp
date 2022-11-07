@@ -3,11 +3,10 @@
 import React from "react";
 
 import styles from "./infratherapie.module.css";
-import "animate.css";
 
 function sports() {
 	return (
-		<div className=" bg-blue1   font-taviraj animate__animated animate__fadeIn animate__slow">
+		<div className=" bg-blue1   font-taviraj">
 			{/* <Layout> */}
 			<h1 className={styles.title}>Les sportifs</h1>
 			<p className="w-[90vw] md:w-[80vw] mdl:w-[50vw] flex text-2xl  text-center text-blue font-bold shadow-md shadow-blue mx-auto px-5 py-5 mb-20 ">
