@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 // import Navbar from "../components/Navigation/Navbar";
 // import Footer from "../components/Footer/Footer";
@@ -71,7 +72,12 @@ function Price() {
 	];
 
 	return (
-		<div className="w-screen">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className="w-screen"
+		>
 			{/* <Navbar backgroundColor="#faedcd" /> */}
 			<main className="relative min-h-min w-full  pb-10 bg-[url('/images/bois7.jpg')]  bg-cover bg-no-repeat bg-fixed  ">
 				<h1 className="relative lg:sticky text-center top-40 text-6xl font-taviraj font-extrabold text-[#6c584c] pb-60">
@@ -170,7 +176,7 @@ function Price() {
 				borderTop="2px solid #6c584c"
 				backgroundColor="#faedcd"
 			/> */}
-		</div>
+		</motion.div>
 	);
 }
 

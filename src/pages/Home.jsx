@@ -6,7 +6,12 @@ import Footer from "../Components/Layout/Footer/Footer";
 
 function Home() {
 	return (
-		<div className={style.container}>
+		<motion.div
+			className={style.container}
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+		>
 			<h1 className={style.h1}>
 				<span>A</span>
 				<span>t</span>
@@ -77,7 +82,7 @@ function Home() {
 				borderTop="2px solid var(--skyblue)"
 				backgroundColor="var(--bgFooter)"
 			/>
-		</div>
+		</motion.div>
 	);
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 // import ButtonToUp from "components/Button/ButtonToUp";
 
@@ -7,7 +8,12 @@ import Styles from "./work.module.css";
 
 function work() {
 	return (
-		<div className=" bg-blue1 w-screen  font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className=" bg-blue1 w-screen  font-taviraj"
+		>
 			<div className="relative flex flex-col justify-center items-center pt-[13rem] mb-28 font-taviraj   ">
 				<div className={Styles.words}>
 					<span>E</span>
@@ -123,7 +129,7 @@ function work() {
 				directement servi à l’achat de matériel pour l’amélioration
 				des postes de travail afin de réduire les TMS.
 			</p>
-		</div>
+		</motion.div>
 	);
 }
 

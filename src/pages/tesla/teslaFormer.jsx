@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 //import Layout from "components/Layout";
 //import ButtonToUp from "components/Button/ButtonToUp";
@@ -30,7 +31,12 @@ const listAgainst = [
 ];
 function TeslaFormer() {
 	return (
-		<div className="min-h-screen bg-blue1  font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className="min-h-screen bg-blue1  font-taviraj"
+		>
 			{/* <Layout> */}
 			<div className="wordH1 xs:relative sm:relative  xs:text-center top-40  md:top-52 text-blue  font-taviraj font-bold text-4xl  sm:text-5xl">
 				Tesla Former & Tesla Chair
@@ -256,7 +262,7 @@ function TeslaFormer() {
 			</button>
 			{/* <ButtonDownloadTesla /> */}
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

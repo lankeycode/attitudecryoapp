@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 //import Navbar from "components/Navigation/Navbar";
 import Footer from "../Components/Layout/Footer/Footer";
@@ -12,7 +13,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function plan() {
 	return (
-		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className=" min-h-screen bg-blue1 w-screen  font-taviraj"
+		>
 			{/* <Navbar /> */}
 			<img
 				src="/attitudeLogo.svg"
@@ -190,7 +196,7 @@ function plan() {
 				borderTop="2px solid var(--skyblue)"
 				backgroundColor="var(--bgFooter)"
 			/>
-		</div>
+		</motion.div>
 	);
 }
 

@@ -1,6 +1,7 @@
 //import { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import React from "react";
 
@@ -55,7 +56,12 @@ function Cryotherapie() {
 	console.log(cryoP1IsVisible);
 
 	return (
-		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className=" min-h-screen bg-blue1 w-screen  font-taviraj"
+		>
 			{/* <Layout> */}
 			<div className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl">
 				<span>CRYO</span>
@@ -280,7 +286,7 @@ function Cryotherapie() {
 			</button>
 			{/* <ButtonDownload /> */}
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

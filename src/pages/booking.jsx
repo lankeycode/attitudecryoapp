@@ -1,11 +1,17 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
+import { motion } from "framer-motion";
 
 // import ParticlesBackgroundBook from "components/Animation/ParticlesBackgroundBook";
 
 function Booking() {
 	return (
-		<div className="min-h-full font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className="min-h-full font-taviraj"
+		>
 			{/* <Navbar className="mb-80" /> */}
 			<div className=" h-[100vh] w-screen">
 				<p className="relative top-[20rem] text-center text-3xl text-blue font-bold ">
@@ -40,7 +46,7 @@ function Booking() {
 				borderTop="2px solid var(--skyblue)"
 				backgroundColor="var(--bgFooter)"
 			/>
-		</div>
+		</motion.div>
 	);
 }
 

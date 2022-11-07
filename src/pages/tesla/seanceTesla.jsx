@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 //import Layout from "components/Layout";
 //import ButtonToUp from "components/Button/ButtonToUp";
@@ -9,7 +10,12 @@ import styles from "./tesla.module.css";
 
 function seanceTesla() {
 	return (
-		<div className="min-h-screen bg-blue1 w-screen  font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className="min-h-screen bg-blue1 w-screen  font-taviraj"
+		>
 			{/* <Layout> */}
 			{/* <ButtonToUp /> */}
 
@@ -21,7 +27,7 @@ function seanceTesla() {
 				<Link href="/booking">RESERVER</Link>
 			</button>
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

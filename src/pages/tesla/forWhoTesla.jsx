@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 //import Layout from "components/Layout";
 
@@ -38,7 +39,12 @@ const listOther = [
 
 function forWhoTesla() {
 	return (
-		<div className="min-h-screen bg-blue1  font-taviraj ">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className="min-h-screen bg-blue1  font-taviraj "
+		>
 			{/* <Layout> */}
 			<h1 className={styles.title}>Pour qui...</h1>
 			<div className="block mdl:flex">
@@ -159,7 +165,7 @@ function forWhoTesla() {
 				</p>
 			</div>
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

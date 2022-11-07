@@ -1,9 +1,15 @@
 // import Link from "next/link";
 // import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Custom404() {
 	return (
-		<div className="bg-blue2 min-h-screen w-screen font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className="bg-blue2 min-h-screen w-screen font-taviraj"
+		>
 			<span className="relative flex justify-center  top-[60vh] text-5xl text-blue font-bold">
 				Oups...
 			</span>
@@ -20,6 +26,6 @@ export default function Custom404() {
 				Retour à l&apos;accueil
 			</a>
 			{/* </Link> */}
-		</div>
+		</motion.div>
 	);
 }

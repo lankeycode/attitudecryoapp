@@ -184,7 +184,12 @@ export default function Company() {
 	//RENDER
 
 	return (
-		<div className=" font-taviraj w-screen bg-blue3">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className=" font-taviraj w-screen bg-blue3"
+		>
 			<div className={Styles.mainBis}>
 				<img
 					src="/images/grenoble.jpg"
@@ -542,6 +547,6 @@ export default function Company() {
 				</p>
 				<br />
 			</div>
-		</div>
+		</motion.div>
 	);
 }

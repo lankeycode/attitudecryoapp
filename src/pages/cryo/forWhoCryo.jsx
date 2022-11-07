@@ -5,12 +5,18 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import styles from "./cryotherapie.module.css";
 
 function forWhoCryo() {
 	return (
-		<div className="bg-blue1 min-h-screen w-screen font-taviraj ">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className="bg-blue1 min-h-screen w-screen font-taviraj "
+		>
 			{/* <Layout> */}
 			<div className={styles.title}> Pour qui...</div>
 			<p className="text-xl md:text-2xl xs:w-[80vw]  text-justify w-[40vw] mb-20 mx-auto">
@@ -128,7 +134,7 @@ function forWhoCryo() {
 				<Link to="/booking">RESERVER</Link>
 			</button>
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

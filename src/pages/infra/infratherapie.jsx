@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 //import ButtonToUp from "components/Button/ButtonToUp";
 //import Layout from "components/Layout";
@@ -20,7 +21,12 @@ function Infratherapie() {
 		{ text: "Personnes ayant subit une transplantation" },
 	];
 	return (
-		<div className=" bg-blue1 font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className=" bg-blue1 font-taviraj"
+		>
 			{/* <Layout> */}
 			<div className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl ">
 				<span>INFRA</span>
@@ -163,7 +169,7 @@ function Infratherapie() {
 			</button>
 			{/* <ButtonDownload /> */}
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 //import Layout from "components/Layout";
 
@@ -7,7 +8,12 @@ import styles from "./infratherapie.module.css";
 
 function firmen() {
 	return (
-		<div className="min-h-screen  bg-blue1 font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className="min-h-screen  bg-blue1 font-taviraj"
+		>
 			{/* <Layout> */}
 			<h1 className={styles.title}>Les pompiers de New York</h1>
 			<p className="flex xs:text-2xl md:text-3xl text-blue xs:w-[85vw] md:w-[75vw] mdl:w-[60vw] font-bold mx-auto pl-5 text-center justify-center items-center sm:h-40 md:h-20 shadow-md shadow-blue">
@@ -62,7 +68,7 @@ function firmen() {
 			</div>
 			<br />
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

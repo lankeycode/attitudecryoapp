@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 //import Layout from "components/Layout";
 
@@ -6,7 +7,7 @@ import styles from "./tesla.module.css";
 
 function talkingAboutTesla() {
 	return (
-		<div className="bg-blue1 min-h-screen w-screen font-taviraj">
+		<motion.div className="bg-blue1 min-h-screen w-screen font-taviraj">
 			{/* <Layout> */}
 			<h1 className={styles.title}>On en parle</h1>
 			<p className="relative xs:top-48 sm:top-40 md:top-40 text-xl text-blue text-center font-bold">
@@ -22,7 +23,7 @@ function talkingAboutTesla() {
 				/>
 			</div>
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

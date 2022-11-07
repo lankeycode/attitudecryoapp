@@ -1,11 +1,12 @@
 body {
 	display: flex;
 	font-family: "taviraj";
-	background-image: url("./images/cryo1.jpg");
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
+	//background-image: url("./attitudeLogo.svg");
+	//background-position: center center;
+	//background-attachment: fixed;
+	//background-size: cover;
 	overflow-x: hidden;
+	background-color: var(--blue);
 }
 
 .container {
@@ -15,6 +16,11 @@ body {
 	margin: 0;
 	min-height: 100vh;
 	width: 100vw;
+	background-image: url("./images/cryo1.jpg");
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-x: hidden;
 }
 
 .h1 {

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 // import Layout from "components/Layout";
 // import ButtonToUp from "components/Button/ButtonToUp";
@@ -6,7 +7,12 @@ import styles from "./infratherapie.module.css";
 
 function talkingAboutInfra() {
 	return (
-		<div className=" min-h-screen w-screen font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className=" min-h-screen w-screen font-taviraj"
+		>
 			{/* <Layout> */}
 			{/* <ButtonToUp /> */}
 			<h1 className={styles.title}>On en parle</h1>
@@ -94,7 +100,7 @@ function talkingAboutInfra() {
 				/>
 			</div>
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 //import Navbar from "components/Navigation/Navbar";
 //import Footer from "components/Footer/Footer";
@@ -12,7 +13,12 @@ import styles from "./infratherapie.module.css";
 
 function seanceInfra() {
 	return (
-		<div className="min-h-screen bg-blue1 w-screen  font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className="min-h-screen bg-blue1 w-screen  font-taviraj"
+		>
 			{/* <Layout> */}
 			{/* <ButtonToUp /> */}
 
@@ -36,7 +42,7 @@ function seanceInfra() {
 				<Link to="/booking">RESERVER</Link>
 			</button>
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

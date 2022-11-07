@@ -1,9 +1,15 @@
 import React from "react";
 import Footer from "../Components/Layout/Footer/Footer";
+import { motion } from "framer-motion";
 
 function mentions() {
 	return (
-		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className=" min-h-screen bg-blue1 w-screen  font-taviraj"
+		>
 			<img
 				src="/attitudeLogo.svg"
 				width={150}
@@ -28,7 +34,7 @@ function mentions() {
 				borderTop="2px solid var(--skyblue)"
 				backgroundColor="var(--bgFooter)"
 			/>
-		</div>
+		</motion.div>
 	);
 }
 

@@ -1,12 +1,17 @@
 //mport Layout from "components/Layout";
-
 import React from "react";
+import { motion } from "framer-motion";
 
 import styles from "./infratherapie.module.css";
 
 function sports() {
 	return (
-		<div className=" bg-blue1   font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className=" bg-blue1   font-taviraj"
+		>
 			{/* <Layout> */}
 			<h1 className={styles.title}>Les sportifs</h1>
 			<p className="w-[90vw] md:w-[80vw] mdl:w-[50vw] flex text-2xl  text-center text-blue font-bold shadow-md shadow-blue mx-auto px-5 py-5 mb-20 ">
@@ -279,7 +284,7 @@ function sports() {
 				</p>
 			</div>
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

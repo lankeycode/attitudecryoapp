@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 //import Layout from "components/Layout";
 
@@ -6,7 +7,12 @@ import styles from "./cryotherapie.module.css";
 
 function protocole() {
 	return (
-		<div className=" min-h-screen bg-blue1 w-screen  font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className=" min-h-screen bg-blue1 w-screen  font-taviraj"
+		>
 			{/* <Layout> */}
 			<h1 className={styles.title}>Protocole</h1>
 
@@ -71,7 +77,7 @@ function protocole() {
 				</p>
 			</div>
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

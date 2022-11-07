@@ -6,12 +6,18 @@ import SeanceC from "../../Components/Seance/SeanceC";
 import Security from "../../Components/Seance/Security";
 
 import styles from "./cryotherapie.module.css";
+import { motion } from "framer-motion";
 
 //
 
 function SeanceCryo() {
 	return (
-		<div className=" bg-blue1 min-h-screen w-screen font-taviraj">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className=" bg-blue1 min-h-screen w-screen font-taviraj"
+		>
 			{/* <Layout> */}
 			{/* <ButtonToUp /> */}
 			<h1 className={styles.title}>Le déroulement de la séance</h1>
@@ -30,7 +36,7 @@ function SeanceCryo() {
 				{/* </Link> */}
 			</button>
 			{/* </Layout> */}
-		</div>
+		</motion.div>
 	);
 }
 

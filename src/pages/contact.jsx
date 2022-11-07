@@ -1,5 +1,6 @@
 import React from "react";
 import Map from "../Components/Map/Map";
+import { motion } from "framer-motion";
 
 import { useState, useEffect, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
@@ -38,7 +39,12 @@ export default function Contact() {
 	});
 
 	return (
-		<div className=" bg-blue1 w-screen">
+		<motion.div
+			initial={{ width: 0 }}
+			animate={{ width: "100vw" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			className=" bg-blue1 w-screen"
+		>
 			<div className="fixed flex flex-col xs:-right-20 md:right-10  lg:right-5 sm:top-60 lg:top-32  ">
 				<FontAwesomeIcon
 					className={Styles.facebook}
@@ -170,6 +176,6 @@ export default function Contact() {
 				</button>
 			</form>
 			<Map />
-		</div>
+		</motion.div>
 	);
 }
