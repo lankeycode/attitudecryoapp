@@ -27,6 +27,11 @@ import Sports from "./pages/infra/Sports";
 import SeanceInfra from "./pages/infra/SeanceInfra";
 import Firemen from "./pages/infra/Firemen";
 import TalkingAboutInfra from "./pages/infra/TalkingAboutInfra";
+import TeslaFormer from "./pages/tesla/TeslaFormer";
+import ForWhoTesla from "./pages/tesla/ForWhoTesla";
+import SeanceTesla from "./pages/tesla/SeanceTesla";
+import Perineum from "./pages/tesla/Perineum";
+import TalkingAboutTesla from "./pages/tesla/TalkingAboutTesla";
 import Work from "./pages/Work";
 import Price from "./pages/Price";
 import Contact from "./pages/Contact";
@@ -67,23 +72,14 @@ function App() {
 					path="/infra/on_en_parle"
 					element={<TalkingAboutInfra />}
 				/>
-				{/* <Route
-						path="/tesla/teslaFormer"
-						element={<TeslaFormer />}
-					/>
-					<Route
-						path="/tesla/pour qui"
-						element={<ForWhoTesla />}
-					/>
-					<Route
-						path="/tesla/seanceTesla"
-						element={<SeanceTesla />}
-					/>
-					<Route path="/tesla/le périnée" element={<Perineum />} />
-					<Route
-						path="/tesla/on_en_parle"
-						element={<TalkingAboutTesla />}
-					/> */}
+				<Route path="/tesla/teslaFormer" element={<TeslaFormer />} />
+				<Route path="/tesla/pour_qui" element={<ForWhoTesla />} />
+				<Route path="/tesla/seanceTesla" element={<SeanceTesla />} />
+				<Route path="/tesla/le_périnée" element={<Perineum />} />
+				<Route
+					path="/tesla/on_en_parle"
+					element={<TalkingAboutTesla />}
+				/>
 				<Route path="/entreprise" element={<Work />} />
 				<Route path="/tarifs" element={<Price />} />
 				<Route path="/contact" element={<Contact />} />

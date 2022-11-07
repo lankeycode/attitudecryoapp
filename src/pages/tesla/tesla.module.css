@@ -1,0 +1,136 @@
+.title {
+	position: relative;
+	//margin-top: 10rem;
+	top: 10rem;
+	margin-bottom: 15.5rem;
+	font-size: 4.5rem;
+	text-align: center;
+	color: #bbdefb;
+	animation: move 1.5s ease-in-out forwards;
+}
+.titleH2 {
+	display: flex;
+	position: relative;
+	margin: 0 auto;
+	width: 50vw;
+	height: 5rem;
+	margin-top: 8rem;
+	margin-bottom: 3rem;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.1rem;
+	background: #bbdefb;
+	box-shadow: -3px -3px 6px #ffffff, 3px 3px 6px #3c4750;
+}
+
+.seance {
+	display: flex;
+	position: relative;
+	margin: 0 auto;
+	width: 30vw;
+	height: 10rem;
+	margin-bottom: 3rem;
+	padding: 1rem 3rem;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(315deg, #cef4ff, #a8c8e2);
+	box-shadow: -3px -3px 6px #3c4750, 3px 3px 6px #ffffff;
+}
+
+/*********** ANIMATION ***********/
+
+@keyframes move {
+	0% {
+		transform: scale(0);
+		/* transform: translate(-30%, 0); */
+	}
+	50% {
+		/* text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75); */
+		text-shadow: -3px -3px 6px #3c4750, 3px 3px 6px #ffffff;
+	}
+	100% {
+		transform: scale(1);
+		/* transform: translate(-30%, 0); */
+		text-shadow: -3px -3px 6px #3c4750, 3px 3px 6px #ffffff;
+	}
+}
+
+@-webkit-keyframes focus-in-expand-fwd {
+	0% {
+		letter-spacing: -0.5em;
+		-webkit-transform: translateZ(-800px);
+		transform: translateZ(-800px);
+		-webkit-filter: blur(12px);
+		filter: blur(12px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-filter: blur(0);
+		filter: blur(0);
+		opacity: 1;
+	}
+}
+@keyframes focus-in-expand-fwd {
+	0% {
+		letter-spacing: -0.5em;
+		-webkit-transform: translateZ(-800px);
+		transform: translateZ(-800px);
+		-webkit-filter: blur(12px);
+		filter: blur(12px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-filter: blur(0);
+		filter: blur(0);
+		opacity: 1;
+	}
+}
+/*********** MOBILE **************/
+@media screen and (max-width: 350px) {
+	.titleH2 {
+		width: 95vw;
+		height: 6rem;
+		font-size: 1.6rem;
+	}
+
+	.seance {
+		width: 85vw;
+		height: 14rem;
+		padding: 1rem;
+	}
+}
+
+/********** SMARTPHONE ************/
+@media screen and (min-width: 351px) {
+	.titleH2 {
+		width: 90vw;
+		height: 6rem;
+		font-size: 1.8rem;
+	}
+
+	.seance {
+		width: 80vw;
+		height: 12rem;
+		padding: 1rem;
+	}
+}
+
+/*********** TABLET *************/
+@media screen and (min-width: 768px) {
+	.titleH2 {
+		width: 80vw;
+		height: 6rem;
+	}
+
+	.seance {
+		width: 60vw;
+	}
+}
+/******** DESKTOP ***********/
+@media screen and (min-width: 967px) {
+}

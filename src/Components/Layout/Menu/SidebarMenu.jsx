@@ -60,7 +60,7 @@ function SidebarMenu() {
 					<SubMenu
 						//onMouseLeave={() => active(false)}
 						// onOpenChange={() => setOpenSidebar(false)}
-						label="nos_services"
+						label="nos services"
 					>
 						<SubMenu label="cryothérapie">
 							<MenuItem
