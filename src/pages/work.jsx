@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // import ButtonToUp from "components/Button/ButtonToUp";
 
-// import Styles from "../styles/work.module.css";
+import Styles from "./work.module.css";
 import "animate.css";
 
 function work() {
@@ -62,9 +63,7 @@ function work() {
 			<div>
 				<p>N’hésitez pas à nous contacter pour en discuter.</p>
 				<button className="relative left-1/2 -translate-x-1/2 mt-5 mb-8 p-3 shadow-form hover:text-skyblue hover:shadow-inner ">
-					<Link href={"/contact"}>
-						<a>Nous contacter</a>
-					</Link>
+					<Link to="/contact">Nous contacter</Link>
 				</button>
 			</div>
 

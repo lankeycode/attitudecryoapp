@@ -1,0 +1,21 @@
+.map {
+	width: 70%;
+	height: 30rem;
+	border: 2px solid var(--skyblue);
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 890px) {
+	.map {
+		width: 95%;
+		height: 20rem;
+	}
+}
+
+.tooltip {
+	color: var(--skyblue);
+	border: 1px solid var(--blue);
+}

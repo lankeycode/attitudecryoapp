@@ -1,14 +1,12 @@
 import React from "react";
+import Map from "../Components/Map/Map";
 
-// import Map from "../components/Map";
-
-// import { useRouter } from "next/router";
 import { useState, useEffect, useRef } from "react";
-// import { useForm, ValidationError } from "@formspree/react";
+import { useForm, ValidationError } from "@formspree/react";
 
-// import "react-toastify/dist/ReactToastify.css";
-// import Styles from "../styles/contact.module.css";
+// import "react-toastify/dist/ReactToastify.css"; import Styles from "./contact.module.css";
 import "animate.css";
+import Styles from "./contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faFacebookF,
@@ -19,7 +17,7 @@ import {
 export default function Contact() {
 	//STATE
 	const googlemap = useRef(null);
-	const router = useRouter();
+	//const router = useRouter();
 
 	// const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
 	const [state, handleSubmit] = useForm("xbjboevk");
@@ -41,7 +39,7 @@ export default function Contact() {
 	});
 
 	return (
-		<div className=" bg-blue1  animate__animated animate__fadeIn">
+		<div className=" bg-blue1 w-screen  animate__animated animate__fadeIn">
 			<div className="fixed flex flex-col xs:-right-20 md:right-10  lg:right-5 sm:top-60 lg:top-32  ">
 				<FontAwesomeIcon
 					className={Styles.facebook}

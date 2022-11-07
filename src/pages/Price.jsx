@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // import Navbar from "../components/Navigation/Navbar";
 // import Footer from "../components/Footer/Footer";
@@ -72,9 +73,9 @@ function Price() {
 	];
 
 	return (
-		<div className="animate__animated animate__fadeIn animate__slow">
+		<div className="w-screen animate__animated animate__fadeIn animate__slow">
 			{/* <Navbar backgroundColor="#faedcd" /> */}
-			<main className="relative min-h-min w-full  pb-10 bg-[url('/bois7.jpg')]  bg-cover bg-no-repeat bg-fixed  ">
+			<main className="relative min-h-min w-full  pb-10 bg-[url('/images/bois7.jpg')]  bg-cover bg-no-repeat bg-fixed  ">
 				<h1 className="relative lg:sticky text-center top-40 text-6xl font-taviraj font-extrabold text-[#6c584c] pb-60">
 					Nos Tarifs
 				</h1>
@@ -160,19 +161,17 @@ function Price() {
 				</p>
 
 				<button className="mdl:sticky md:fixed  md:bottom-32  relative left-1/2 md:left-[83%] lg:left-1/2  -translate-x-1/2 sm:top-2 md:top-[60%] w-32 md:w-44 h-10 md:h-16 text-[#dda15e] bg-[#6c584c] rounded-lg hover:bg-[#dda15e] hover:text-[#6c584c] hover:border-2 hover:border-[#6c584c]  ">
-					{/* <Link href={"/booking"}> */}
-					<a> RESERVER</a>
-					{/* </Link> */}
+					<Link href={"/booking"}>RESERVER</Link>
 				</button>
 			</main>
-			<Footer
+			{/* <Footer
 				width="100%"
 				height="20rem"
 				position="relative"
 				bottom="0px"
 				borderTop="2px solid #6c584c"
 				backgroundColor="#faedcd"
-			/>
+			/> */}
 		</div>
 	);
 }
