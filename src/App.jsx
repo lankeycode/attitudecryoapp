@@ -42,6 +42,7 @@ function App() {
 		<div>
 			<Header />
 			<SidebarMenu />
+
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/le_centre" element={<Company />} />

@@ -12,7 +12,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function SidebarMenu() {
 	const [openSidebar, setOpenSidebar] = useState(false);
-	// const {open} = useProSidebar
+	//const { active } = useProSidebar;
 
 	return (
 		<div className="top-0 fixed z-[5000]">
@@ -26,9 +26,9 @@ function SidebarMenu() {
 				/>
 			</button>
 			<Sidebar
-				className={` mr-10 h-screen bg-[#fff] opacity-100 z-[1000]  transition-all duration-1000 ease-in ${
-					open
-						? "xs:bg-[#fff] fixed  h-[100vh]  "
+				className={` mr-10 h-screen  z-[1000]  transition-all duration-1000 ease-in ${
+					openSidebar
+						? " fixed bg-blue h-[10vh]  "
 						: "  xs:h-screen fixed  xs:left-[-35rem] "
 				}`}
 				// style={{
@@ -58,14 +58,11 @@ function SidebarMenu() {
 						Le centre
 					</MenuItem>
 					<SubMenu
-						// onMouseLeave={() => setOpen(false)}
-						onOpenChange={() => setOpenSidebar(false)}
+						//onMouseLeave={() => active(false)}
+						// onOpenChange={() => setOpenSidebar(false)}
 						label="nos_services"
 					>
-						<SubMenu
-							onMouseLeave={(open) => false}
-							label="cryothérapie"
-						>
+						<SubMenu label="cryothérapie">
 							<MenuItem
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/cryo/cryotherapie" />}

@@ -2,15 +2,15 @@ import React from "react";
 
 //import Layout from "components/Layout";
 
-//import styles from "../../styles/cryotherapie.module.css";
+import styles from "./cryotherapie.module.css";
 import "animate.css";
 
 function talkingAboutCryo() {
 	return (
 		<div className="bg-blue1 min-h-screen w-screen font-taviraj animate__animated animate__fadeIn animate__slow">
 			{/* <Layout> */}
-			{/* <h1 className={styles.title}>On en parle</h1> */}
-			<h1>On en parle</h1>
+			<h1 className={styles.title}>On en parle</h1>
+
 			<div className="relative   sm:w-[80vw] md:w-[70vw] mdl:w-[50vw] h-[15rem]  md:h-[25rem] mb-40  border-4 border-[#0075AA] m-auto">
 				<video
 					className="relative mb-10 lg:-top-9 h-[14.5rem] md:h-[24.5rem] lg:h-[28.5rem] md:w-[79.5rem] "

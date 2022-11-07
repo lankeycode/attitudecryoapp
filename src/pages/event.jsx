@@ -5,6 +5,7 @@ import React from "react";
 
 // import Styles from "../styles/events.module.css";
 import "animate.css";
+import ParticleBackground from "../Components/Animation/ParticlesBackground";
 
 function event() {
 	return (
@@ -13,7 +14,7 @@ function event() {
 				<p className="relative top-[30vh] text-center xs:text-4xl sm:text-5xl md:text-6xl mdl:text-7xl text-skyblue font-taviraj">
 					Ouverture très prochainement de votre centre Attitude Cryo
 				</p>
-				{/* <ParticlesBackground /> */}
+				<ParticleBackground />
 			</div>
 		</div>
 	);

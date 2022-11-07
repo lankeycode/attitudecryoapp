@@ -6,15 +6,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-//import styles from "../../styles/cryotherapie.module.css";
+import styles from "./cryotherapie.module.css";
 import "animate.css";
 
 function forWhoCryo() {
 	return (
 		<div className="bg-blue1 min-h-screen w-screen font-taviraj animate__animated animate__fadeIn animate__slow">
 			{/* <Layout> */}
-			{/* <div className={styles.title}> Pour qui...</div> */}
-			<div className=""> Pour qui...</div>
+			<div className={styles.title}> Pour qui...</div>
+			{/* <div className=""> Pour qui...</div> */}
 			<p className="text-xl md:text-2xl xs:w-[80vw]  text-justify w-[40vw] mb-20 mx-auto">
 				La cryothérapie s’est démocratisée, au point d’être désormais
 				ouverte à toutes et à tous, et pour d’autres usages. Les
@@ -23,8 +23,8 @@ function forWhoCryo() {
 			</p>
 			{/* <ButtonToUp /> */}
 			{/* <p className=" relative underline  text-skyblue text-2xl font-bold text-center xs:bg-blue xs:h-20 md:bg-[transparent] xs:py-5 "> */}
-			{/* <p className={styles.cryoCase}>TRAUMATOLOGIQUE</p> */}
-			<p className="">TRAUMATOLOGIQUE</p>
+			<p className={styles.cryoCase}>TRAUMATOLOGIQUE</p>
+
 			<div className=" relative block md:flex mb-20">
 				<div className="realtive mdl:w-1/2 w-[90vw] h-[70%]   text-2xl text-start m-5 mt-10 md:mt-40  px-5 mdl:px-14 md:py-20 bg-blue2 shadow-md shadow-blue">
 					<p> - Contusions et douleurs musculaires</p>
@@ -34,18 +34,18 @@ function forWhoCryo() {
 				</div>
 				<img
 					className="relative mdl:w-[30%]  w-[100vw] h-[40vh] mt-10 border-b-4  border-b-skyblue "
-					src="/douleur2.png"
+					src="/images/douleur2.png"
 					layout="fill"
 					alt=""
 				/>
 			</div>
-			{/* <p className={styles.cryoCase}>RHUMATOLOGIQUE</p> */}
-			<p className="">RHUMATOLOGIQUE</p>
+			<p className={styles.cryoCase}>RHUMATOLOGIQUE</p>
+
 			<br />
 			<div className="relative block md:flex justify-end mb-20 ">
 				<img
 					className="relative mdl:w-[30%]  w-[100vw] h-[40vh] mt-10 border-b-4 border-b-skyblue "
-					src="/douleur1.png"
+					src="/images/douleur1.png"
 					layout="fill"
 					alt=""
 				/>
@@ -61,8 +61,8 @@ function forWhoCryo() {
 					<br />
 				</div>
 			</div>
-			{/* <p className={styles.cryoCase}>NEUROLOGIQUE</p> */}
-			<p className="">NEUROLOGIQUE</p>
+			<p className={styles.cryoCase}>NEUROLOGIQUE</p>
+
 			<br />
 			<div className=" relative block md:flex mb-20">
 				<div className="realtive mdl:w-1/2 w-[90vw]  text-2xl text-start m-5 pt-5 px-5 md:py-10 md:h-[40vh] mdl:px-14 bg-blue2 shadow-md shadow-blue">
@@ -77,18 +77,18 @@ function forWhoCryo() {
 				</div>
 				<img
 					className="relative mdl:w-[30%] md:w-[60%] w-[100vw] h-[40vh] mt-10 border-b-4 border-b-skyblue "
-					src="/Sclérose.png"
+					src="/images/Sclérose.png"
 					layout="fill"
 					alt=""
 				/>
 			</div>
-			{/* <p className={styles.cryoCase}>DERMATOLOGIQUE</p> */}
-			<p className="">DERMATOLOGIQUE</p>
+			<p className={styles.cryoCase}>DERMATOLOGIQUE</p>
+
 			<br />
 			<div className="relative block md:flex justify-end mb-20 ">
 				<img
 					className="relative mdl:w-[30%]  w-[100vw] h-[35vh] mt-10 border-b-4 border-b-skyblue "
-					src="/Dermatologie.png"
+					src="/images/Dermatologie.png"
 					layout="fill"
 					alt=""
 				/>
@@ -100,8 +100,8 @@ function forWhoCryo() {
 					<br />
 				</div>
 			</div>
-			{/* <p className={styles.cryoCase}>SPORT</p> */}
-			<p className="">SPORT</p>
+			<p className={styles.cryoCase}>SPORT</p>
+
 			<br />
 			<div className="relative block md:flex justify mb-20 ">
 				<div className="realtive mdl:w-1/2 w-[90vw]  text-2xl text-start m-5 pt-5 px-5 mdl:px-14 bg-blue2 shadow-md shadow-blue">
@@ -120,7 +120,7 @@ function forWhoCryo() {
 				</div>
 				<img
 					className="relative mdl:w-[30%]  w-[100vw] h-[45vh] mt-10 border-b-4 border-b-skyblue "
-					src="/Sport1.png"
+					src="/images/Sport1.png"
 					layout="fill"
 					alt=""
 				/>

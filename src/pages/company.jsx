@@ -14,6 +14,7 @@ import "animate.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import ButtonToUp from "../Components/Button/ButtonToUp";
 
 export default function Company() {
 	//STATE
@@ -185,7 +186,6 @@ export default function Company() {
 
 	return (
 		<div className=" font-taviraj bg-blue3 animate__animated animate__fadeIn animate__slower ">
-			{/* <div className={Styles.mainBis}> */}
 			<div className={Styles.mainBis}>
 				<img
 					src="/images/grenoble.jpg"
@@ -209,13 +209,12 @@ export default function Company() {
 					</p>
 				</div>
 
-				{/* <div className={Styles.BlurBis}> */}
 				<div className={Styles.BlurBis}>
 					<p className=" relative top-[25%] animate-[fadeIn_4.5s_ease] text-skyblue ">
 						Infrathérapie
 					</p>
 				</div>
-				{/* <div className={Styles.BlurBis}> */}
+
 				<div className={Styles.BlurBis}>
 					<p className=" text-skyblue relative top-[25%]  animate-[fadeIn_4.5s_ease]  ">
 						TeslaFormer
@@ -223,7 +222,7 @@ export default function Company() {
 				</div>
 			</div>
 
-			{/* <ButtonToUp /> */}
+			<ButtonToUp />
 			<div className={Styles.transition}></div>
 
 			<div className="relative xs:-top-48 sm:-top-60 w-[90vw] md:w-[70vw]  mx-auto  h-[50vh] md:h-[60vh] mdl:h-[70vh] border-2 border-black">
@@ -334,7 +333,7 @@ export default function Company() {
 						<div className="" data-swiper-parallax="-300">
 							<div className="w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
 								<img
-									src="/cryoInterior.jpeg"
+									src="/images/cryoInterior.jpeg"
 									layout="fill"
 									objectFit="cover"
 									priority
@@ -347,7 +346,7 @@ export default function Company() {
 						<div className="" data-swiper-parallax="-300">
 							<div className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
 								<img
-									src="/cryoInterior1.jpeg"
+									src="/images/cryoInterior1.jpeg"
 									layout="fill"
 									priority
 									alt=""
@@ -359,7 +358,7 @@ export default function Company() {
 						<div className="" data-swiper-parallax="-300">
 							<div className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
 								<img
-									src="/cryoInterior2.jpeg"
+									src="/images/cryoInterior2.jpeg"
 									layout="fill"
 									priority
 									alt=""
