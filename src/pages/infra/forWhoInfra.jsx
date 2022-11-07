@@ -2,15 +2,15 @@
 
 import React from "react";
 
-//import styles from "../../styles/infratherapie.module.css";
+import styles from "./infratherapie.module.css";
 import "animate.css";
 
 function forWhoInfra() {
 	return (
 		<div className=" bg-blue1 min-h-screen w-screen font-taviraj animate__animated animate__fadeIn animate__slow">
 			{/* <Layout> */}
-			{/* <h1 className={styles.title}>Pour qui...</h1> */}
-			<h1>Pour qui...</h1>
+			<h1 className={styles.title}>Pour qui...</h1>
+
 			<div className="">
 				<p className="mb-5 font-bold text-blue text-3xl mdl:text-4xl text-center">
 					Les bienfaits{" "}
@@ -53,7 +53,7 @@ function forWhoInfra() {
 
 				<img
 					className="relative mdl:w-[20vw]  w-[100vw] h-[35vh] mdl:h-[40vh] mt-10 border-b-4  border-b-skyblue "
-					src="/relaxInfra.jpg"
+					src="/images/relaxInfra.jpg"
 					layout="fill"
 					alt=""
 				/>
@@ -67,7 +67,7 @@ function forWhoInfra() {
 			<div className=" relative block md:flex justify-end mb-20">
 				<img
 					className="relative mdl:w-[20vw]  w-[100vw] h-[35vh] mdl:h[40vh] mt-10 border-b-4 border-b-skyblue  "
-					src="/detoxInfra.jpg"
+					src="/images/detoxInfra.jpg"
 					layout="fill"
 					alt=""
 				/>
@@ -92,7 +92,7 @@ function forWhoInfra() {
 			<div className="relative block md:flex  mb-20 ml-10">
 				<img
 					className="relative mdl:w-[15vw]  w-[100vw] h-[35vh] mdl:h-[40vh] mt-10 border-b-4 border-b-skyblue "
-					src="/recupInfra2.jpg"
+					src="/images/recupInfra2.jpg"
 					layout="fill"
 					alt=""
 				/>
@@ -110,7 +110,7 @@ function forWhoInfra() {
 
 				<img
 					className="relative mdl:w-[15vw]  w-[100vw] h-[35vh] mdl:h-[40vh] mt-10 border-b-4 border-b-skyblue "
-					src="/recupInfra.jpg"
+					src="/images/recupInfra.jpg"
 					layout="fill"
 					alt=""
 				/>
@@ -124,7 +124,7 @@ function forWhoInfra() {
 			<div className="relative block md:flex justify-end mb-20 ">
 				<img
 					className="relative mdl:w-[30%]  w-[100vw] h-[35vh] mt-10 border-b-4 border-b-skyblue "
-					src="/sommeilInfra.jpg"
+					src="/images/sommeilInfra.jpg"
 					layout="fill"
 					alt=""
 				/>

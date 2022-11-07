@@ -2,7 +2,7 @@
 
 import React from "react";
 
-//import styles from "../../styles/infratherapie.module.css";
+import styles from "./infratherapie.module.css";
 import "animate.css";
 
 function sports() {
@@ -112,7 +112,7 @@ function sports() {
 
 				<img
 					className="relative w-[90vw] mdl:w-[40vw] h-[30vh] md:h-[40vh] mdl:h-[50vh] mx-auto mb-20 shadow-lg shadow-skyblue"
-					src="/infraSportif.jpg"
+					src="/pages/infraSportif.jpg"
 					layout="fill"
 					alt="photos de Mansour BARNAOUI"
 				/>
@@ -185,7 +185,7 @@ function sports() {
 
 				<img
 					className=" relative w-[90vw] mdl:w-[60vw] h-[40vh] mdl:h-[60vh]  mx-auto mt-10 border-2 border-skyblue"
-					src="/infraSportif2.jpg"
+					src="/pages/infraSportif2.jpg"
 					layout="fill"
 					alt="Temoignages de spotifs de haut niveau"
 				/>

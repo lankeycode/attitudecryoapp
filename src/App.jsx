@@ -59,8 +59,8 @@ function App() {
 					path="/infra/infratherapie"
 					element={<Infratherapie />}
 				/>
-				<Route path="/infra/pour qui" element={<ForWhoInfra />} />
-				<Route path="/infra/les sportifs" element={<Sports />} />
+				<Route path="/infra/pour_qui" element={<ForWhoInfra />} />
+				<Route path="/infra/les_sportifs" element={<Sports />} />
 				<Route path="/infra/seanceInfra" element={<SeanceInfra />} />
 				<Route path="/infra/firemen" element={<Firemen />} />
 				<Route

@@ -96,6 +96,12 @@ function SidebarMenu() {
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/infra/infratherapie" />}
 							>
+								l'infratherapie
+							</MenuItem>
+							<MenuItem
+								onClick={() => setOpenSidebar(!openSidebar)}
+								routerLink={<Link to="/infra/pour_qui" />}
+							>
 								Pour qui...
 							</MenuItem>
 							<MenuItem
