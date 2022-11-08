@@ -26,7 +26,9 @@ function SidebarMenu() {
 				/>
 			</button>
 			<Sidebar
-				className={` mr-10 h-screen  z-[1000]  transition-all duration-1000 ease-in ${
+				backgroundColor="var(--skyblue)"
+				overlayColor="rgb(0, 0, 0, 0.9)"
+				className={` mr-10 h-screen text-blue font-bold  z-[1000]  transition-all duration-1000 ease-in ${
 					openSidebar
 						? " fixed bg-blue h-[10vh]  "
 						: "  xs:h-screen fixed  xs:left-[-35rem] "
@@ -41,7 +43,7 @@ function SidebarMenu() {
 			>
 				<img
 					className="pt-2 mb-5 ml-5 w-[150px] h-[150px] "
-					src="./attitudeLogo.svg"
+					src="/attitudeLogo.svg"
 					alt="logo"
 				/>
 				<Menu>

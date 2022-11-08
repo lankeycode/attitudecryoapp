@@ -7,7 +7,7 @@ const ParticlesConfig = {
 	},
 	fullScreen: {
 		enable: true,
-		zIndex: -1,
+		zIndex: 1,
 	},
 	interactivity: {
 		detectsOn: "window",

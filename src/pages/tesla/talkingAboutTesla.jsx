@@ -7,7 +7,12 @@ import styles from "./tesla.module.css";
 
 function talkingAboutTesla() {
 	return (
-		<motion.div className="bg-blue1 min-h-screen w-screen font-taviraj">
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0, transition: { duration: 0.5 } }}
+			className="bg-blue1 min-h-screen w-screen font-taviraj"
+		>
 			{/* <Layout> */}
 			<h1 className={styles.title}>On en parle</h1>
 			<p className="relative xs:top-48 sm:top-40 md:top-40 text-xl text-blue text-center font-bold">

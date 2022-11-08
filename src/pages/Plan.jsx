@@ -14,22 +14,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function plan() {
 	return (
 		<motion.div
-			initial={{ width: 0 }}
-			animate={{ width: "100vw" }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
-			className=" min-h-screen bg-blue1 w-screen  font-taviraj"
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0, transition: { duration: 0.5 } }}
+			className=" min-h-screen bg-blue1 w-screen  font-taviraj pb-20"
 		>
 			{/* <Navbar /> */}
-			<img
+			{/* <img
 				src="/attitudeLogo.svg"
 				width={150}
 				height={150}
 				alt="Logo"
-			/>
-
-			<button className="relative   top-10  w-40 h-12 text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
-				<Link to="/">Accueil</Link>
-			</button>
+			/> */}
+			<Link to="/">
+				<button className="relative top-32 w-40 h-12 ml-40 text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
+					Accueil
+				</button>
+			</Link>
 
 			<h1 className="relative top-36 text-4xl mb-52 ml-10 ">
 				Plan du site
@@ -188,14 +189,14 @@ function plan() {
 				</Link>
 				<br />
 			</div>
-			<Footer
+			{/* <Footer
 				width="100%"
 				height="20rem"
 				position="relative"
 				bottom="0px"
 				borderTop="2px solid var(--skyblue)"
 				backgroundColor="var(--bgFooter)"
-			/>
+			/> */}
 		</motion.div>
 	);
 }

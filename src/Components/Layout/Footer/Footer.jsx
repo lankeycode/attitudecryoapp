@@ -13,9 +13,12 @@ function Footer({
 	height,
 	position,
 	bottom,
+	marginTop,
 	borderTop,
 	backgroundColor,
 }) {
+	//STATE
+
 	return (
 		//<footer className=" w-full  h-32  relative bottom-0 border-t-2 border-t-blue bg-[#caf0f8] ">
 		<footer
@@ -65,7 +68,7 @@ function Footer({
 					</Link>
 				</div>
 				<div className="relative text-start mr-5 w-1/2 ">
-					<Link to="/plan du site">
+					<Link to="/plan">
 						<p className={Styles.span2}>Plan du site</p>
 					</Link>
 				</div>

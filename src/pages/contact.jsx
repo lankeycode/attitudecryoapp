@@ -40,9 +40,9 @@ export default function Contact() {
 
 	return (
 		<motion.div
-			initial={{ width: 0 }}
-			animate={{ width: "100vw" }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" bg-blue1 w-screen"
 		>
 			<div className="fixed flex flex-col xs:-right-20 md:right-10  lg:right-5 sm:top-60 lg:top-32  ">

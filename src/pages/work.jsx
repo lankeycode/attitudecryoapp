@@ -9,9 +9,9 @@ import Styles from "./work.module.css";
 function work() {
 	return (
 		<motion.div
-			initial={{ width: 0 }}
-			animate={{ width: "100vw" }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" bg-blue1 w-screen  font-taviraj"
 		>
 			<div className="relative flex flex-col justify-center items-center pt-[13rem] mb-28 font-taviraj   ">

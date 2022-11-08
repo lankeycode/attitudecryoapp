@@ -8,9 +8,9 @@ function Home() {
 	return (
 		<motion.div
 			className={style.container}
-			initial={{ width: 0 }}
-			animate={{ width: "100vw" }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 		>
 			<h1 className={style.h1}>
 				<span>A</span>
@@ -74,14 +74,6 @@ function Home() {
 					</Link>
 				</motion.div>
 			</div>
-			<Footer
-				width="100%"
-				height="20rem"
-				position="relative"
-				bottom="0px"
-				borderTop="2px solid var(--skyblue)"
-				backgroundColor="var(--bgFooter)"
-			/>
 		</motion.div>
 	);
 }

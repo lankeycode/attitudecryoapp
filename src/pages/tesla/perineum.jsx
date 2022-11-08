@@ -9,9 +9,9 @@ import styles from "./tesla.module.css";
 function perineum() {
 	return (
 		<motion.div
-			initial={{ width: 0 }}
-			animate={{ width: "100vw" }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-screen w-screen bg-blue1  font-taviraj "
 		>
 			{/* <Layout> */}
