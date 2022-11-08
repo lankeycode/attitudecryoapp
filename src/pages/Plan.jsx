@@ -26,11 +26,9 @@ function plan() {
 				height={150}
 				alt="Logo"
 			/> */}
-			<Link to="/">
-				<button className="relative top-32 w-40 h-12 ml-40 text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
-					Accueil
-				</button>
-			</Link>
+			<button className="relative top-32 w-40 h-12 ml-40 text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
+				<Link to="/">Accueil</Link>
+			</button>
 
 			<h1 className="relative top-36 text-4xl mb-52 ml-10 ">
 				Plan du site

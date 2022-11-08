@@ -10,7 +10,7 @@ function sports() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className=" bg-blue1   font-taviraj"
+			className=" bg-blue1 pb-20   font-taviraj"
 		>
 			{/* <Layout> */}
 			<h1 className={styles.title}>Les sportifs</h1>

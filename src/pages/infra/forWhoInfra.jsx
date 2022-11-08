@@ -10,7 +10,7 @@ function forWhoInfra() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className=" bg-blue1 min-h-screen w-screen font-taviraj"
+			className=" bg-blue1 min-h-screen w-screen pb-20 font-taviraj"
 		>
 			{/* <Layout> */}
 			<h1 className={styles.title}>Pour qui...</h1>

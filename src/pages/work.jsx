@@ -12,7 +12,7 @@ function work() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className=" bg-blue1 w-screen  font-taviraj"
+			className=" bg-blue1 w-screen pb-20  font-taviraj"
 		>
 			<div className="relative flex flex-col justify-center items-center pt-[13rem] mb-28 font-taviraj   ">
 				<div className={Styles.words}>

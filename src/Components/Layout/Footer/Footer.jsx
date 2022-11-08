@@ -27,6 +27,7 @@ function Footer({
 				height: "20rem",
 				position: "relative",
 				bottom: "0px",
+				marginTop,
 				borderTop: "2px solid var(--blue)",
 				backgroundColor: "var(--bgFooter)",
 			}}
@@ -39,14 +40,14 @@ function Footer({
 				z="50"
 				alt="Logo Attitude Cryo"
 			/>
-			<div className=" relative ml-5 top-10">
+			<div className=" relative ml-3 xs:top-2 md:top-10">
 				<p> 37 Rue Monge</p>
 				<p>38100 Grenoble</p>
 				<p>07 66 54 46 13</p>
 			</div>
 
 			<div className={Styles.icones}>
-				<div className="relative lg:w-[10vw] md:w-[20vw] xs:w-[42vw] flex xs:h-6 sm:h-8 sm:-top-18 md:h-10  md:-top-20  left-1/2 -translate-x-1/2 ">
+				<div className="relative lg:w-[10vw] md:w-[20vw] xs:w-[42vw] flex xs:h-6 sm:h-8 xs:top-10 sm:-top-18 md:h-10  md:-top-20  left-1/2 -translate-x-1/2 ">
 					<FontAwesomeIcon
 						className={Styles.facebook}
 						icon={faFacebookF}
@@ -61,8 +62,8 @@ function Footer({
 					></FontAwesomeIcon>
 				</div>
 			</div>
-			<div className="relative flex w-screen  items-center mb-4">
-				<div className=" relative    text-end mr-5 w-1/2">
+			<div className="relative top-20 flex w-screen items-center mb-4">
+				<div className=" relative  text-end mr-5 w-1/2">
 					<Link to="/mentions">
 						<p className={Styles.span1}>Mentions légales</p>
 					</Link>
@@ -73,7 +74,7 @@ function Footer({
 					</Link>
 				</div>
 			</div>
-			<p className=" text-center text-black ">
+			<p className="relative -bottom-20 text-center text-black ">
 				Copyright &copy; {new Date().getFullYear()} Attitude Cryo
 			</p>
 		</footer>

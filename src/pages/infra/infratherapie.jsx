@@ -25,7 +25,7 @@ function Infratherapie() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className=" bg-blue1 font-taviraj"
+			className=" bg-blue1 pb-20 font-taviraj"
 		>
 			{/* <Layout> */}
 			<div className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl ">
@@ -46,7 +46,7 @@ function Infratherapie() {
 				LES INFRAROUGES LONGS DÉTOXIFIENT, TONIFIENT ET STIMULENT
 				L&apos;ORGANISME
 			</p>
-			<ButtonToUp />
+			{/* <ButtonToUp /> */}
 			<div className="relative  text-center ">
 				<div className="section1 relative w-full block mdl:flex mb-16 ">
 					<div className="realtive text-lg md:text-xl mdl:w-1/2 w-[100vw] text-justify pt-10 px-5 mdl:px-20 bg-blue2">

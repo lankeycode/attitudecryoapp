@@ -36,6 +36,7 @@ import Work from "./pages/Work";
 import Price from "./pages/Price";
 import Contact from "./pages/Contact";
 import Event from "./pages/Event";
+import Booking from "./pages/Booking";
 import Mentions from "./pages/Mentions";
 import Plan from "./pages/Plan";
 import NoPage from "./pages/NoPage";
@@ -102,6 +103,7 @@ function App() {
 					<Route path="/tarifs" element={<Price />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/evenement" element={<Event />} />
+					<Route path="/booking" element={<Booking />} />
 					<Route path="/mentions" element={<Mentions />} />
 					<Route path="/plan" element={<Plan />} />
 					<Route path="*" element={<NoPage />} />

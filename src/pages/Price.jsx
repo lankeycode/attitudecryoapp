@@ -76,7 +76,7 @@ function Price() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className="w-screen"
+			className="w-screen "
 		>
 			{/* <Navbar backgroundColor="#faedcd" /> */}
 			<main className="relative min-h-min w-full  pb-10 bg-[url('/images/bois7.jpg')]  bg-cover bg-no-repeat bg-fixed  ">

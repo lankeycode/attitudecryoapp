@@ -4,14 +4,11 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import React from "react";
+import ButtonDownload from "../../Components/Button/ButtonDownload";
 
 //import Layout from "components/Layout";
 
-//import "animate.css";
-
 //import ButtonToUp from "components/Button/ButtonToUp";
-
-//import ButtonDownload from "components/Button/ButtonDownload";
 
 const listAbsolute = [
 	{ text: "Hypertension artérielle non soignée" },
@@ -60,7 +57,7 @@ function Cryotherapie() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className=" min-h-screen bg-blue1 w-screen  font-taviraj"
+			className=" min-h-screen bg-blue1 w-screen pb-20  font-taviraj"
 		>
 			{/* <Layout> */}
 			<div className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl">
@@ -284,7 +281,7 @@ function Cryotherapie() {
 			<button className="relative left-1/2 -translate-x-1/2  mb-5  w-44 h-12  text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
 				<Link to="/booking">RESERVER</Link>
 			</button>
-			{/* <ButtonDownload /> */}
+			<ButtonDownload />
 			{/* </Layout> */}
 		</motion.div>
 	);

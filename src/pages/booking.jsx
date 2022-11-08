@@ -1,8 +1,8 @@
 import React from "react";
-import Footer from "../components/Footer/Footer";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-// import ParticlesBackgroundBook from "components/Animation/ParticlesBackgroundBook";
+import ParticlesBackgroundBook from "../Components/Animation/ParticlesBackgroundBook";
 
 function Booking() {
 	return (
@@ -10,7 +10,7 @@ function Booking() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className="min-h-full font-taviraj"
+			className="min-h-full pb-20 font-taviraj"
 		>
 			{/* <Navbar className="mb-80" /> */}
 			<div className=" h-[100vh] w-screen">
@@ -22,11 +22,11 @@ function Booking() {
 					{" "}
 					Une question ? Une information...{" "}
 				</p>
-				{/* <Link href={"/contact"}> */}
-				<a className=" relative flex w-60 h-16 mx-auto justify-center items-center text-center bg-blue top-[25rem] shadow-md shadow-black hover:bg-skyblue hover:text-blue hover:font-bold ">
-					Vous pouvez nous contacter
-				</a>
-				{/* </Link> */}
+				<Link to={"/contact"}>
+					<button className=" relative flex w-60 h-16 mx-auto justify-center items-center text-center bg-blue top-[25rem] shadow-md shadow-black hover:bg-skyblue hover:text-blue hover:font-bold ">
+						Vous pouvez nous contacter
+					</button>
+				</Link>
 				<ParticlesBackgroundBook />
 			</div>
 			{/* <iframe
@@ -39,13 +39,6 @@ function Booking() {
 				loading="eager"
 				sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-top-navigation allow-scripts allow-forms"
 			></iframe> */}
-			<Footer
-				width="100%"
-				height="20rem"
-				position="relative"
-				borderTop="2px solid var(--skyblue)"
-				backgroundColor="var(--bgFooter)"
-			/>
 		</motion.div>
 	);
 }

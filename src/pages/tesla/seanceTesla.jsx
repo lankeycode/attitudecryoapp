@@ -14,7 +14,7 @@ function seanceTesla() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className="min-h-screen bg-blue1 w-screen  font-taviraj"
+			className="min-h-screen bg-blue1 w-screen pb-20  font-taviraj"
 		>
 			{/* <Layout> */}
 			{/* <ButtonToUp /> */}

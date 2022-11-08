@@ -188,7 +188,7 @@ export default function Company() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className=" font-taviraj w-screen bg-blue3"
+			className=" font-taviraj w-screen pb-20 bg-blue3"
 		>
 			<div className={Styles.mainBis}>
 				<img

@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 //import Layout from "components/Layout";
 //import ButtonToUp from "components/Button/ButtonToUp";
-//import ButtonDownloadTesla from "components/Button/ButtonDownloadTesla";
 
 import styles from "./tesla.module.css";
+import ButtonDownloadTesla from "../../Components/Button/ButtonDownloadTesla";
 
 const listAgainst = [
 	{ text: "Grossesse" },
@@ -35,7 +35,7 @@ function TeslaFormer() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className="min-h-screen bg-blue1  font-taviraj"
+			className="min-h-screen pb-20 bg-blue1  font-taviraj"
 		>
 			{/* <Layout> */}
 			<div className="wordH1 xs:relative sm:relative  xs:text-center top-40  md:top-52 text-blue  font-taviraj font-bold text-4xl  sm:text-5xl">
@@ -99,11 +99,7 @@ function TeslaFormer() {
 						<br />
 					</div>
 					<div className="relative mdl:w-[55vw] mdl:h-[70vh] mdl:top-[5rem] mdl:ml-[5rem] shadow-lg shadow-blue mdl:border-2 border-r-blue mdl:border-t-blue  ">
-						<Image
-							src="/TESLAFormerStomach.jpg"
-							layout="fill"
-							alt=""
-						/>
+						<img src="/TESLAFormerStomach.jpg" layout="fill" alt="" />
 					</div>
 				</div>
 			</div>
@@ -260,7 +256,7 @@ function TeslaFormer() {
 			<button className="relative left-1/2 -translate-x-1/2  w-32 h-10 mb-5 mt-20  text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
 				<Link to="/booking">RESERVER</Link>
 			</button>
-			{/* <ButtonDownloadTesla /> */}
+			<ButtonDownloadTesla />
 			{/* </Layout> */}
 		</motion.div>
 	);

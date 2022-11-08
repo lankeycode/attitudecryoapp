@@ -43,7 +43,7 @@ function forWhoTesla() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className="min-h-screen bg-blue1  font-taviraj "
+			className="min-h-screen pb-20 bg-blue1  font-taviraj "
 		>
 			{/* <Layout> */}
 			<h1 className={styles.title}>Pour qui...</h1>
