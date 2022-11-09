@@ -1,13 +1,9 @@
-//import Navbar from "components/Navigation/Navbar";
-//import Footer from "components/Footer/Footer";
-//import Layout from "components/Layout";
-//import ButtonToUp from "components/Button/ButtonToUp";
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import styles from "./cryotherapie.module.css";
+import SEO from "../Components/SEO/SEO";
 
 function forWhoCryo() {
 	return (
@@ -17,7 +13,10 @@ function forWhoCryo() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="bg-blue1 min-h-screen w-screen pb-20 font-taviraj "
 		>
-			{/* <Layout> */}
+			<SEO
+				title="Cryothérapie : Pour qui..."
+				description="La cryotherapie s'adresse à toutes les personnes avec des maux traumatologique,rhumatologique,neurologique,dermatologique,musculaire..."
+			/>
 			<div className={styles.title}> Pour qui...</div>
 			<p className="text-xl md:text-2xl xs:w-[80vw]  text-justify w-[40vw] mb-20 mx-auto">
 				La cryothérapie s’est démocratisée, au point d’être désormais
@@ -25,8 +24,7 @@ function forWhoCryo() {
 				séances de cryothérapie seront indiquées dans de multiples cas
 				:
 			</p>
-			{/* <ButtonToUp /> */}
-			{/* <p className=" relative underline  text-skyblue text-2xl font-bold text-center xs:bg-blue xs:h-20 md:bg-[transparent] xs:py-5 "> */}
+
 			<p className={styles.cryoCase}>TRAUMATOLOGIQUE</p>
 
 			<div className=" relative block md:flex mb-20">
@@ -133,7 +131,6 @@ function forWhoCryo() {
 			<button className="relative left-1/2 -translate-x-1/2  mb-5  w-44 h-12  text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
 				<Link to="/booking">RESERVER</Link>
 			</button>
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

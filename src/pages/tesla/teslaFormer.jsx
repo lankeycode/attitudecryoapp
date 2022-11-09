@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
-//import Layout from "components/Layout";
-//import ButtonToUp from "components/Button/ButtonToUp";
-
 import styles from "./tesla.module.css";
 import ButtonDownloadTesla from "../../Components/Button/ButtonDownloadTesla";
 
@@ -37,7 +33,6 @@ function TeslaFormer() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-screen pb-20 bg-blue1  font-taviraj"
 		>
-			{/* <Layout> */}
 			<div className="wordH1 xs:relative sm:relative  xs:text-center top-40  md:top-52 text-blue  font-taviraj font-bold text-4xl  sm:text-5xl">
 				Tesla Former & Tesla Chair
 				<div>
@@ -51,16 +46,13 @@ function TeslaFormer() {
 				</div>
 				<span></span>
 			</div>
-			<div className="relative xs:top-60 sm:top-44 md:top-64  sm:w-[80vw] md:w-[80vw] mdl:w-[40vw] h-[15rem] md:h-[25rem] mdl:h-[27rem] mb-80 border-4 border-blue m-auto">
-				<video
-					className="relative mdl:-top-9 h-[14.5rem] md:h-[24.5rem] mdl:h-[28.5rem] md:w-[79.5rem] "
-					src="/video/teslaFormer.mp4"
-					muted
-					controls
-					poster="/attitudeLogo.svg"
-				/>
-				{/* <ButtonToUp /> */}
-			</div>
+			<video
+				className="relative xs:top-60 sm:top-44 md:top-64  sm:w-[80vw] md:w-[80vw] mdl:w-[40vw] h-[15rem] md:h-[25rem] mdl:h-[27rem] mb-80 border-4 border-blue m-auto"
+				src="/video/teslaFormer.mp4"
+				muted
+				controls
+				poster="/attitudeLogo.svg"
+			/>
 			<div className="relative  text-center text-xl mb-10 ">
 				<div className="section1 relative w-screen block mdl:flex  ">
 					<div className="relative mdl:w-[30vw] mdl:top-[5rem] mdl:mb-[5rem] mdl:ml-[2rem]  w-[100vw] text-justify pt-10 px-5 mdl:px-5 bg-blue2 shadow-lg shadow-blue">
@@ -82,25 +74,16 @@ function TeslaFormer() {
 							de son potentiel maximum ! Avec TESLA Former, il est
 							possible d&apos;atteindre les 100%.
 						</p>
-						{/* <p>
-							{" "}
-							Il a été prouvé scientifiquement que cette technologie
-							entraîne une augmentation de la masse musculaire après
-							plusieurs séances sur la même zone de près de 40%, avec
-							une diminution de l’épaisseur de graisse de 20%.
-						</p>
-						<p>
-							{" "}
-							Tesla Former permet donc de se muscler rapidement, tout
-							en brûlant des graisses, car le muscle fonctionne à
-							plein régime.
-						</p> */}
 
 						<br />
 					</div>
-					<div className="relative mdl:w-[55vw] mdl:h-[70vh] mdl:top-[5rem] mdl:ml-[5rem] shadow-lg shadow-blue mdl:border-2 border-r-blue mdl:border-t-blue  ">
-						<img src="/TESLAFormerStomach.jpg" layout="fill" alt="" />
-					</div>
+
+					<img
+						className="relative mdl:w-[55vw] mdl:h-[70vh] mdl:top-[5rem] mdl:ml-[5rem] shadow-lg shadow-blue mdl:border-2 border-r-blue mdl:border-t-blue  "
+						src="/images/TESLAFormerStomach.jpg"
+						layout="fill"
+						alt=""
+					/>
 				</div>
 			</div>
 
@@ -136,12 +119,6 @@ function TeslaFormer() {
 							ce qui conduit finalement à une contraction musculaire
 							complète.
 						</p>
-						{/* <p>
-							{" "}
-							Tesla Former permet donc de se muscler rapidement, tout
-							en brûlant des graisses, car le muscle fonctionne à
-							plein régime.
-						</p> */}
 
 						<br />
 					</div>
@@ -200,7 +177,6 @@ function TeslaFormer() {
 			<img
 				className="relative left-1/2 -translate-x-1/2 xs:w-[90vw] md:w-[80vw] mdl:w-[70vw] xs:h-[25vh] md:h-[30vh] mdl:h-[60vh] mb-20 md:border-4 border-blue "
 				src="/images/zonesTesla1.png"
-				layout="fill"
 				alt="#"
 			/>
 
@@ -214,7 +190,6 @@ function TeslaFormer() {
 			<img
 				className="relative left-1/2 -translate-x-1/2 xs:w-[90vw] md:w-[80vw] mdl:w-[70vw] xs:h-[25vh] md:h-[30vh] mdl:h-[60vh] mb-20 md:border-4 border-blue "
 				src="/images/zonesChair.png"
-				layout="fill"
 				alt="#"
 			/>
 
@@ -257,7 +232,6 @@ function TeslaFormer() {
 				<Link to="/booking">RESERVER</Link>
 			</button>
 			<ButtonDownloadTesla />
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

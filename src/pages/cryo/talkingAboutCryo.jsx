@@ -1,8 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-//import Layout from "components/Layout";
-
 import styles from "./cryotherapie.module.css";
 
 function talkingAboutCryo() {
@@ -13,18 +10,20 @@ function talkingAboutCryo() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="bg-blue1 min-h-screen w-screen pb-20 font-taviraj"
 		>
-			{/* <Layout> */}
+			<SEO
+				title="Cryothérapie : On en parle"
+				description="
+INSEP : Institut National des Sports et de la Performance.À l’Insep, la cryothérapie n’est pas uniquement réservée aux sportifs de haut niveau. « Nous recevons aussi des équipes amateurs ainsi que des particuliers : soit des gens qui font du sport et veulent bien récupérer, par exemple après un marathon, soit des personnes qui souffrent de pathologies rhumatismales. Dans ce cas, cela a un effet intéressant sur la mobilité des articulations et la douleur »"
+			/>
 			<h1 className={styles.title}>On en parle</h1>
+			<video
+				className="relative   sm:w-[80vw] md:w-[70vw] mdl:w-[50vw] h-[15rem]  md:h-[25rem] mb-40  border-4 border-[#0075AA] m-auto"
+				src="/video/cryo.mp4"
+				muted
+				controls
+				poster="/attitudeLogo.svg"
+			/>
 
-			<div className="relative   sm:w-[80vw] md:w-[70vw] mdl:w-[50vw] h-[15rem]  md:h-[25rem] mb-40  border-4 border-[#0075AA] m-auto">
-				<video
-					className="relative mb-10 lg:-top-9 h-[14.5rem] md:h-[24.5rem] lg:h-[28.5rem] md:w-[79.5rem] "
-					src="/cryo.mp4"
-					muted
-					controls
-					poster="/attitudeLogo.svg"
-				/>
-			</div>
 			<p className="text-xl md:text-2xl ml-5 font-bold ">
 				INSEP : Institut National des Sports et de la Performance
 			</p>
@@ -64,7 +63,6 @@ function talkingAboutCryo() {
 				</p>
 				<br />
 			</div>
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

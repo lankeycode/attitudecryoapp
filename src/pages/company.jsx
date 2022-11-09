@@ -1,4 +1,3 @@
-// import ButtonToUp from "components/Button/ButtonToUp";
 import { Link } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
@@ -7,13 +6,12 @@ import { useAnimation } from "framer-motion";
 import { Parallax, Navigation, Pagination, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { transition } from "@chakra-ui/react";
+import SEO from "../Components/SEO/SEO";
 
 import Styles from "./company.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import ButtonToUp from "../Components/Button/ButtonToUp";
 
 export default function Company() {
 	//STATE
@@ -190,14 +188,13 @@ export default function Company() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" font-taviraj w-screen pb-20 bg-blue3"
 		>
+			<SEO
+				title="attitude cryo"
+				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques validé scientifiquement pour votre Bien-être."
+			/>
 			<div className={Styles.mainBis}>
-				<img
-					src="/images/grenoble.jpg"
-					layout="fill"
-					objectFit="cover"
-					alt=""
-				/>
-				<div className="companyH1  text-center py-3 px-4 md:py-6 md:px-12 justify-center  xs:left-[5rem] md:left-[40%] mdl:left-[45%] absolute xs:top-[5rem] sm:top-[10rem] md:top-[12rem] mdl:top-[15rem] xs:text-[2.5rem]  md:text-6xl mdl:text-7xl   font-taviraj font-bold ">
+				{/* <img className="h-full" src="/images/grenoble.jpg" alt="" /> */}
+				<div className="companyH1  text-center py-3 px-4 md:py-6 md:px-12 justify-center  xs:left-[5rem] md:left-[40%] mdl:left-[45%] absolute xs:top-[5rem] sm:top-[10rem] md:top-[12rem] mdl:top-[15rem] xs:text-[2rem]  md:text-6xl  mdl:text-7xl font-taviraj font-bold ">
 					<h1 className={Styles.companyH1}>
 						<span></span>
 						<span></span>
@@ -225,8 +222,6 @@ export default function Company() {
 					</p>
 				</div>
 			</div>
-
-			<ButtonToUp />
 			<div className={Styles.transition}></div>
 
 			<div className="relative xs:-top-48 sm:-top-60 w-[90vw] md:w-[70vw]  mx-auto  h-[50vh] md:h-[60vh] mdl:h-[70vh] border-2 border-black">
@@ -335,46 +330,39 @@ export default function Company() {
 
 					<SwiperSlide>
 						<div className="" data-swiper-parallax="-300">
-							<div className="w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-								<img
-									src="/images/cryoInterior.jpeg"
-									layout="fill"
-									objectFit="cover"
-									priority
-									alt=""
-								/>
-							</div>
+							<img
+								className="w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
+								src="/images/cryoInterior.jpeg"
+								objectFit="cover"
+								alt=""
+							/>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
 						<div className="" data-swiper-parallax="-300">
-							<div className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-								<img
-									src="/images/cryoInterior1.jpeg"
-									layout="fill"
-									priority
-									alt=""
-								/>
-							</div>
+							<img
+								className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
+								src="/images/cryoInterior1.jpeg"
+								alt=""
+							/>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
 						<div className="" data-swiper-parallax="-300">
-							<div className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-								<img
-									src="/images/cryoInterior2.jpeg"
-									layout="fill"
-									priority
-									alt=""
-								/>
-							</div>
+							<img
+								className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
+								src="/images/cryoInterior2.jpeg"
+								alt=""
+							/>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
 						<div className="" data-swiper-parallax="-300">
-							<div className="w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-								<img src="/relax.jpg" layout="fill" priority alt="" />
-							</div>
+							<img
+								className="w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
+								src="/images/relax.jpg"
+								alt=""
+							/>
 						</div>
 					</SwiperSlide>
 				</Swiper>
@@ -409,50 +397,38 @@ export default function Company() {
 						></div>
 						<SwiperSlide>
 							<div className="" data-swiper-parallax="-300">
-								<div className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-									<img
-										src="/relax.jpg"
-										layout="fill"
-										priority
-										alt=""
-									/>
-								</div>
+								<img
+									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
+									src="/images/relax.jpg"
+									alt=""
+								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className="" data-swiper-parallax="-300">
-								<div className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-									<img
-										src="/relax.jpg"
-										layout="fill"
-										priority
-										alt=""
-									/>
-								</div>
+								<img
+									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
+									src="/images/relax.jpg"
+									alt=""
+								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className="" data-swiper-parallax="-300">
-								<div className=" w-[90vw] mdl:w-[60vw] h-[50vh] mdl:h-[75vh] mx-auto">
-									<img
-										src="/relax.jpg"
-										layout="fill"
-										priority
-										alt=""
-									/>
-								</div>
+								<img
+									className=" w-[90vw] mdl:w-[60vw] h-[50vh] mdl:h-[75vh] mx-auto"
+									src="/images/relax.jpg"
+									alt=""
+								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className="" data-swiper-parallax="-300">
-								<div className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-									<img
-										src="/relax.jpg"
-										layout="fill"
-										priority
-										alt=""
-									/>
-								</div>
+								<img
+									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
+									src="/images/relax.jpg"
+									alt=""
+								/>
 							</div>
 						</SwiperSlide>
 					</Swiper>
@@ -490,50 +466,39 @@ export default function Company() {
 						></div>
 						<SwiperSlide>
 							<div className="" data-swiper-parallax="-300">
-								<div className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-									<img
-										src="/relax.jpg"
-										layout="fill"
-										priority
-										alt=""
-									/>
-								</div>
+								<img
+									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
+									src="/images/relax.jpg"
+									alt=""
+								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className="" data-swiper-parallax="-300">
-								<div className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-									<img
-										src="/relax.jpg"
-										layout="fill"
-										priority
-										alt=""
-									/>
-								</div>
+								<img
+									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
+									src="/images/relax.jpg"
+									alt=""
+								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className="" data-swiper-parallax="-300">
-								<div className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-									<img
-										src="/relax.jpg"
-										layout="fill"
-										priority
-										alt=""
-									/>
-								</div>
+								<img
+									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
+									src="/images/relax.jpg"
+									priority
+									alt=""
+								/>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className="" data-swiper-parallax="-300">
-								<div className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto">
-									<img
-										src="/relax.jpg"
-										layout="fill"
-										priority
-										alt=""
-									/>
-								</div>
+								<img
+									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
+									src="/images/relax.jpg"
+									alt=""
+								/>
 							</div>
 						</SwiperSlide>
 					</Swiper>

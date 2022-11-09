@@ -1,4 +1,3 @@
-//mport Layout from "components/Layout";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -12,7 +11,6 @@ function sports() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" bg-blue1 pb-20   font-taviraj"
 		>
-			{/* <Layout> */}
 			<h1 className={styles.title}>Les sportifs</h1>
 			<p className="w-[90vw] md:w-[80vw] mdl:w-[50vw] flex text-2xl  text-center text-blue font-bold shadow-md shadow-blue mx-auto px-5 py-5 mb-20 ">
 				Une solution unique pour une préparation et une récupération
@@ -116,8 +114,7 @@ function sports() {
 
 				<img
 					className="relative w-[90vw] mdl:w-[40vw] h-[30vh] md:h-[40vh] mdl:h-[50vh] mx-auto mb-20 shadow-lg shadow-skyblue"
-					src="/pages/infraSportif.jpg"
-					layout="fill"
+					src="/images/infraSportif.jpg"
 					alt="photos de Mansour BARNAOUI"
 				/>
 			</div>
@@ -189,8 +186,7 @@ function sports() {
 
 				<img
 					className=" relative w-[90vw] mdl:w-[60vw] h-[40vh] mdl:h-[60vh]  mx-auto mt-10 border-2 border-skyblue"
-					src="/pages/infraSportif2.jpg"
-					layout="fill"
+					src="/images/infraSportif2.jpg"
 					alt="Temoignages de spotifs de haut niveau"
 				/>
 			</div>
@@ -283,7 +279,6 @@ function sports() {
 					de leurs traumatismes.
 				</p>
 			</div>
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

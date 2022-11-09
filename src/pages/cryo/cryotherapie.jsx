@@ -5,10 +5,7 @@ import { motion } from "framer-motion";
 
 import React from "react";
 import ButtonDownload from "../../Components/Button/ButtonDownload";
-
-//import Layout from "components/Layout";
-
-//import ButtonToUp from "components/Button/ButtonToUp";
+import SEO from "../../Components/SEO/SEO";
 
 const listAbsolute = [
 	{ text: "Hypertension artérielle non soignée" },
@@ -59,22 +56,23 @@ function Cryotherapie() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" min-h-screen bg-blue1 w-screen pb-20  font-taviraj"
 		>
-			{/* <Layout> */}
+			<SEO
+				title="La cryothérapie"
+				description="Des bienfaits en températures très basses (froid extreme jusqu'à -110 degrés) par la cryothérapie en corps entier."
+			/>
 			<div className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl">
 				<span>CRYO</span>
 				<span>THERA</span>
 				<span>PIE</span>
 			</div>
-			<div className="relative xs:top-60 sm:top-44 md:top-64  sm:w-[80vw] md:w-[70vw] mdl:w-[50vw] h-[15rem]  md:h-[25rem] mb-80  border-4 border-[#0075AA] m-auto">
-				<video
-					className="relative mb-20 lg:-top-9 h-[14.5rem] md:h-[24.5rem] lg:h-[28.5rem] md:w-[79.5rem] "
-					src="/video/cryo.mp4"
-					muted
-					controls
-					poster="/attitudeLogo.svg"
-				/>
-			</div>
-			{/* <ButtonToUp /> */}
+
+			<video
+				className="relative xs:top-60 sm:top-44 md:top-64  sm:w-[80vw] md:w-[70vw] mdl:w-[50vw] h-[15rem]  md:h-[25rem] mb-80  border-4 border-[#0075AA] m-auto "
+				src="/video/cryo.mp4"
+				muted
+				controls
+				poster="/attitudeLogo.svg"
+			/>
 			<div className="relative  text-center text-2xl ">
 				<div className="section1 relative w-full block mdl:flex ">
 					<div className="realtive mdl:w-1/2 w-[100vw] text-justify pt-10 px-5 lg:px-20 bg-blue2">
@@ -119,20 +117,18 @@ function Cryotherapie() {
 					</div>
 
 					<img
-						className="relative mdl:w-1/2  "
-						src="/cryoInterior1.jpeg"
-						layout="fill"
-						alt=""
+						className="relative mdl:w-1/2 xs:border-b-blue xs:border-b-4  "
+						src="/images/cryoInterior1.jpeg"
+						alt="Interieur de la cabine de cryothérapie"
 					/>
 				</div>
 
 				<div className="">
 					<div className="section2 relative w-full block mdl:flex mb-20   ">
 						<img
-							className="relative mdl:w-1/2  mdl:opacity-50 bg-[] "
-							src="/relax.jpg"
-							layout="fill"
-							alt=""
+							className="relative mdl:w-1/2  mdl:opacity-50 xs:border-b-blue xs:border-b-4 "
+							src="/images/relax.jpg"
+							alt="Femme qui fait du yoga"
 						/>
 
 						<div className="realtive mdl:w-1/2 w-[100vw] text-justify pt-10 px-5 mdl:px-20 bg-blue2">
@@ -282,7 +278,6 @@ function Cryotherapie() {
 				<Link to="/booking">RESERVER</Link>
 			</button>
 			<ButtonDownload />
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

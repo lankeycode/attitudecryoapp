@@ -1,10 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-// import Layout from "components/Layout";
-
 import styles from "./tesla.module.css";
-//import ButtonToUp from "components/Button/ButtonToUp";
 
 function perineum() {
 	return (
@@ -14,9 +10,8 @@ function perineum() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-screen w-screen pb-20 bg-blue1  font-taviraj "
 		>
-			{/* <Layout> */}
 			<h1 className={styles.title}>Périnée</h1>
-			{/* <ButtonToUp /> */}
+
 			{/****** SECTION WOMEN *******/}
 			<div className=" text-xl px-3 md:w-[90vw] md:ml-5   ">
 				<p className="text-3xl text-center text-blue font-bold mt-10 mb-5">
@@ -99,7 +94,6 @@ function perineum() {
 					reins ou mauvaise posture.
 				</p>
 			</div>
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

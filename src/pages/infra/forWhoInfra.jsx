@@ -1,7 +1,6 @@
-//import Layout from "components/Layout";
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
 import styles from "./infratherapie.module.css";
 
 function forWhoInfra() {
@@ -12,7 +11,6 @@ function forWhoInfra() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" bg-blue1 min-h-screen w-screen pb-20 font-taviraj"
 		>
-			{/* <Layout> */}
 			<h1 className={styles.title}>Pour qui...</h1>
 
 			<div className="">
@@ -58,7 +56,6 @@ function forWhoInfra() {
 				<img
 					className="relative mdl:w-[20vw]  w-[100vw] h-[35vh] mdl:h-[40vh] mt-10 border-b-4  border-b-skyblue "
 					src="/images/relaxInfra.jpg"
-					layout="fill"
 					alt=""
 				/>
 			</div>
@@ -72,7 +69,6 @@ function forWhoInfra() {
 				<img
 					className="relative mdl:w-[20vw]  w-[100vw] h-[35vh] mdl:h[40vh] mt-10 border-b-4 border-b-skyblue  "
 					src="/images/detoxInfra.jpg"
-					layout="fill"
 					alt=""
 				/>
 
@@ -97,7 +93,6 @@ function forWhoInfra() {
 				<img
 					className="relative mdl:w-[15vw]  w-[100vw] h-[35vh] mdl:h-[40vh] mt-10 border-b-4 border-b-skyblue "
 					src="/images/recupInfra2.jpg"
-					layout="fill"
 					alt=""
 				/>
 
@@ -115,7 +110,6 @@ function forWhoInfra() {
 				<img
 					className="relative mdl:w-[15vw]  w-[100vw] h-[35vh] mdl:h-[40vh] mt-10 border-b-4 border-b-skyblue "
 					src="/images/recupInfra.jpg"
-					layout="fill"
 					alt=""
 				/>
 			</div>
@@ -129,7 +123,6 @@ function forWhoInfra() {
 				<img
 					className="relative mdl:w-[30%]  w-[100vw] h-[35vh] mt-10 border-b-4 border-b-skyblue "
 					src="/images/sommeilInfra.jpg"
-					layout="fill"
 					alt=""
 				/>
 
@@ -144,18 +137,9 @@ function forWhoInfra() {
 					<br />
 				</div>
 			</div>
-			{/* <p className="text-xl md:text-2xl xs:w-[80vw]  text-justify w-[40vw] mb-5 mx-auto">
-				L&apos;infrathérapie s’est démocratisée, au point d’être
-				désormais ouverte à toutes et à tous, et pour d’autres usages.
-				Les séances d&apos;infratherapie seront indiquées dans de
-				multiples cas :
-			</p> */}
 			<button className="relative left-1/2 -translate-x-1/2  mb-5  w-44 h-12  text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
-				{/* <Link href={"/booking"}> */}
-				<a> RESERVER</a>
-				{/* </Link> */}
+				<Link to={"/booking"}>RESERVER</Link>
 			</button>
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

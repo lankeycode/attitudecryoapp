@@ -44,6 +44,7 @@ import Header from "./Components/Layout/Header/Header";
 import SidebarMenu from "./Components/Layout/Menu/SidebarMenu";
 import Layout from "./Components/Layout/Layout";
 import AnimatedRoutes from "./Components/Animation/AnimatedRoutes";
+import ButtonToUp from "./Components/Button/ButtonToUp";
 
 function App() {
 	//STATE
@@ -54,6 +55,7 @@ function App() {
 				<Header />
 				<SidebarMenu />
 				<AnimatedRoutes />
+				<ButtonToUp />
 				{/* <Routes>
 					<AnimatedRoutes />
 					<Route path="/" element={<Home />} />

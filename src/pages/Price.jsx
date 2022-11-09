@@ -2,10 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-// import Navbar from "../components/Navigation/Navbar";
-// import Footer from "../components/Footer/Footer";
-// import ButtonToUp from "components/Button/ButtonToUp";
-
 function Price() {
 	const PriceCryo = [
 		{ nb: "1", title: " séance :", price: " 39€", total: "" },
@@ -78,7 +74,6 @@ function Price() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="w-screen "
 		>
-			{/* <Navbar backgroundColor="#faedcd" /> */}
 			<main className="relative min-h-min w-full  pb-10 bg-[url('/images/bois7.jpg')]  bg-cover bg-no-repeat bg-fixed  ">
 				<h1 className="relative lg:sticky text-center top-40 text-6xl font-taviraj font-extrabold text-[#6c584c] pb-60">
 					Nos Tarifs
@@ -165,7 +160,7 @@ function Price() {
 				</p>
 
 				<button className="mdl:sticky md:fixed  md:bottom-32  relative left-1/2 md:left-[83%] lg:left-1/2  -translate-x-1/2 sm:top-2 md:top-[60%] w-32 md:w-44 h-10 md:h-16 text-[#dda15e] bg-[#6c584c] rounded-lg hover:bg-[#dda15e] hover:text-[#6c584c] hover:border-2 hover:border-[#6c584c]  ">
-					<Link href={"/booking"}>RESERVER</Link>
+					<Link to={"/booking"}>RESERVER</Link>
 				</button>
 			</main>
 			{/* <Footer

@@ -1,11 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-// import ParticlesBackground from "components/Animation/ParticlesBackground";
-// import ButtonToUp from "components/Button/ButtonToUp";
-
-// import Styles from "../styles/events.module.css";
-
 import ParticleBackground from "../Components/Animation/ParticlesBackground";
 
 function event() {

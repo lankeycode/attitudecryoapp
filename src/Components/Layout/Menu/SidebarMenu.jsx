@@ -8,11 +8,20 @@ import {
 	useProSidebar,
 } from "react-pro-sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+	faBars,
+	faXmark,
+	faHome,
+	faEuro,
+	faEnvelope,
+	faBell,
+	faBriefcase,
+	faTemperatureLow,
+} from "@fortawesome/free-solid-svg-icons";
 
 function SidebarMenu() {
 	const [openSidebar, setOpenSidebar] = useState(false);
-	//const { active } = useProSidebar;
+	const { open, defaultOpen, active, disabled } = useProSidebar();
 
 	return (
 		<div className="top-0 fixed z-[5000]">
@@ -30,7 +39,7 @@ function SidebarMenu() {
 				overlayColor="rgb(0, 0, 0, 0.9)"
 				className={` mr-10 h-screen text-blue font-bold  z-[1000]  transition-all duration-1000 ease-in ${
 					openSidebar
-						? " fixed bg-blue h-[10vh]  "
+						? " fixed bg-blue h-[10vh] xs-left-[0] "
 						: "  xs:h-screen fixed  xs:left-[-35rem] "
 				}`}
 				// style={{
@@ -51,20 +60,26 @@ function SidebarMenu() {
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/" />}
 					>
-						Accueil
+						<FontAwesomeIcon icon={faHome} className="mr-1" /> Accueil
 					</MenuItem>
 					<MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/le_centre" />}
 					>
+						<img
+							className="h-20 w-20 absolute -top-[1.4rem] right-14"
+							src="/attitudeLogo.svg"
+						/>
 						Le centre
 					</MenuItem>
 					<SubMenu
-						//onMouseLeave={() => active(false)}
-						// onOpenChange={() => setOpenSidebar(false)}
+						onMouseLeave={() => defaultOpen(true)}
 						label="nos services"
 					>
-						<SubMenu label="cryothérapie">
+						<SubMenu
+							className=" text-skyblue bg-blue focus:bg-blue3"
+							label="cryothérapie"
+						>
 							<MenuItem
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/cryo/cryotherapie" />}
@@ -93,7 +108,10 @@ function SidebarMenu() {
 								On en parle
 							</MenuItem>
 						</SubMenu>
-						<SubMenu label="infrathérapie">
+						<SubMenu
+							className="text-skyblue bg-blue"
+							label="infrathérapie"
+						>
 							<MenuItem
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/infra/infratherapie" />}
@@ -131,7 +149,10 @@ function SidebarMenu() {
 								On en parle
 							</MenuItem>
 						</SubMenu>
-						<SubMenu label="teslaFormer">
+						<SubMenu
+							className="text-skyblue bg-blue "
+							label="teslaFormer"
+						>
 							<MenuItem
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/tesla/teslaFormer" />}
@@ -169,35 +190,32 @@ function SidebarMenu() {
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/entreprise" />}
 					>
+						<FontAwesomeIcon icon={faBriefcase} className="mr-2" />
 						entreprises
 					</MenuItem>
 					<MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/tarifs" />}
 					>
+						<FontAwesomeIcon icon={faEuro} className="mr-2" />
 						tarifs
 					</MenuItem>
 					<MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/contact" />}
 					>
+						<FontAwesomeIcon icon={faEnvelope} className="mr-2" />
 						contact
 					</MenuItem>
 					<MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/evenement" />}
 					>
+						<FontAwesomeIcon icon={faBell} className="mr-2" />
 						évènements
 					</MenuItem>
 				</Menu>
 			</Sidebar>
-			{/* <button
-				className="absolute right-5 "
-				onClick={() => collapseSidebar()}
-			>
-				{" "}
-				Collapse{" "}
-			</button> */}
 		</div>
 	);
 }

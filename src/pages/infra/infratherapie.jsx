@@ -1,14 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
-//import ButtonToUp from "components/Button/ButtonToUp";
-//import Layout from "components/Layout";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
 
 //mport styles from "../../styles/infratherapie.module.css";
-//import ButtonDownload from "components/Button/ButtonDownload";
 
 function Infratherapie() {
 	const listForbiden = [
@@ -27,26 +23,25 @@ function Infratherapie() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" bg-blue1 pb-20 font-taviraj"
 		>
-			{/* <Layout> */}
 			<div className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl ">
 				<span>INFRA</span>
 				<span>THERA</span>
 				<span>PIE</span>
 			</div>
-			<div className="relative xs:top-60 sm:top-44 md:top-64  sm:w-[80vw] md:w-[80vw] mdl:w-[40vw] h-[15rem] md:h-[25rem] mdl:h-[27rem] mb-96 border-4 border-blue m-auto">
-				<video
-					className="relative mb-20 mdl:-top-9 h-[14.5rem] md:h-[24.5rem] mdl:h-[28.5rem] md:w-[79.5rem]"
-					src="/video/infra.mp4"
-					muted
-					controls
-					poster="/attitudeLogo.svg"
-				/>
-			</div>
+
+			<video
+				className="relative xs:top-60 sm:top-44 md:top-64  sm:w-[80vw] md:w-[80vw] mdl:w-[40vw] h-[15rem] md:h-[25rem] mdl:h-[27rem] mb-96 border-4 border-blue m-auto"
+				src="/video/infra.mp4"
+				muted
+				controls
+				poster="/attitudeLogo.svg"
+			/>
+
 			<p className="flex text-xl md:text-2xl text-center justify-center items-center text-blue w-[90vw] md:w-[70vw]  h-28 md:h-20 mx-auto  font-bold mb-20 shadow-lg shadow-skyblue ">
 				LES INFRAROUGES LONGS DÉTOXIFIENT, TONIFIENT ET STIMULENT
 				L&apos;ORGANISME
 			</p>
-			{/* <ButtonToUp /> */}
+
 			<div className="relative  text-center ">
 				<div className="section1 relative w-full block mdl:flex mb-16 ">
 					<div className="realtive text-lg md:text-xl mdl:w-1/2 w-[100vw] text-justify pt-10 px-5 mdl:px-20 bg-blue2">
@@ -105,8 +100,7 @@ function Infratherapie() {
 
 					<img
 						className="relative mdl:w-1/2  mdl:opacity-50"
-						src="/leDome.jpg"
-						layout="fill"
+						src="/images/leDome.jpg"
 						alt=""
 					/>
 				</div>
@@ -163,12 +157,8 @@ function Infratherapie() {
 				<br />
 			</div>
 			<button className="relative left-1/2 -translate-x-1/2 sm:-top-8 md:-top-1 mb-20   w-44 h-12  text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
-				{/* <Link href={"/booking"}> */}
-				<a> RESERVER</a>
-				{/* </Link> */}
+				<Link to={"/booking"}> * RESERVER</Link>
 			</button>
-			{/* <ButtonDownload /> */}
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

@@ -1,8 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-//import Layout from "components/Layout";
-
 import styles from "./cryotherapie.module.css";
 
 function protocole() {
@@ -13,7 +10,10 @@ function protocole() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" min-h-screen bg-blue1 w-screen pb-20  font-taviraj"
 		>
-			{/* <Layout> */}
+			<SEO
+				title="Cryothérapie : Protocole"
+				description="Mise en place d'un protocole de cryothérapie le plus adapté à vos objectifs en vous proposant un programme..."
+			/>
 			<h1 className={styles.title}>Protocole</h1>
 
 			<br />
@@ -32,7 +32,6 @@ function protocole() {
 				<img
 					className="relative mx-auto w-3/4 md:w-[40vw] mdl:w-[30vw] h-[25vh] md:h-[30vh] mdl:h-[35vh]"
 					src="/images/sportPiscine.jpg"
-					layout="fill"
 					alt="nageur dans une piscine"
 				/>
 
@@ -49,7 +48,6 @@ function protocole() {
 				<img
 					className="relative mx-auto w-3/4 md:w-[40vw] mdl:w-[30vw] h-[25vh] md:h-[30vh] mdl:h-[35vh]"
 					src="/images/pain.jpg"
-					layout="fill"
 					alt="douleur au bras"
 				/>
 
@@ -65,7 +63,6 @@ function protocole() {
 				<img
 					className="relative mx-auto w-3/4 md:w-[40vw] mdl:w-[30vw] h-[25vh] md:h-[30vh] mdl:h-[35vh]"
 					src="/images/sommeilSmall.jpg"
-					layout="fill"
 					alt="Femme allongée sur un lit
                "
 				/>
@@ -76,7 +73,6 @@ function protocole() {
 					bien-être quotidien
 				</p>
 			</div>
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

@@ -12,7 +12,6 @@ function Booking() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-full pb-20 font-taviraj"
 		>
-			{/* <Navbar className="mb-80" /> */}
 			<div className=" h-[100vh] w-screen">
 				<p className="relative top-[20rem] text-center text-3xl text-blue font-bold ">
 					Le système de réservation en ligne sera très prochainement

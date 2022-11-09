@@ -1,8 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-//import Layout from "components/Layout";
-
 import styles from "./tesla.module.css";
 
 function talkingAboutTesla() {
@@ -13,7 +10,6 @@ function talkingAboutTesla() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="bg-blue1 min-h-screen w-screen pb-20 font-taviraj"
 		>
-			{/* <Layout> */}
 			<h1 className={styles.title}>On en parle</h1>
 			<p className="relative xs:top-48 sm:top-40 md:top-40 text-xl text-blue text-center font-bold">
 				Le témoignage de la miss France Elodie Gossuin
@@ -27,7 +23,6 @@ function talkingAboutTesla() {
 					poster="/attitudeLogo.svg"
 				/>
 			</div>
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

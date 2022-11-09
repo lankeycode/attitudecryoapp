@@ -1,8 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-//import Layout from "components/Layout";
-
 import styles from "./tesla.module.css";
 
 const listMedical = [
@@ -45,7 +42,6 @@ function forWhoTesla() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-screen pb-20 bg-blue1  font-taviraj "
 		>
-			{/* <Layout> */}
 			<h1 className={styles.title}>Pour qui...</h1>
 			<div className="block mdl:flex">
 				<div className="relative w-[80vw]  mdl:w-[40vw] mdl:h-[30vh] mb-20 mdl:mb-5 p-5 top-10 mx-10 text-xl shadow-swiperTitle  ">
@@ -58,22 +54,22 @@ function forWhoTesla() {
 					</p>
 				</div>
 
-				<div className="w-[80vw] mdl:w-[40vw] h-[45vh] mdl:h-[50vh] relative mx-auto  shadow-lg shadow-blue ">
-					<Image
-						src="/TESLAFormerLegsChair.jpg"
-						layout="fill"
-						priority="true"
-						alt=""
-					/>
-				</div>
+				<img
+					className="w-[80vw] mdl:w-[40vw] h-[45vh] mdl:h-[50vh] relative mx-auto  shadow-lg shadow-blue "
+					src="/images/TESLAFormerLegsChair.jpg"
+					alt=""
+				/>
 			</div>
 			<br />
 
 			{/* **************************** */}
 			<div className="block mdl:flex">
-				<div className="w-[80vw] mdl:w-[40vw] h-[45vh] mdl:h-[50vh] relative mx-auto  shadow-lg shadow-blue ">
-					<Image src="/TESLAFormerStomach.jpg" layout="fill" alt="" />
-				</div>
+				<img
+					className="w-[80vw] mdl:w-[40vw] h-[45vh] mdl:h-[50vh] relative mx-auto  shadow-lg shadow-blue "
+					src="/images/TESLAFormerStomach.jpg"
+					alt=""
+				/>
+
 				<div className="relative w-[80vw]  mdl:w-[40vw] mdl:h-[30vh] mb-20 mdl:mb-5 p-5 top-10 mx-10 text-xl shadow-swiperTitle  ">
 					<p>
 						Tesla Former s’avère idéal chez les femmes après une
@@ -93,9 +89,12 @@ function forWhoTesla() {
 						périnée.
 					</p>
 				</div>
-				<div className="w-[80vw] mdl:w-[40vw] h-[45vh] mdl:h-[50vh] relative mx-auto  shadow-lg shadow-blue ">
-					<Image src="/TESLAFormerStomach.jpg" layout="fill" alt="" />
-				</div>
+
+				<img
+					className="w-[80vw] mdl:w-[40vw] h-[45vh] mdl:h-[50vh] relative mx-auto  shadow-lg shadow-blue "
+					src="/images/TESLAFormerStomach.jpg"
+					alt=""
+				/>
 			</div>
 			<br />
 			<p className="w-[90vw] md:w-[60vw] mdl:w-[40vw] md:h-28 mdl:h-28 flex text-xl text-blue font-bold  text-center mx-auto mt-20 mb-10 p-5 shadow-md shadow-blue">
@@ -164,7 +163,6 @@ function forWhoTesla() {
 					condition des muscles et du tissu adipeux
 				</p>
 			</div>
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

@@ -2,14 +2,14 @@
 	position: relative;
 	min-height: 100vh;
 	width: 100vw;
-	background-image: url("/grenoble.jpg");
-	background-position: top;
-	background-position-y: 0%;
-	background-attachment: scroll;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	background-image: url("/images/grenoble.jpg");
+	//background-position: top;
+	//background-position-y: 0%;
+	//background-attachment: scroll;
+	//background-size: cover;
+	//-webkit-background-size: cover;
+	//-moz-background-size: cover;
+	//-o-background-size: cover;
 	animation-duration: 6s;
 	-webkit-animation-duration: 6s;
 	animation-iteration-count: 1;
@@ -23,11 +23,20 @@
 	position: relative;
 	min-height: 110vh;
 	width: 100vw;
-	//background-color: #915;
+	background-image: url("/images/grenoble.jpg");
 	background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
+
+	//background-position: top;
+	//background-position-y: 0%;
+	//background-attachment: scroll;
+	//background-size: cover;
+	//-webkit-background-size: cover;
+	//-moz-background-size: cover;
+	//-o-background-size: cover;
 }
+
 /************ ANIMATION H1 *************/
 .companyH1 {
 	animation-name: animeH1;
@@ -39,6 +48,12 @@
 	box-sizing: border-box;
 	border: 2px solid #2a3cad;
 	transform: scale(0);
+	padding: 1rem 2rem;
+}
+@media screen and (max-width: 749px) {
+	.companyH1 {
+		padding: 0 1.5rem;
+	}
 }
 
 .companyH1:after {

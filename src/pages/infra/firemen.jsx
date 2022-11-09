@@ -1,10 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-//import Layout from "components/Layout";
-
 import styles from "./infratherapie.module.css";
-//import ButtonDownload from "components/Button//ButtonDownload";
 
 function firmen() {
 	return (
@@ -14,7 +10,6 @@ function firmen() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-screen  bg-blue1 pb-20 font-taviraj"
 		>
-			{/* <Layout> */}
 			<h1 className={styles.title}>Les pompiers de New York</h1>
 			<p className="flex xs:text-2xl md:text-3xl text-blue xs:w-[85vw] md:w-[75vw] mdl:w-[60vw] font-bold mx-auto pl-5 text-center justify-center items-center sm:h-40 md:h-20 shadow-md shadow-blue">
 				La détoxication des pompiers de New York avec le sauna
@@ -67,7 +62,6 @@ function firmen() {
 				</p>
 			</div>
 			<br />
-			{/* </Layout> */}
 		</motion.div>
 	);
 }

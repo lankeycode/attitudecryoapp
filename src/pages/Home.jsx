@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import style from "./home.module.css";
 import { motion } from "framer-motion";
 import Footer from "../Components/Layout/Footer/Footer";
+import SEO from "../Components/SEO/SEO";
 
 function Home() {
 	return (
@@ -12,6 +13,10 @@ function Home() {
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 		>
+			<SEO
+				title="attitude cryo"
+				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques validé scientifiquement pour votre Bien-être."
+			/>
 			<h1 className={style.h1}>
 				<span>A</span>
 				<span>t</span>
