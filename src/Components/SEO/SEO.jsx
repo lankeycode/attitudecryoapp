@@ -1,13 +1,14 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-function SEO({ title, description, name, type }) {
+function SEO({ title, description, canonical, name, type }) {
 	return (
 		<HelmetProvider>
 			<Helmet>
 				{/* Standard metadata tags */}
 				<title>{title}</title>
 				<meta name="description" content={description} />
+				<link rel="canonical" href={canonical} />
 				{/* End standard metadata tags */}
 				{/* Facebook tags */}
 				<meta property="og:type" content={type} />

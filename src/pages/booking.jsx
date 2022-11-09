@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
 import ParticlesBackgroundBook from "../Components/Animation/ParticlesBackgroundBook";
+import SEO from "../Components/SEO/SEO";
 
 function Booking() {
 	return (
@@ -12,11 +12,15 @@ function Booking() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-full pb-20 font-taviraj"
 		>
+			<SEO
+				title="Reservation d'une séance"
+				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques validé scientifiquement pour votre Bien-être."
+			/>
 			<div className=" h-[100vh] w-screen">
-				<p className="relative top-[20rem] text-center text-3xl text-blue font-bold ">
+				<h1 className="relative top-[20rem] text-center text-3xl text-blue font-bold ">
 					Le système de réservation en ligne sera très prochainement
 					disponible
-				</p>
+				</h1>
 				<p className="relative top-[23rem] text-center text-lg text-blue">
 					{" "}
 					Une question ? Une information...{" "}

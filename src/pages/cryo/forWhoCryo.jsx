@@ -17,7 +17,7 @@ function forWhoCryo() {
 				title="Cryothérapie : Pour qui..."
 				description="La cryotherapie s'adresse à toutes les personnes avec des maux traumatologique,rhumatologique,neurologique,dermatologique,musculaire..."
 			/>
-			<div className={styles.title}> Pour qui...</div>
+			<h1 className={styles.title}> Pour qui...</h1>
 			<p className="text-xl md:text-2xl xs:w-[80vw]  text-justify w-[40vw] mb-20 mx-auto">
 				La cryothérapie s’est démocratisée, au point d’être désormais
 				ouverte à toutes et à tous, et pour d’autres usages. Les

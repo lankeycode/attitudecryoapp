@@ -3,6 +3,8 @@
 	font-size: 0;
 	line-height: 1.5;
 	//color: #bbdefb;
+	display: flex;
+	justify-content: center;
 }
 .words span {
 	font-size: 5rem;

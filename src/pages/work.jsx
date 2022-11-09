@@ -14,7 +14,7 @@ function work() {
 		>
 			<SEO
 				title="Espace entreprise"
-				description="Attitude Cryo accompagne les entreprises sur le sujet de QVCT « Qualité de Vie et des Conditions de Travail » à travers le levier de bien-être. Attitude Cryo, un centre pour tous,même pour les entreprises. Dans le milieu professionel, on assiste à une prise de conscience des bienfaits de la pratique d'activité physique et sportive pour la santé et le bien-être au travail."
+				description="Attitude Cryo accompagne les entreprises sur le sujet de QVCT « Qualité de Vie et des Conditions de Travail » à travers le levier de bien-être."
 			/>
 			<div className="relative flex flex-col justify-center items-center  pt-[13rem] mb-28 font-taviraj   ">
 				<div className={Styles.words}>

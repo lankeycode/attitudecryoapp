@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import SEO from "../Components/SEO/SEO";
 
 import {
 	faCircle,
@@ -16,6 +17,7 @@ function plan() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" min-h-screen bg-blue1 w-screen  font-taviraj pb-20"
 		>
+			<SEO title="Le plan du site" description="" />
 			<button className="relative top-32 w-40 h-12 ml-40 text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
 				<Link to="/">Accueil</Link>
 			</button>

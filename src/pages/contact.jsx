@@ -44,9 +44,12 @@ export default function Contact() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
-			className=" bg-blue1 w-screen"
+			className=" bg-blue1 w-screen pb-20"
 		>
-			<SEO title="Contactez-nous" description="" />
+			<SEO
+				title="Contactez-nous"
+				description="Contactez nous via notre page de contact pour differentes renseignements"
+			/>
 			<div className="fixed flex flex-col xs:-right-20 md:right-10  lg:right-5 sm:top-60 lg:top-32  ">
 				<FontAwesomeIcon
 					className={Styles.facebook}
@@ -62,25 +65,27 @@ export default function Contact() {
 				></FontAwesomeIcon>
 			</div>
 
-			<div className="relative flex flex-col justify-center items-center pt-[10rem] mb-20 font-taviraj   ">
-				<div className={Styles.words}>
-					<span>C</span>
-					<span>O</span>
-					<span>N</span>
-					<span>T</span>
-					<span>A</span>
-					<span>C</span>
-					<span>T</span>
-					<span>E</span>
-					<span>Z</span>
-				</div>
+			<div className="relative  flex flex-col justify-center items-center pt-[10rem] mb-20 font-taviraj   ">
+				<h1>
+					<div className={Styles.words}>
+						<span>C</span>
+						<span>O</span>
+						<span>N</span>
+						<span>T</span>
+						<span>A</span>
+						<span>C</span>
+						<span>T</span>
+						<span>E</span>
+						<span>Z</span>
+					</div>
 
-				<div className={Styles.words}>
-					<span>N</span>
-					<span>O</span>
-					<span>U</span>
-					<span>S</span>
-				</div>
+					<div className={Styles.words}>
+						<span>N</span>
+						<span>O</span>
+						<span>U</span>
+						<span>S</span>
+					</div>
+				</h1>
 			</div>
 
 			<form

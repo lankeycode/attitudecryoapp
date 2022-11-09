@@ -51,8 +51,10 @@ function SidebarMenu() {
 				// }}
 			>
 				<img
-					className="pt-2 mb-5 ml-5 w-[150px] h-[150px] "
+					className="pt-2 mb-5 ml-5"
 					src="/attitudeLogo.svg"
+					width={150}
+					height={150}
 					alt="logo"
 				/>
 				<Menu>
@@ -67,8 +69,11 @@ function SidebarMenu() {
 						routerLink={<Link to="/le_centre" />}
 					>
 						<img
-							className="h-20 w-20 absolute -top-[1.4rem] right-14"
+							className=" absolute -top-[1.4rem] right-14"
 							src="/attitudeLogo.svg"
+							width={"5rem"}
+							height={"5rem"}
+							alt="logo"
 						/>
 						Le centre
 					</MenuItem>

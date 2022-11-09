@@ -10,6 +10,7 @@ function Header() {
 				<Link to="/">
 					<img
 						src="/attitudeLogo.svg"
+						alt="logo"
 						className="fixed -top-10 left-10 w-[150px] h-[150px]  pt-20"
 					/>
 				</Link>

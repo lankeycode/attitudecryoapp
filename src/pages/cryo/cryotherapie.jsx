@@ -60,11 +60,11 @@ function Cryotherapie() {
 				title="La cryothérapie"
 				description="Des bienfaits en températures très basses (froid extreme jusqu'à -110 degrés) par la cryothérapie en corps entier."
 			/>
-			<div className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl">
+			<h1 className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl">
 				<span>CRYO</span>
 				<span>THERA</span>
 				<span>PIE</span>
-			</div>
+			</h1>
 
 			<video
 				className="relative xs:top-60 sm:top-44 md:top-64  sm:w-[80vw] md:w-[70vw] mdl:w-[50vw] h-[15rem]  md:h-[25rem] mb-80  border-4 border-[#0075AA] m-auto "

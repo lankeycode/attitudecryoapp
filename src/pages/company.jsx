@@ -189,8 +189,9 @@ export default function Company() {
 			className=" font-taviraj w-screen pb-20 bg-blue3"
 		>
 			<SEO
-				title="attitude cryo"
+				title="Le centre Attitude Cryo"
 				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques validé scientifiquement pour votre Bien-être."
+				canonical="/Le_centre"
 			/>
 			<div className={Styles.mainBis}>
 				{/* <img className="h-full" src="/images/grenoble.jpg" alt="" /> */}
@@ -333,7 +334,7 @@ export default function Company() {
 							<img
 								className="w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 								src="/images/cryoInterior.jpeg"
-								alt=""
+								alt="Image de la cabine de cryothérapie"
 							/>
 						</div>
 					</SwiperSlide>
@@ -342,7 +343,7 @@ export default function Company() {
 							<img
 								className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 								src="/images/cryoInterior1.jpeg"
-								alt=""
+								alt="Image de la cabine de cryothérapie"
 							/>
 						</div>
 					</SwiperSlide>
@@ -351,7 +352,7 @@ export default function Company() {
 							<img
 								className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 								src="/images/cryoInterior2.jpeg"
-								alt=""
+								alt="Image de la cabine de cryothérapie"
 							/>
 						</div>
 					</SwiperSlide>
@@ -360,7 +361,7 @@ export default function Company() {
 							<img
 								className="w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 								src="/images/relax.jpg"
-								alt=""
+								alt="Une femme qui fait du yoga"
 							/>
 						</div>
 					</SwiperSlide>
@@ -399,7 +400,7 @@ export default function Company() {
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 									src="/images/relax.jpg"
-									alt=""
+									alt="Une femme qui fait du yoga"
 								/>
 							</div>
 						</SwiperSlide>
@@ -408,7 +409,7 @@ export default function Company() {
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 									src="/images/relax.jpg"
-									alt=""
+									alt="Une femme qui fait du yoga"
 								/>
 							</div>
 						</SwiperSlide>
@@ -417,7 +418,7 @@ export default function Company() {
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[50vh] mdl:h-[75vh] mx-auto"
 									src="/images/relax.jpg"
-									alt=""
+									alt="Une femme qui fait du yoga"
 								/>
 							</div>
 						</SwiperSlide>
@@ -426,7 +427,7 @@ export default function Company() {
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 									src="/images/relax.jpg"
-									alt=""
+									alt="Une femme qui fait du yoga"
 								/>
 							</div>
 						</SwiperSlide>
@@ -468,7 +469,7 @@ export default function Company() {
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 									src="/images/relax.jpg"
-									alt=""
+									alt="Une femme qui fait du yoga"
 								/>
 							</div>
 						</SwiperSlide>
@@ -477,7 +478,7 @@ export default function Company() {
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 									src="/images/relax.jpg"
-									alt=""
+									alt="Une femme qui fait du yoga"
 								/>
 							</div>
 						</SwiperSlide>
@@ -486,7 +487,7 @@ export default function Company() {
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 									src="/images/relax.jpg"
-									alt=""
+									alt="Une femme qui fait du yoga"
 								/>
 							</div>
 						</SwiperSlide>
@@ -495,7 +496,7 @@ export default function Company() {
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 									src="/images/relax.jpg"
-									alt=""
+									alt="Une femme qui fait du yoga"
 								/>
 							</div>
 						</SwiperSlide>

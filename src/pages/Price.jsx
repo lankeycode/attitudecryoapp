@@ -75,7 +75,10 @@ function Price() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="w-screen "
 		>
-			<SEO title="Les tarifs" description="" />
+			<SEO
+				title="Les tarifs"
+				description="Retrouver les details des différents tarifs pour toutes nos services et prestations"
+			/>
 			<main className="relative min-h-min w-full  pb-10 bg-[url('/images/bois7.jpg')]  bg-cover bg-no-repeat bg-fixed  ">
 				<h1 className="relative lg:sticky text-center top-40 text-6xl font-taviraj font-extrabold text-[#6c584c] pb-60">
 					Nos Tarifs

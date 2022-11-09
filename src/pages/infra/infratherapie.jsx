@@ -28,11 +28,11 @@ function Infratherapie() {
 				title="L'infratherapie"
 				description="L'nfrathérapie est une méthode de soin douce, naturelle et sans danger, utilisant les infrarouges longs. Le réchauffement se produit au coeur du tissu. Cela provoque une sudation importante indentique à celle générée lors d'un effort physique soutenu."
 			/>
-			<div className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl ">
+			<h1 className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl ">
 				<span>INFRA</span>
 				<span>THERA</span>
 				<span>PIE</span>
-			</div>
+			</h1>
 
 			<video
 				className="relative xs:top-60 sm:top-44 md:top-64  sm:w-[80vw] md:w-[80vw] mdl:w-[40vw] h-[15rem] md:h-[25rem] mdl:h-[27rem] mb-96 border-4 border-blue m-auto"

@@ -15,6 +15,7 @@ function Home() {
 			<SEO
 				title="attitude cryo"
 				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques validé scientifiquement pour votre Bien-être."
+				canonical="/"
 			/>
 			<h1 className={style.h1}>
 				<span>A</span>

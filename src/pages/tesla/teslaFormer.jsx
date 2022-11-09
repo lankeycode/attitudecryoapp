@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "./tesla.module.css";
 import ButtonDownloadTesla from "../../Components/Button/ButtonDownloadTesla";
+import SEO from "../../Components/SEO/SEO";
 
 const listAgainst = [
 	{ text: "Grossesse" },
@@ -33,8 +34,9 @@ function TeslaFormer() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-screen pb-20 bg-blue1  font-taviraj"
 		>
-			<div className="wordH1 xs:relative sm:relative  xs:text-center top-40  md:top-52 text-blue  font-taviraj font-bold text-4xl  sm:text-5xl">
-				Tesla Former & Tesla Chair
+			<SEO title="TESLAFormer & TESLAChair" description="" />
+			<h1 className="wordH1 xs:relative sm:relative  xs:text-center top-40  md:top-52 text-blue  font-taviraj font-bold text-4xl  sm:text-5xl">
+				{/* Tesla Former & Tesla Chair */}
 				<div>
 					<span>TESLA</span>
 					<span className="ml-5">FORMER</span>
@@ -45,7 +47,7 @@ function TeslaFormer() {
 					<span className="ml-5">CHAIR</span>
 				</div>
 				<span></span>
-			</div>
+			</h1>
 			<video
 				className="relative xs:top-60 sm:top-44 md:top-64  sm:w-[80vw] md:w-[80vw] mdl:w-[40vw] h-[15rem] md:h-[25rem] mdl:h-[27rem] mb-80 border-4 border-blue m-auto"
 				src="/video/teslaFormer.mp4"

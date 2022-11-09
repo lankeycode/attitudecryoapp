@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Custom404() {
 	//STATE
 	const navigate = useNavigate();
+	let location = useLocation();
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -21,6 +22,7 @@ export default function Custom404() {
 			/>
 			<h1 className="text-xl md:text-3xl text-blue font-bold flex justify-center top-[27vh] md:top-[25vh] relative">
 				La page recherchée n&apos;existe pas
+				<code>{location.pathname}</code>
 			</h1>
 
 			<button
