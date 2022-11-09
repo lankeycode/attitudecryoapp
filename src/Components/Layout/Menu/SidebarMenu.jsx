@@ -72,10 +72,7 @@ function SidebarMenu() {
 						/>
 						Le centre
 					</MenuItem>
-					<SubMenu
-						onMouseLeave={() => defaultOpen(true)}
-						label="nos services"
-					>
+					<SubMenu label="nos services">
 						<SubMenu
 							className=" text-skyblue bg-blue focus:bg-blue3"
 							label="cryothérapie"

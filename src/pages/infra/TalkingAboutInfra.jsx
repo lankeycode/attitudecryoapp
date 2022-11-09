@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./infratherapie.module.css";
+import SEO from "../../Components/SEO/SEO";
 
 function talkingAboutInfra() {
 	return (
@@ -10,6 +11,10 @@ function talkingAboutInfra() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" min-h-screen w-screen pb-20 font-taviraj"
 		>
+			<SEO
+				title="Infratherapie : On en parle"
+				description="'Grace à mon VITAL DOME, je récupère plus vite entre chaque match. Malgré un programme chargé, je suis toujours plus performant.' (Tony PARKER Joueur NBA)"
+			/>
 			<h1 className={styles.title}>On en parle</h1>
 
 			<div className="relative block mdl:flex sm:w-[80vw] md:w-[80vw] mdl:w-[40vw] h-[15rem] md:h-[25rem] mdl:h-[27rem] mb-80  mx-auto mdl:ml-20 ">

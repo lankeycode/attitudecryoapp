@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./tesla.module.css";
+import SEO from "../../Components/SEO/SEO";
 
 const listMedical = [
 	// {
@@ -42,6 +43,10 @@ function forWhoTesla() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-screen pb-20 bg-blue1  font-taviraj "
 		>
+			<SEO
+				title="Tesla : Pour qui..."
+				description="Cette technologie s’adresse aux femmes et aux hommes qui cherchent à se muscler et à tonifier leur silhouette, mais aussi à des sportifs de haut niveau pour travailler encore davantage une partie de leur corps afin d’améliorer leurs performances."
+			/>
 			<h1 className={styles.title}>Pour qui...</h1>
 			<div className="block mdl:flex">
 				<div className="relative w-[80vw]  mdl:w-[40vw] mdl:h-[30vh] mb-20 mdl:mb-5 p-5 top-10 mx-10 text-xl shadow-swiperTitle  ">

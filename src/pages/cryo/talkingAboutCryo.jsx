@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./cryotherapie.module.css";
+import SEO from "../../Components/SEO/SEO";
 
 function talkingAboutCryo() {
 	return (

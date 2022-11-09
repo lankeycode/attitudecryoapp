@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import styles from "./cryotherapie.module.css";
-import SEO from "../Components/SEO/SEO";
+import SEO from "../../Components/SEO/SEO";
 
 function forWhoCryo() {
 	return (

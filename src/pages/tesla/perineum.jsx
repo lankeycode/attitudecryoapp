@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./tesla.module.css";
+import SEO from "../../Components/SEO/SEO";
 
 function perineum() {
 	return (
@@ -10,6 +11,10 @@ function perineum() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-screen w-screen pb-20 bg-blue1  font-taviraj "
 		>
+			<SEO
+				title="Tesla : Le périnée"
+				description="Le périnée est une zone fragile dont on s'occupe généralement assez peu.Or, chez la femme, il est mis à rude épreuve pendant la grossesse et l'accouchement."
+			/>
 			<h1 className={styles.title}>Périnée</h1>
 
 			{/****** SECTION WOMEN *******/}

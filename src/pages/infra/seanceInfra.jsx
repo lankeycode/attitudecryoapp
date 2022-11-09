@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SeanceI from "../../components/Seance/SeanceI";
+import SEO from "../../components/SEO/SEO";
 
 import styles from "./infratherapie.module.css";
 
@@ -13,6 +14,10 @@ function seanceInfra() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-screen bg-blue1 w-screen pb-20  font-taviraj"
 		>
+			<SEO
+				title="La séance infrathérapie"
+				description="Il convient de noter que la sudation obtenue par le sauna japonais est de type 2, très différente de la transpiration obtenue en faisant du sport de manière classique qui produit de mauvaises odeurs, ce qui n’est pas le cas avec le sauna japonais. Donc pas de stress s'il faut reprendre le travail après une séance entre midi et deux !"
+			/>
 			<h1 className={styles.title}>Le déroulement de la séance</h1>
 
 			<div className=" text-2xl mt-60 mb-20">

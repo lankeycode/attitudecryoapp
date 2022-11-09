@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
+import SEO from "../../Components/SEO/SEO";
 
 //mport styles from "../../styles/infratherapie.module.css";
 
@@ -23,6 +24,10 @@ function Infratherapie() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" bg-blue1 pb-20 font-taviraj"
 		>
+			<SEO
+				title="L'infratherapie"
+				description="L'nfrathérapie est une méthode de soin douce, naturelle et sans danger, utilisant les infrarouges longs. Le réchauffement se produit au coeur du tissu. Cela provoque une sudation importante indentique à celle générée lors d'un effort physique soutenu."
+			/>
 			<div className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl ">
 				<span>INFRA</span>
 				<span>THERA</span>
@@ -106,25 +111,27 @@ function Infratherapie() {
 				</div>
 			</div>
 			<div className=" text-lg md:text-xl">
-				<p>
+				<p className="px-3">
 					L’infrathérapie est le produit moderne d’un riche passé
 					d’expérience thérapeutique !
 				</p>
 				<br />
-				<p>
+				<p className="px-3">
 					Cette technique représente une véritable révolution pour la
 					désintoxication du corps humain quotidiennement agressé par
 					des milliers d’agents polluants.
 				</p>
 				<br />
-				<p>L’infrathérapie est accessible à tous !</p>
-				<p>
+				<p className="px-3">
+					L’infrathérapie est accessible à tous !
+				</p>
+				<p className="px-3">
 					Et, vraiment adapté à tous, aux sportifs, aux hyperactifs,
 					aux stressés, et aux gourmands. Un vrai moment de bien-être
 					aux multiples bienfaits pour vous aider au quotidien.
 				</p>
 				<br />
-				<p>
+				<p className="px-3">
 					Dans un sauna japonais, vous serez allongé(e) sur une
 					serviette, sur le dos avec la tête à l’air libre, ce qui
 					vous permettra de respirer de l’air frais et de ne pas

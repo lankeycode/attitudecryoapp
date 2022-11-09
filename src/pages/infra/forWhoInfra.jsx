@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "./infratherapie.module.css";
+import SEO from "../../Components/SEO/SEO";
 
 function forWhoInfra() {
 	return (
@@ -11,6 +12,10 @@ function forWhoInfra() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" bg-blue1 min-h-screen w-screen pb-20 font-taviraj"
 		>
+			<SEO
+				title="Infratherapie : Pour qui..."
+				description="Les infrarouges longs sont indispensables à la vie et à notre équilibre pour régénération, la relaxation,la détoxication,la récupération sportive,la qualité de sommeil."
+			/>
 			<h1 className={styles.title}>Pour qui...</h1>
 
 			<div className="">

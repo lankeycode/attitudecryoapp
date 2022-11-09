@@ -333,7 +333,6 @@ export default function Company() {
 							<img
 								className="w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 								src="/images/cryoInterior.jpeg"
-								objectFit="cover"
 								alt=""
 							/>
 						</div>
@@ -487,7 +486,6 @@ export default function Company() {
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
 									src="/images/relax.jpg"
-									priority
 									alt=""
 								/>
 							</div>

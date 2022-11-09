@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import style from "./home.module.css";
 import { motion } from "framer-motion";
-import Footer from "../Components/Layout/Footer/Footer";
 import SEO from "../Components/SEO/SEO";
 
 function Home() {

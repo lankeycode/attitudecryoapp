@@ -4,7 +4,7 @@ import SeanceC from "../../Components/Seance/SeanceC";
 import Security from "../../Components/Seance/Security";
 import styles from "./cryotherapie.module.css";
 import { motion } from "framer-motion";
-import SEO from "../Components/SEO/SEO";
+import SEO from "../../Components/SEO/SEO";
 
 //
 

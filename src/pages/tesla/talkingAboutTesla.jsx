@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./tesla.module.css";
+import SEO from "../../Components/SEO/SEO";
 
 function talkingAboutTesla() {
 	return (
@@ -10,6 +11,10 @@ function talkingAboutTesla() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="bg-blue1 min-h-screen w-screen pb-20 font-taviraj"
 		>
+			<SEO
+				title="Tesla : On en parle"
+				description="Le témoignage de la miss France élodie Gossuin."
+			/>
 			<h1 className={styles.title}>On en parle</h1>
 			<p className="relative xs:top-48 sm:top-40 md:top-40 text-xl text-blue text-center font-bold">
 				Le témoignage de la miss France Elodie Gossuin

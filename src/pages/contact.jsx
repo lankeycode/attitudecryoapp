@@ -1,6 +1,7 @@
 import React from "react";
 import Map from "../Components/Map/Map";
 import { motion } from "framer-motion";
+import SEO from "../Components/SEO/SEO";
 
 import { useState, useEffect, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
@@ -45,6 +46,7 @@ export default function Contact() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" bg-blue1 w-screen"
 		>
+			<SEO title="Contactez-nous" description="" />
 			<div className="fixed flex flex-col xs:-right-20 md:right-10  lg:right-5 sm:top-60 lg:top-32  ">
 				<FontAwesomeIcon
 					className={Styles.facebook}

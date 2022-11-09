@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import SEO from "../../Components/SEO/SEO";
 import styles from "./infratherapie.module.css";
 
 function sports() {
@@ -11,6 +11,10 @@ function sports() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" bg-blue1 pb-20   font-taviraj"
 		>
+			<SEO
+				title="Infratherapie : Les sportifs"
+				description="Une solution unique pour une préparation et une récupération physique efficace et rapide"
+			/>
 			<h1 className={styles.title}>Les sportifs</h1>
 			<p className="w-[90vw] md:w-[80vw] mdl:w-[50vw] flex text-2xl  text-center text-blue font-bold shadow-md shadow-blue mx-auto px-5 py-5 mb-20 ">
 				Une solution unique pour une préparation et une récupération

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./infratherapie.module.css";
+import SEO from "../../Components/SEO/SEO";
 
 function firmen() {
 	return (
@@ -10,6 +11,10 @@ function firmen() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-screen  bg-blue1 pb-20 font-taviraj"
 		>
+			<SEO
+				title="Infratherapie : Les pompiers de NY"
+				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques validé scientifiquement pour votre Bien-être."
+			/>
 			<h1 className={styles.title}>Les pompiers de New York</h1>
 			<p className="flex xs:text-2xl md:text-3xl text-blue xs:w-[85vw] md:w-[75vw] mdl:w-[60vw] font-bold mx-auto pl-5 text-center justify-center items-center sm:h-40 md:h-20 shadow-md shadow-blue">
 				La détoxication des pompiers de New York avec le sauna
@@ -19,9 +24,8 @@ function firmen() {
 
 			<img
 				className="relative md:w-[70vw] mdl:w-[45vw] h-[45vh] mx-auto xs:mb-10 md:mb-20"
-				src={"/images/fireman1.png"}
-				layout="fill"
-				alt=""
+				src={"/images/Fireman1.png"}
+				alt="les pompiers de New York"
 			/>
 
 			<div className="ml-5">
