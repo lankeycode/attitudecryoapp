@@ -74,7 +74,7 @@ function Home() {
 							TESLA
 						</h2>
 						<span className="absolute top-[70%] -translate-x-14 xs:text-xl sm:text-2xl mb-40  text-skyblue">
-							Tesla Former
+							TeslaFormer
 						</span>
 					</Link>
 				</motion.div>
