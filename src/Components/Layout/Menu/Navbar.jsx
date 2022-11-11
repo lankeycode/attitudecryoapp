@@ -33,9 +33,9 @@ function Navbar({ backgroundColor }) {
 						<img
 							src="/attitudeLogo.svg"
 							alt="logo"
-							width={150}
-							height={150}
-							className="fixed -top-10 left-10 w-[150px] h-[150px]  pt-20"
+							width={120}
+							height={120}
+							className="fixed -top-16 left-5 pt-20 "
 						/>
 					</Link>
 				</div>

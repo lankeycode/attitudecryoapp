@@ -11,7 +11,9 @@ function Header() {
 					<img
 						src="/attitudeLogo.svg"
 						alt="logo"
-						className="fixed -top-10 left-10 w-[150px] h-[150px]  pt-20"
+						width="120px"
+						height="120px"
+						className="fixed -top-16 left-5 pt-20 "
 					/>
 				</Link>
 			</div>
