@@ -45,12 +45,14 @@ import SidebarMenu from "./Components/Layout/Menu/SidebarMenu";
 import Layout from "./Components/Layout/Layout";
 import AnimatedRoutes from "./Components/Animation/AnimatedRoutes";
 import ButtonToUp from "./Components/Button/ButtonToUp";
+import WebSite from "./Components/SEO/WebSite";
 
 function App() {
 	//STATE
 
 	return (
 		<div>
+			<WebSite />
 			<Router>
 				<Header />
 				<SidebarMenu />
