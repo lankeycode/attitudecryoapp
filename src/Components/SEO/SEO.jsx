@@ -18,27 +18,39 @@ function SEO({ title, description, canonical, name, type }) {
 				{/* Facebook tags */}
 				<meta property="og:locale" content="fr_FR" />
 				<meta property="og:type" content="website" />
-				<meta
-					property="og:title"
-					content="Centre d'amincissement par le froid extrême ainsi que par chaleur via la technologie infrarouge longs. "
-				/>
+				<meta property="og:title" content="Attitude Cryo " />
 				<meta
 					property="og:description"
 					content="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques validé scientifiquement pour votre Bien-être."
 				/>
-				<meta property="og:url" content="https://attitudecryo.com/" />
+				<meta
+					property="og:url"
+					content="https://attitudecryo.com/le_centre"
+				/>
 				<meta property="og:name" content="Attitude Cryo" />
 				<meta
 					property="og:image"
-					content="https://attitudecryo.com/images/cryoInterior.jpeg"
+					content="https://attitudecryo.com/images/cryoInterior1.jpeg"
 				/>
 				{/* End Facebook tags */}
 
 				{/* Twitter tags */}
-				{/* <meta name="twitter:creator" content={name} />
-				<meta name="twitter:card" content={type} />
-				<meta name="twitter:title" content={title} />
-				<meta name="twitter:description" content={description} /> */}
+				<meta name="twitter:creator" content="@attitudeCryo" />
+				<meta name="twitter:site" content="@attitudeCryo" />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:title" content="Attitude Cryo" />
+				<meta
+					name="twitter:description"
+					content="Centre d'amincissement par le froid extrême ainsi que par chaleur via la technologie infrarouge longs."
+				/>
+				<meta
+					name="twitter:image"
+					content="https://attitudecryo.com/images/cryoInterior1.jpeg"
+				/>
+				<meta
+					name="twitter:url"
+					content="https://attitudecryo.com/le_centre"
+				/>
 				{/* End Twitter tags */}
 			</Helmet>
 		</HelmetProvider>
