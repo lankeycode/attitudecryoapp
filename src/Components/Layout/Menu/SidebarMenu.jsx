@@ -37,9 +37,9 @@ function SidebarMenu() {
 			<Sidebar
 				backgroundColor="var(--skyblue)"
 				overlayColor="rgb(0, 0, 0, 0.9)"
-				className={` mr-10 h-screen text-blue font-bold  z-[1000]  transition-all duration-1000 ease-in ${
+				className={` mr-10 h-screen text-blue font-bold  z-[1000]  transition-all  ease-in ${
 					openSidebar
-						? " fixed bg-blue h-[10vh] xs-left-[0] "
+						? " fixed bg-blue h-[10vh] xs:left-[0]  "
 						: "  xs:h-screen fixed  xs:left-[-35rem] "
 				}`}
 				// style={{
@@ -68,42 +68,50 @@ function SidebarMenu() {
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/le_centre" />}
 					>
-						<img
+						{/* <img
 							className=" absolute -top-[1.4rem] right-14"
 							src="/attitudeLogo.svg"
 							width={"5rem"}
 							height={"5rem"}
 							alt="logo"
-						/>
+						/> */}
 						Le centre
 					</MenuItem>
 					<SubMenu label="nos services">
 						<SubMenu
-							className=" text-skyblue bg-blue focus:bg-blue3"
+							className=" text-skyblue bg-blue"
 							label="cryothérapie"
 						>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/cryo/cryotherapie" />}
 							>
 								la cryothérapie
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/cryo/pour_qui" />}
 							>
 								Pour qui...
 							</MenuItem>
-							<MenuItem routerLink={<Link to="/cryo/seanceCryo" />}>
+							<MenuItem
+								className="bg-blue1"
+								onClick={() => setOpenSidebar(!openSidebar)}
+								routerLink={<Link to="/cryo/seanceCryo" />}
+							>
 								Comment se déroule la séance
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/cryo/protocole" />}
 							>
 								Protocole
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/cryo/on_en_parle" />}
 							>
@@ -115,36 +123,42 @@ function SidebarMenu() {
 							label="infrathérapie"
 						>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/infra/infratherapie" />}
 							>
 								l'infratherapie
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/infra/pour_qui" />}
 							>
 								Pour qui...
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/infra/les_sportifs" />}
 							>
 								Les sportifs
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/infra/seanceInfra" />}
 							>
 								Comment se déroule la séance
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/infra/firemen" />}
 							>
 								Les pompiers de NY
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/infra/on_en_parle" />}
 							>
@@ -156,30 +170,35 @@ function SidebarMenu() {
 							label="teslaFormer"
 						>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/tesla/teslaFormer" />}
 							>
 								Tesla
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/tesla/pour_qui" />}
 							>
 								Pour qui...
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/tesla/seanceTesla" />}
 							>
 								comment se déroule la séance
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/tesla/le_périnée" />}
 							>
 								Périnée
 							</MenuItem>
 							<MenuItem
+								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
 								routerLink={<Link to="/tesla/on_en_parle" />}
 							>

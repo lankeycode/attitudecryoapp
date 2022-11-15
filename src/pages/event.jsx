@@ -14,6 +14,7 @@ function event() {
 			<SEO
 				title="Les évenements chez Attitude Cryo"
 				description="Attitude Cryo organise différents évènements avec des ouvertures noctures, promotions etc.."
+				canonical="https://attitudecryo.com/evenement"
 			/>
 			<div className="w-screen h-[100vh]">
 				<h1 className="relative z-50 top-[30vh] px-5 text-center xs:text-4xl sm:text-5xl md:text-6xl mdl:text-7xl text-skyblue font-taviraj">

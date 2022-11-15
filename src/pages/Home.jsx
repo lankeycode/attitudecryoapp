@@ -1,4 +1,5 @@
 import React from "react";
+import HomeModal from "../Components/Modal/HomeModal";
 import { Link } from "react-router-dom";
 import style from "./home.module.css";
 import { motion } from "framer-motion";
@@ -14,9 +15,10 @@ function Home() {
 		>
 			<SEO
 				title="attitude cryo"
-				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques validé scientifiquement pour votre Bien-être."
-				canonical="/"
+				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques de cryotérapie en corps entier, d'infrathérapie  validé scientifiquement pour votre Bien-être ."
+				canonical="https://attitudecryo.com/home"
 			/>
+			<HomeModal />
 			<h1 className={style.h1}>
 				<span>A</span>
 				<span>t</span>
@@ -40,7 +42,7 @@ function Home() {
 					className={style.cryotherapie}
 				>
 					<Link to="/cryo/cryotherapie">
-						<h2 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl text-blue">
+						<h2 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl  text-blue hover:text-skyblue hover:font-semibold">
 							CRYO
 						</h2>
 						<span className="absolute top-[70%] -translate-x-14 xs:text-xl sm:text-2xl text-skyblue  ">
@@ -55,7 +57,7 @@ function Home() {
 					className={style.infratherapie}
 				>
 					<Link to="/infra/infratherapie">
-						<h2 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl text-blue">
+						<h2 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl text-blue hover:text-skyblue hover:font-semibold">
 							INFRA
 						</h2>
 						<span className="absolute top-[70%] -translate-x-14 xs:text-xl sm:text-2xl text-skyblue">
@@ -70,7 +72,7 @@ function Home() {
 					className={style.tesla}
 				>
 					<Link to="/tesla/teslaFormer">
-						<h2 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl text-blue">
+						<h2 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl text-blue hover:text-skyblue hover:font-semibold">
 							TESLA
 						</h2>
 						<span className="absolute top-[70%] -translate-x-14 xs:text-xl sm:text-2xl mb-40  text-skyblue">

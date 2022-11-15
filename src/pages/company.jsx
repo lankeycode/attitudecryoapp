@@ -191,7 +191,7 @@ export default function Company() {
 			<SEO
 				title="Le centre Attitude Cryo"
 				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques validé scientifiquement pour votre Bien-être."
-				canonical="/Le_centre"
+				canonical="https://attitudecryo.com/le_centre"
 			/>
 			<div className={Styles.mainBis}>
 				{/* <img className="h-full" src="/images/grenoble.jpg" alt="" /> */}
@@ -206,21 +206,21 @@ export default function Company() {
 			</div>
 			<div className="relative justify-center  xs:bottom-[12rem] xs:text-sm sm:bottom-[17rem] sm:text-base  md:bottom-[26rem]  mdl:bottom-[20rem] flex md:text-3xl">
 				<div className={Styles.BlurBis}>
-					<p className=" text-blue  relative top-[25%] animate-[fadeIn_4.5s_ease] ">
+					<h2 className=" text-blue  relative top-[25%] animate-[fadeIn_4.5s_ease] ">
 						Cryothérapie
-					</p>
+					</h2>
 				</div>
 
 				<div className={Styles.BlurBis}>
-					<p className=" relative top-[25%] animate-[fadeIn_4.5s_ease] text-skyblue ">
+					<h2 className=" relative top-[25%] animate-[fadeIn_4.5s_ease] text-skyblue ">
 						Infrathérapie
-					</p>
+					</h2>
 				</div>
 
 				<div className={Styles.BlurBis}>
-					<p className=" text-skyblue relative top-[25%]  animate-[fadeIn_4.5s_ease]  ">
+					<h2 className=" text-skyblue relative top-[25%]  animate-[fadeIn_4.5s_ease]  ">
 						TeslaFormer
-					</p>
+					</h2>
 				</div>
 			</div>
 			<div className={Styles.transition}></div>
@@ -306,7 +306,7 @@ export default function Company() {
 
 			{/********* MAIN SECTION2 ****************/}
 			<div className="">
-				<p className={Styles.swiperTitleCryo}>La Cryothérapie</p>
+				<h3 className={Styles.swiperTitleCryo}>La Cryothérapie</h3>
 				<Swiper
 					style={{
 						"--swiper-navigation-color": "#2b73b3",
@@ -373,7 +373,7 @@ export default function Company() {
 						id="infra"
 						className="h-2 bg-[transparent] w-40 relative xs:top-[-17rem] sm:top-[-20rem] md:top-[-23rem] mdl:-top-[50rem]"
 					></div>
-					<p className={Styles.swiperTitleInfra}>Infrathérapie</p>
+					<h3 className={Styles.swiperTitleInfra}>Infrathérapie</h3>
 					<Swiper
 						style={{
 							"--swiper-navigation-color": "#2b73b3",
@@ -440,9 +440,9 @@ export default function Company() {
 						id="tesla"
 						className="h-2 bg-[transparent] w-40 relative xs:top-[-17rem] sm:top-[-20rem] md:top-[-23rem] mdl:-top-[50rem]"
 					></div>
-					<p className={Styles.swiperTitleTesla}>
+					<h3 className={Styles.swiperTitleTesla}>
 						Tesla Former & chair
-					</p>
+					</h3>
 					<Swiper
 						style={{
 							"--swiper-navigation-color": "#2b73b3",

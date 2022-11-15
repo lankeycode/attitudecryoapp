@@ -13,7 +13,7 @@ function Header() {
 						alt="logo"
 						width="120px"
 						height="120px"
-						className="fixed -top-16 left-5 pt-20 "
+						className="fixed -top-16 left-5 pt-20 z-50"
 					/>
 				</Link>
 			</div>

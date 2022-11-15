@@ -15,6 +15,7 @@ function Booking() {
 			<SEO
 				title="Reservation d'une séance"
 				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques validé scientifiquement pour votre Bien-être."
+				canonical="https://attitudecryo.com/booking"
 			/>
 			<div className=" h-[100vh] w-screen">
 				<h1 className="relative top-[20rem] text-center text-3xl text-blue font-bold ">

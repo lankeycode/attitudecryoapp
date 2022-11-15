@@ -27,6 +27,7 @@ function Infratherapie() {
 			<SEO
 				title="L'infratherapie"
 				description="L'nfrathérapie est une méthode de soin douce, naturelle et sans danger, utilisant les infrarouges longs. Le réchauffement se produit au coeur du tissu. Cela provoque une sudation importante indentique à celle générée lors d'un effort physique soutenu."
+				canonical="https://attitudecryo.com/infa/infratherapie"
 			/>
 			<h1 className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl ">
 				<span>INFRA</span>

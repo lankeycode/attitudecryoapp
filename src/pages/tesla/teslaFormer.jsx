@@ -34,7 +34,11 @@ function TeslaFormer() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className="min-h-screen pb-20 bg-blue1  font-taviraj"
 		>
-			<SEO title="TESLAFormer & TESLAChair" description="" />
+			<SEO
+				title="TESLAFormer & TESLAChair"
+				description=""
+				canonical="https://attitudecryo.com/tesla/TeslaFormer"
+			/>
 			<h1 className="wordH1 xs:relative sm:relative  xs:text-center top-40  md:top-52 text-blue  font-taviraj font-bold text-4xl  sm:text-5xl">
 				{/* Tesla Former & Tesla Chair */}
 				<div>

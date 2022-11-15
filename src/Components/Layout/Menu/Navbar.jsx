@@ -27,19 +27,7 @@ function Navbar({ backgroundColor }) {
 			<nav
 				style={{ backgroundColor }}
 				className={navBg ? Styles.nav_ : Styles.nav}
-			>
-				<div>
-					<Link to="/">
-						<img
-							src="/attitudeLogo.svg"
-							alt="logo"
-							width={120}
-							height={120}
-							className="fixed -top-16 left-5 pt-20 "
-						/>
-					</Link>
-				</div>
-			</nav>
+			></nav>
 		</>
 	);
 }

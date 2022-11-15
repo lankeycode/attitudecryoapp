@@ -59,6 +59,7 @@ function Cryotherapie() {
 			<SEO
 				title="La cryothérapie"
 				description="Des bienfaits en températures très basses (froid extreme jusqu'à -110 degrés) par la cryothérapie en corps entier."
+				canonical="https://attitudecryo.com/cryo/cryotherapie"
 			/>
 			<h1 className="wordH1 xs:relative sm:relative  xs:text-center  top-52 mb-10 text-blue font-taviraj font-bold  text-5xl md:text-6xl">
 				<span>CRYO</span>

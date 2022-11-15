@@ -49,6 +49,7 @@ export default function Contact() {
 			<SEO
 				title="Contactez-nous"
 				description="Contactez nous via notre page de contact pour differentes renseignements"
+				canonical="https://attitudecryo.com/contact"
 			/>
 			<div className="fixed flex flex-col xs:-right-20 md:right-10  lg:right-5 sm:top-60 lg:top-32  ">
 				<FontAwesomeIcon
