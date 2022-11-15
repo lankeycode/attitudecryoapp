@@ -165,7 +165,7 @@ function Infratherapie() {
 				<br />
 			</div>
 			<button className="relative left-1/2 -translate-x-1/2 sm:-top-8 md:-top-1 mb-20   w-44 h-12  text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
-				<Link to={"/booking"}> * RESERVER</Link>
+				<Link to={"/booking"}> RESERVER</Link>
 			</button>
 		</motion.div>
 	);

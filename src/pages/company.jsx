@@ -193,6 +193,7 @@ export default function Company() {
 				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques validé scientifiquement pour votre Bien-être."
 				canonical="https://attitudecryo.com/le_centre"
 			/>
+
 			<div className={Styles.mainBis}>
 				{/* <img className="h-full" src="/images/grenoble.jpg" alt="" /> */}
 				<div className="companyH1  text-center py-3 px-4 md:py-6 md:px-12 justify-center  xs:left-[5rem] md:left-[40%] mdl:left-[45%] absolute xs:top-[5rem] sm:top-[10rem] md:top-[12rem] mdl:top-[15rem] xs:text-[2rem]  md:text-6xl  mdl:text-7xl font-taviraj font-bold ">

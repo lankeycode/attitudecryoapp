@@ -2,7 +2,7 @@
 	position: relative;
 	min-height: 100vh;
 	width: 100vw;
-	background-image: url("/images/grenoble.jpg");
+	//background-image: url("/images/grenoble.jpg");
 	//background-position: top;
 	//background-position-y: 0%;
 	//background-attachment: scroll;
@@ -22,7 +22,7 @@
 .mainBis {
 	position: relative;
 	min-height: 110vh;
-	width: 100vw;
+	//width: 100vw;
 	background-image: url("/images/grenoble.jpg");
 	background-position: center center;
 	background-attachment: fixed;
@@ -38,6 +38,26 @@
 	//-webkit-background-size: cover;
 	//-moz-background-size: cover;
 	//-o-background-size: cover;
+}
+
+.mainBis:after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-image: url("/images/grenoble.jpg");
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+@supports (-webkit-touch-callout: none) {
+	/* CSS specific to iOS devices */
+	.mainBis {
+		background-attachment: scroll;
+	}
 }
 
 /************ ANIMATION H1 *************/
