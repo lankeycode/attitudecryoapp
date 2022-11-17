@@ -28,7 +28,7 @@ function talkingAboutInfra() {
 
 				<video
 					className="relative mb-20 mdl:-top-9 h-[14.5rem] md:h-[24.5rem] mdl:h-[28.5rem] md:w-[79.5rem] border-8 border-blue1"
-					src="/video/ASVEL FR.mp4"
+					src="/video/ASVEL.mp4"
 					muted
 					controls
 					poster="/attitudeLogo.svg"

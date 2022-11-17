@@ -37,7 +37,7 @@ function Infratherapie() {
 
 			<video
 				className="relative xs:top-60 sm:top-44 md:top-64  sm:w-[80vw] md:w-[80vw] mdl:w-[40vw] h-[15rem] md:h-[25rem] mdl:h-[27rem] mb-96 border-4 border-blue m-auto"
-				src="/video/infra.mp4"
+				src="/video/Infra.mp4"
 				muted
 				controls
 				poster="/attitudeLogo.svg"
