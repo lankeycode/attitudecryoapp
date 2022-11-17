@@ -54,10 +54,10 @@ function App() {
 			<Router>
 				<Header />
 				<SidebarMenu />
-				<AnimatedRoutes />
+				{/* <AnimatedRoutes /> */}
 				<ButtonToUp />
-				{/* <Routes>
-					<AnimatedRoutes />
+				<Routes>
+					{/* <AnimatedRoutes /> */}
 					<Route path="/" element={<Home />} />
 					<Route path="/le_centre" element={<Company />} />
 					<Route path="/nos_services" element={<Services />} />
@@ -109,7 +109,7 @@ function App() {
 					<Route path="/mentions" element={<Mentions />} />
 					<Route path="/plan" element={<Plan />} />
 					<Route path="*" element={<NoPage />} />
-				</Routes> */}
+				</Routes>
 				<Layout />
 			</Router>
 		</div>
