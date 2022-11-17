@@ -6,7 +6,7 @@ import SEO from "../Components/SEO/SEO";
 function event() {
 	return (
 		<motion.div
-			initial={{ opacity: 0 }}
+			initial={{ opacity: 0, top: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" min-h-full bg-blue1 font-taviraj"

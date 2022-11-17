@@ -17,12 +17,13 @@ function plan() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 			className=" min-h-screen bg-blue1 w-screen  font-taviraj pb-20"
 		>
-			<SEO title="Le plan du site" description="" />
-			<Link to="/">
-				<button className="relative top-32 w-40 h-12 ml-40 text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
-					Accueil
-				</button>
-			</Link>
+			<SEO
+				title="Le plan du site"
+				description="Le plan du site web"
+			/>
+			<button className="relative top-32 w-40 h-12 ml-40 text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
+				<Link to={"/"}>Accueil</Link>
+			</button>
 
 			<h1 className="relative top-36 text-4xl mb-52 ml-10 ">
 				Plan du site

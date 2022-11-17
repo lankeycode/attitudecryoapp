@@ -77,7 +77,7 @@ function Price() {
 		>
 			<SEO
 				title="Les tarifs"
-				description="Retrouver les details des différents tarifs pour toutes nos services et prestations"
+				description="Retrouver les détails des différents tarifs pour tous nos services et prestations"
 				canonical="https://attitudecryo.com/tarifs"
 			/>
 			<main className="relative min-h-min w-full  pb-10 bg-[url('/images/bois7.jpg')]  bg-cover bg-no-repeat bg-fixed  ">
