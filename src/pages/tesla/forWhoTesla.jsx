@@ -97,7 +97,7 @@ function forWhoTesla() {
 
 				<img
 					className="w-[80vw] mdl:w-[40vw] h-[45vh] mdl:h-[50vh] relative mx-auto  shadow-lg shadow-blue "
-					src="/images/TESLAFormerStomach.jpg"
+					src="/images/TESLAFormer.jpg"
 					alt=""
 				/>
 			</div>

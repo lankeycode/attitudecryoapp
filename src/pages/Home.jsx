@@ -14,7 +14,7 @@ function Home() {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 		>
 			<SEO
-				title="attitude cryo"
+				title="Accueil"
 				description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques de cryotérapie en corps entier, d'infrathérapie  validé scientifiquement pour votre Bien-être ."
 				canonical="https://attitudecryo.com/home"
 			/>

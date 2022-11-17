@@ -400,8 +400,8 @@ export default function Company() {
 							<div className="" data-swiper-parallax="-300">
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
-									src="/images/relax.jpg"
-									alt="Une femme qui fait du yoga"
+									src="/images/leDome.jpg"
+									alt="Le dome de vital tech"
 								/>
 							</div>
 						</SwiperSlide>
@@ -469,8 +469,8 @@ export default function Company() {
 							<div className="" data-swiper-parallax="-300">
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
-									src="/images/relax.jpg"
-									alt="Une femme qui fait du yoga"
+									src="/images/TESLAFormerPrestigeWithChair.jpg"
+									alt="Fauteuil TESLAFormer"
 								/>
 							</div>
 						</SwiperSlide>
@@ -478,8 +478,8 @@ export default function Company() {
 							<div className="" data-swiper-parallax="-300">
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
-									src="/images/relax.jpg"
-									alt="Une femme qui fait du yoga"
+									src="/images/ApplicatorFMSFormer.jpg"
+									alt="Electrode FMS"
 								/>
 							</div>
 						</SwiperSlide>
@@ -487,8 +487,8 @@ export default function Company() {
 							<div className="" data-swiper-parallax="-300">
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
-									src="/images/relax.jpg"
-									alt="Une femme qui fait du yoga"
+									src="/images/TESLAFormerLegsChair.jpg"
+									alt="couple avec le TESLAFormer"
 								/>
 							</div>
 						</SwiperSlide>
@@ -496,8 +496,8 @@ export default function Company() {
 							<div className="" data-swiper-parallax="-300">
 								<img
 									className=" w-[90vw] mdl:w-[60vw] h-[55vh] mdl:h-[75vh] mx-auto"
-									src="/images/relax.jpg"
-									alt="Une femme qui fait du yoga"
+									src="/images/TESLAFormerTherapyStomach.jpg"
+									alt="Une femme allongée qui fait du TESLAformer"
 								/>
 							</div>
 						</SwiperSlide>
