@@ -24,7 +24,7 @@ function SidebarMenu() {
 	const { open, defaultOpen, active, disabled } = useProSidebar();
 
 	return (
-		<div className="top-0 fixed z-[9000]">
+		<div className="top-0 fixed z-[1000]">
 			<button
 				onClick={() => setOpenSidebar(!openSidebar)}
 				className="fixed float right-5 w-10 h-10 text-slate-light xs:top-6 sm:top-12  "
@@ -50,14 +50,14 @@ function SidebarMenu() {
 				// 	color: "var(--blue)",
 				// }}
 			>
-				<img
+				{/* <img
 					className="pt-2 mb-5 ml-5"
 					src="/attitudeLogo.svg"
 					width={150}
 					height={150}
 					alt="logo"
-				/>
-				<Menu>
+				/> */}
+				<Menu className="relative top-32">
 					<MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/" />}

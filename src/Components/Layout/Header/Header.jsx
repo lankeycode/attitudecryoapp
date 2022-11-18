@@ -16,7 +16,7 @@ function Header() {
 						alt="logo"
 						width="120px"
 						height="120px"
-						className="fixed -top-16 left-5 pt-20  cursor-pointer z-[8000] "
+						className="fixed -top-16 left-5 pt-20  cursor-pointer z-[10000] "
 					/>
 				</Link>
 			</div>
