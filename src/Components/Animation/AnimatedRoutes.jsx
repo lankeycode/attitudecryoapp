@@ -5,7 +5,6 @@ import {
 	Routes,
 	Route,
 	useLocation,
-	Navigate,
 } from "react-router-dom";
 import Home from "../../pages/Home";
 import Company from "../../pages/Company";
@@ -38,7 +37,7 @@ import { useEffect } from "react";
 
 function AnimatedRoutes() {
 	//STATE
-
+	const location = useLocation;
 	return (
 		<AnimatePresence>
 			<Routes location={location} key={location.pathname}>

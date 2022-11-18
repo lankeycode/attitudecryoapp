@@ -5,13 +5,6 @@ import {
 	Route,
 	useLocation,
 } from "react-router-dom";
-// import {
-// 	ProSidebarProvider,
-// 	Sidebar,
-// 	Menu,
-// 	MenuItem,
-// 	SubMenu,
-// } from "react-pro-sidebar";
 
 import Home from "./pages/Home";
 import Company from "./pages/Company";
@@ -46,6 +39,7 @@ import Layout from "./Components/Layout/Layout";
 import AnimatedRoutes from "./Components/Animation/AnimatedRoutes";
 import ButtonToUp from "./Components/Button/ButtonToUp";
 import ScrollToTop from "./Components/Layout/Menu/ScrollTop";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
 	//STATE
@@ -59,7 +53,6 @@ function App() {
 				{/* <AnimatedRoutes /> */}
 				<ButtonToUp />
 				<Routes>
-					{/* <AnimatedRoutes /> */}
 					<Route path="/" element={<Home />} />
 					<Route path="/le_centre" element={<Company />} />
 					<Route path="/nos_services" element={<Services />} />

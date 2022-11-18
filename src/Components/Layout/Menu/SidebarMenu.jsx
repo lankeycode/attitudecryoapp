@@ -24,7 +24,7 @@ function SidebarMenu() {
 	const { open, defaultOpen, active, disabled } = useProSidebar();
 
 	return (
-		<div className="top-0 fixed z-[5000]">
+		<div className="top-0 fixed z-[9000]">
 			<button
 				onClick={() => setOpenSidebar(!openSidebar)}
 				className="fixed float right-5 w-10 h-10 text-slate-light xs:top-6 sm:top-12  "
