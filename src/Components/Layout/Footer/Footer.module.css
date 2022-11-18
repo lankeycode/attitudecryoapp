@@ -14,7 +14,7 @@
 }
 
 .twitter,
-.facebook,
+.linkedin,
 .instagram {
 	font-size: 1.8rem;
 	margin: 0 0.7rem;
@@ -25,8 +25,8 @@
 	.twitter {
 		color: #1da1f2;
 	}
-	.facebook {
-		color: #4267b2;
+	.linkedin {
+		color: #0077b5;
 	}
 
 	.instagram {
@@ -49,7 +49,7 @@
 
 @media screen and (min-width: 1280px) {
 	.twitter:hover,
-	.facebook:hover,
+	.linkedin:hover,
 	.instagram:hover {
 		transform: translateY(-30%);
 	}
@@ -57,8 +57,8 @@
 	.twitter:hover {
 		color: #1da1f2;
 	}
-	.facebook:hover {
-		color: #4267b2;
+	.linkedin:hover {
+		color: #0077b5;
 	}
 
 	.instagram:hover {

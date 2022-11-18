@@ -40,15 +40,15 @@ function work() {
 					<span>E</span>
 				</div>
 
-				<p className="w-[90vw] md:w-[75vw] text-blue text-center text-2xl font-bold mt-20 mb-20 shadow-md shadow-blue mx-auto px-5 py-10 opacity-0 animate-fadeInBlue">
+				<h1 className="w-[90vw] md:w-[75vw] text-blue text-center text-2xl font-bold mt-20 mb-20 shadow-md shadow-blue mx-auto px-5 py-10 opacity-0 animate-fadeInBlue">
 					Attitude Cryo accompagne les entreprises sur le sujet de
 					QVCT « Qualité de Vie et des Conditions de Travail » à
 					travers le levier de bien-être.
-				</p>
+				</h1>
 			</div>
-			<p className="w-[80vw] md:w-[45vw] mx-auto py-5 text-center text-blue font-bold shadow-button mt-10 mb-5 ">
+			<h2 className="w-[80vw] md:w-[45vw] mx-auto py-5 text-center text-blue font-bold shadow-button mt-10 mb-5 ">
 				Attitude Cryo & les entreprises
-			</p>
+			</h2>
 			<div className="px-3">
 				<p className="">
 					Attitude Cryo, un centre pour tous,même pour les
@@ -79,9 +79,9 @@ function work() {
 				</button>
 			</div>
 
-			<p className="w-[80vw] md:w-[45vw] mx-auto py-5 text-center text-blue font-bold  shadow-button mt-10 mb-5">
+			<h2 className="w-[80vw] md:w-[45vw] mx-auto py-5 text-center text-blue font-bold  shadow-button mt-10 mb-5">
 				Quel est le lien entre performance au travail et bien-être ?
-			</p>
+			</h2>
 			<div className="px-3">
 				<p>
 					Bien souvent, les dirigeants d’entreprise estiment que le

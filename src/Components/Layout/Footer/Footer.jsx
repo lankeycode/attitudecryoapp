@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import Styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faFacebookF,
 	faInstagram,
+	faLinkedin,
 	faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -49,14 +49,27 @@ function Footer({
 
 			<div className={Styles.icones}>
 				<div className="relative lg:w-[10vw] md:w-[20vw] xs:w-[42vw] flex xs:h-6 sm:h-8 xs:top-10 sm:-top-18 md:h-10  md:-top-20  left-1/2 -translate-x-1/2 ">
-					<FontAwesomeIcon
-						className={Styles.facebook}
-						icon={faFacebookF}
-					></FontAwesomeIcon>
-					<FontAwesomeIcon
-						className={Styles.twitter}
-						icon={faTwitter}
-					></FontAwesomeIcon>
+					<a
+						href={
+							"https://www.linkedin.com/in/taoufik-idhassi-08564369/"
+						}
+						target="_blank"
+					>
+						<FontAwesomeIcon
+							className={Styles.linkedin}
+							icon={faLinkedin}
+						></FontAwesomeIcon>
+					</a>
+					<a
+						href={"https://twitter.com/AttitudeCryo"}
+						target="_blank"
+					>
+						<FontAwesomeIcon
+							className={Styles.twitter}
+							icon={faTwitter}
+						></FontAwesomeIcon>
+					</a>
+
 					<FontAwesomeIcon
 						className={Styles.instagram}
 						icon={faInstagram}

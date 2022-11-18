@@ -34,10 +34,11 @@ import Booking from "../../pages/Booking";
 import Mentions from "../../pages/Mentions";
 import Plan from "../../pages/Plan";
 import NoPage from "../../pages/NoPage";
+import { useEffect } from "react";
 
 function AnimatedRoutes() {
 	//STATE
-	const location = useLocation();
+
 	return (
 		<AnimatePresence>
 			<Routes location={location} key={location.pathname}>

@@ -45,6 +45,7 @@ import SidebarMenu from "./Components/Layout/Menu/SidebarMenu";
 import Layout from "./Components/Layout/Layout";
 import AnimatedRoutes from "./Components/Animation/AnimatedRoutes";
 import ButtonToUp from "./Components/Button/ButtonToUp";
+import ScrollToTop from "./Components/Layout/Menu/ScrollTop";
 
 function App() {
 	//STATE
@@ -52,6 +53,7 @@ function App() {
 	return (
 		<div>
 			<Router>
+				<ScrollToTop />
 				<Header />
 				<SidebarMenu />
 				{/* <AnimatedRoutes /> */}

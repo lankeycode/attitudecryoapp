@@ -10,10 +10,11 @@ import { useForm, ValidationError } from "@formspree/react";
 import Styles from "./contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faFacebookF,
 	faInstagram,
+	faLinkedin,
 	faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
 	//STATE
@@ -51,15 +52,24 @@ export default function Contact() {
 				description="Contactez nous via notre page de contact pour differentes renseignements"
 				canonical="https://attitudecryo.com/contact"
 			/>
-			<div className="fixed flex flex-col xs:-right-20 md:right-10  lg:right-5 sm:top-60 lg:top-32  ">
-				<FontAwesomeIcon
-					className={Styles.facebook}
-					icon={faFacebookF}
-				></FontAwesomeIcon>
-				<FontAwesomeIcon
-					className={Styles.twitter}
-					icon={faTwitter}
-				></FontAwesomeIcon>
+			<div className="fixed flex flex-col xs:-right-20 md:right-10  lg:right-5 sm:top-60 lg:top-[15rem] z-[2000]  ">
+				<a
+					href={
+						"https://www.linkedin.com/in/taoufik-idhassi-08564369/"
+					}
+					target="_blank"
+				>
+					<FontAwesomeIcon
+						className={Styles.linkedin}
+						icon={faLinkedin}
+					></FontAwesomeIcon>
+				</a>
+				<a href={"https://twitter.com/AttitudeCryo"} target="_blank">
+					<FontAwesomeIcon
+						className={Styles.twitter}
+						icon={faTwitter}
+					></FontAwesomeIcon>
+				</a>
 				<FontAwesomeIcon
 					className={Styles.instagram}
 					icon={faInstagram}

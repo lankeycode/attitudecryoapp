@@ -19,7 +19,7 @@ function talkingAboutInfra() {
 
 			<div className="relative block mdl:flex sm:w-[80vw] md:w-[80vw] mdl:w-[40vw] h-[15rem] md:h-[25rem] mdl:h-[27rem] mb-80  mx-auto mdl:ml-20 ">
 				<video
-					className="relative mb-20 mdl:-top-9 h-[14.5rem] md:h-[24.5rem] mdl:h-[28.5rem] md:w-[79.5rem] mdl:mr-10 border-8 border-blue1"
+					className="relative mb-20 mdl:-top-9 h-[14.5rem] md:h-[24.5rem] mdl:h-[28.5rem] md:w-[79.5rem] mdl:mr-10 "
 					src="/video/TémoignageRécupSportive.mp4"
 					muted
 					controls
@@ -27,7 +27,7 @@ function talkingAboutInfra() {
 				/>
 
 				<video
-					className="relative mb-20 mdl:-top-9 h-[14.5rem] md:h-[24.5rem] mdl:h-[28.5rem] md:w-[79.5rem] border-8 border-blue1"
+					className="relative mb-20 mdl:-top-9 h-[14.5rem] md:h-[24.5rem] mdl:h-[28.5rem] md:w-[79.5rem] "
 					src="/video/ASVEL.mp4"
 					muted
 					controls
