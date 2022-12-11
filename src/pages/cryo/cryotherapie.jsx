@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import React from "react";
-import ButtonDownload from "../../Components/Button/ButtonDownload";
+// import ButtonDownload from "../../Components/Button/ButtonDownload";
 import SEO from "../../Components/SEO/SEO";
 import AnimatedPage from "../../Components/Animation/AnimatedPage";
 
@@ -278,7 +278,7 @@ function Cryotherapie() {
 				<button className="relative left-1/2 -translate-x-1/2  mb-5  w-44 h-12  text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
 					<Link to="/booking">RESERVER</Link>
 				</button>
-				<ButtonDownload />
+				{/* <ButtonDownload /> */}
 			</div>
 		</AnimatedPage>
 	);
