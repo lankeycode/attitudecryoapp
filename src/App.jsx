@@ -91,7 +91,7 @@ function App() {
 						path="/tesla/seanceTesla"
 						element={<SeanceTesla />}
 					/>
-					<Route path="/tesla/le_périnée" element={<Perineum />} />
+					<Route path="/tesla/le_perinee" element={<Perineum />} />
 					<Route
 						path="/tesla/on_en_parle"
 						element={<TalkingAboutTesla />}

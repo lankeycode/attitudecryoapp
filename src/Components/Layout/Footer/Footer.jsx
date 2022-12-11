@@ -30,7 +30,7 @@ function Footer({
 				marginTop,
 				borderTop: "2px solid var(--blue)",
 				backgroundColor: "var(--bgFooter)",
-				zIndex: 200,
+				zIndex: 10,
 			}}
 		>
 			<img

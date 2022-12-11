@@ -78,7 +78,7 @@ function Cryotherapie() {
 								La cryothérapie en corps entier{" "}
 							</p>
 							<br />
-							<p>
+							<p className="text-xl">
 								C’est l&apos;exposition du corps en entier dans un
 								environnement de froid extrême et sec, pour déclencher
 								ce fameux « choc thermique », provoquant ainsi des
@@ -88,26 +88,26 @@ function Cryotherapie() {
 								de développer des effets bénéfiques durables.
 							</p>
 							<br />
-							<p>
+							<p className="text-xl">
 								Le procédé est fondé sur des séries d’expositions du
 								corps entier dans une chambre à une très basse
 								température, -110 degré, un froid sec et ventilé, sur
 								une courte période, entre 2 et 4mn.
 							</p>
 							<br />
-							<p>
+							<p className="text-xl">
 								Reconnue comme une technique efficace de récupération
 								avant et/ou après un effort, particulièrement chez les
 								sportifs de haut niveau.
 							</p>
 							<br />
-							<p>
+							<p className="text-xl">
 								De nombreuses études scientifiques mettent en avant
 								les vertus du froids extrême sur l’homme et ses
 								bienfaits.
 							</p>
 							<br />
-							<p>
+							<p className="text-xl">
 								La cryothérapie s’est démocratisée, au point d’être
 								désormais ouverte à toutes et à tous, et pour d’autres
 								usages.
@@ -135,7 +135,7 @@ function Cryotherapie() {
 									Les bienfaits
 								</p>
 								<br />
-								<p>
+								<p className="text-xl">
 									La cryothérapie en corps entier s’avère être un
 									véritable atout « dopant naturel » qui permet de
 									diminuer les troubles liés aux douleurs, aux stress,
@@ -143,7 +143,7 @@ function Cryotherapie() {
 									physique.
 								</p>
 								<br />
-								<p>
+								<p className="text-xl">
 									L’exposition au froid extrême possède de nombreux
 									bienfaits sur l’organisme, reconnus depuis des
 									années, dans le cadre de l’accompagnement des
@@ -151,27 +151,27 @@ function Cryotherapie() {
 									rhumatologie.
 								</p>
 								<br />
-								<p>
+								<p className="text-xl">
 									Le froid, c’est quatre propriétés générant des
 									bienfaits immédiats pour votre corps{" "}
 								</p>
 								<br />
-								<p>
+								<p className="text-xl">
 									- <span className="mx-1">Antalgique</span> = Diminue
 									la douleur
 								</p>
 								<br />
-								<p>
+								<p className="text-xl">
 									- <span className="mx-1">Anti-inflammatoire </span>{" "}
 									= Lutte contre l’inflammation et l’œdème{" "}
 								</p>
 								<br />
-								<p>
+								<p className="text-xl">
 									- <span className="mx-1">Vaso-moteur </span> =
 									Stimule la circulation sanguine
 								</p>
 								<br />
-								<p>
+								<p className="text-xl">
 									- <span className="mx-1">Action hémostatique </span>{" "}
 									= Diminue le saignement
 								</p>
@@ -184,14 +184,14 @@ function Cryotherapie() {
 								Cela procure :
 							</p>
 							<br />
-							<p>
+							<p className="text-xl">
 								- Une amélioration de la fonction respiratoire : le
 								système nerveux sympathique réagit au froid par une
 								légère bronchodilatation, ce qui améliore la capacité
 								respiratoire
 							</p>
 							<br />
-							<p>
+							<p className="text-xl">
 								- Des bienfaits sur le système immunitaire : des
 								études ont mis en évidence l&apos;augmentation de
 								certains marqueurs de l&apos;immunité suite des bains
@@ -200,7 +200,7 @@ function Cryotherapie() {
 								hivernale, comme l&apos;angine et la bronchite
 							</p>
 							<br />
-							<p>
+							<p className="text-xl">
 								- Des bienfaits sur l&apos;ensemble des muscles : en
 								effet, l&apos;augmentation du flux sanguin et de la
 								fréquence cardiaque favorise le drainage,
@@ -208,14 +208,14 @@ function Cryotherapie() {
 								meilleure élimination.
 							</p>
 							<br />
-							<p>
+							<p className="text-xl">
 								- Une amélioration de la qualité de la peau : cela
 								s&apos;explique par l&apos;augmentation de la
 								microcirculation cutanée, qui rend l&apos;épiderme
 								plus ferme et tonique
 							</p>
 							<br />
-							<p>
+							<p className="text-xl">
 								- Par son action sur le système nerveux, la
 								cryothérapie a également des effets bénéfiques sur le
 								stress, l&apos;anxiété et les troubles du sommeil.

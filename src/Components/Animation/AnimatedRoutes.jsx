@@ -41,7 +41,7 @@ function AnimatedRoutes() {
 	return (
 		<AnimatePresence>
 			<Routes location={location} key={location.pathname}>
-				<Route path="/" element={<Home />} />
+				<Route path="/accueil" element={<Home />} />
 				<Route path="/le_centre" element={<Company />} />
 				<Route path="/nos_services" element={<Services />} />
 				<Route path="/cryo/cryotherapie" element={<Cryotherapie />} />
@@ -67,7 +67,7 @@ function AnimatedRoutes() {
 				<Route path="/tesla/teslaFormer" element={<TeslaFormer />} />
 				<Route path="/tesla/pour_qui" element={<ForWhoTesla />} />
 				<Route path="/tesla/seanceTesla" element={<SeanceTesla />} />
-				<Route path="/tesla/le_périnée" element={<Perineum />} />
+				<Route path="/tesla/le_perinee" element={<Perineum />} />
 				<Route
 					path="/tesla/on_en_parle"
 					element={<TalkingAboutTesla />}

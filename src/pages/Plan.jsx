@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import SEO from "../Components/SEO/SEO";
 
@@ -11,6 +11,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AnimatedPage from "../Components/Animation/AnimatedPage";
 
 function plan() {
+	//STATE
+	const navigate = useNavigate();
+	let location = useLocation();
 	return (
 		<AnimatedPage>
 			<div className=" min-h-screen bg-blue1 w-screen  font-taviraj pb-20">
@@ -18,14 +21,19 @@ function plan() {
 					title="Le plan du site"
 					description="Le plan du site web"
 				/>
-				<button className="relative top-32 w-40 h-12 ml-40 text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
-					<Link to={"/"}>Accueil</Link>
-				</button>
+				{/* <button
+					onClick={() => {
+						navigate("/");
+					}}
+					className="fixed top-32 left-10 flex items-center justify-center  w-40 h-12 mx-auto z-50 text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue "
+				>
+					Accueil
+				</button> */}
 
-				<h1 className="relative top-36 text-4xl mb-52 ml-10 ">
+				<h1 className="relative top-36 text-4xl mb-52  ml-10 ">
 					Plan du site
 				</h1>
-				<div className="relative flex-col ml-10 mb-10 z-5000 ">
+				<div className="relative  md:left-[5rem]  mb-10 ">
 					<Link to="/" className="text-3xl">
 						<FontAwesomeIcon
 							icon={faGenderless}
@@ -130,7 +138,7 @@ function plan() {
 						Comment se déroule la séance
 					</Link>
 					<br />
-					<Link to="/tesla/le_périnée" className="text-xl ml-10 ">
+					<Link to="/tesla/le_perinee" className="text-xl ml-10 ">
 						Périnée...
 					</Link>
 					<br />
@@ -168,6 +176,15 @@ function plan() {
 							className="h-5 text-blue mr-2"
 						/>
 						Evènements
+					</Link>
+					<br />
+					<Link to="/booking" className="text-3xl ">
+						<FontAwesomeIcon
+							icon={faGenderless}
+							className="h-5 text-blue mr-2"
+						/>
+						Booking
+						<span className="text-xl ml-2">(réservation séance)</span>
 					</Link>
 					<br />
 					<Link to="/mentions" className="text-3xl ">
