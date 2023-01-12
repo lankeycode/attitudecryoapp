@@ -115,11 +115,27 @@ body {
 	margin: 1.5rem 0.2rem;
 	position: relative;
 	transition: 0.5s ease;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.8);
 	//cursor: pointer;
 	left: 50%;
 	transform: translateX(-50%);
 	font-family: Taviraj;
+}
+.cryotherapie:hover,
+.infratherapie:hover,
+.tesla:hover {
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.cryotherapie:hover {
+	background-image: url("/images/cryoInterior.jpeg");
+}
+.infratherapie:hover {
+	background-image: url("/images/leDome.jpg");
+}
+.tesla:hover {
+	background-image: url("/images/TESLAChair.png");
 }
 
 @-webkit-keyframes scale-in-center-cryo {

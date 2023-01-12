@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import ParticlesBackgroundBook from "../Components/Animation/ParticlesBackgroundBook";
 import SEO from "../Components/SEO/SEO";
 import AnimatedPage from "../Components/Animation/AnimatedPage";
+import style from "./booking.module.css";
 
 function Booking() {
 	return (
@@ -15,7 +16,7 @@ function Booking() {
 					canonical="https://attitudecryo.com/booking"
 				/>
 				<div className=" h-[100vh] w-screen">
-					<h1 className="relative top-[20rem] text-center text-3xl text-blue font-bold ">
+					{/* <h1 className="relative top-[20rem] text-center text-3xl text-blue font-bold ">
 						Le système de réservation en ligne sera très prochainement
 						disponible
 					</h1>
@@ -28,18 +29,18 @@ function Booking() {
 							Vous pouvez nous contacter
 						</button>
 					</Link>
-					<ParticlesBackgroundBook />
+					<ParticlesBackgroundBook /> */}
+
+					<iframe
+						// className="relative mt-28 mb-[20rem] deciplus"
+						className={style.deciplus}
+						src={import.meta.env.VITE_DECIPLUS_URL}
+						// height={"1000"}
+						// width={"100%"}
+						loading="eager"
+						sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-top-navigation allow-scripts allow-forms"
+					></iframe>
 				</div>
-				{/* <iframe
-				className="relative mt-28 "
-				//  src={process.env.SECRET_URL}
-				src="https://squareup.com/appointments/book/udn1cgwad0ipu4/LG6W5QZKY7Z0R/start"
-				height={"1000"}
-				width={"100%"}
-				frameBorder="0"
-				loading="eager"
-				sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-top-navigation allow-scripts allow-forms"
-			></iframe> */}
 			</div>
 		</AnimatedPage>
 	);

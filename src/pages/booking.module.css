@@ -1,0 +1,13 @@
+.deciplus {
+	margin-top: 5rem;
+	height: 100vh;
+	width: 95vw;
+}
+
+/********* RESPONSIVE *********/
+
+@media screen and (max-width: 459px) {
+	.deciplus {
+		width: 90vw;
+	}
+}

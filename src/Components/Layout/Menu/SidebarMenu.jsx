@@ -194,7 +194,7 @@ function SidebarMenu() {
 							<MenuItem
 								className="bg-blue1"
 								onClick={() => setOpenSidebar(!openSidebar)}
-								routerLink={<Link to="/tesla/le_périnée" />}
+								routerLink={<Link to="/tesla/le_perinee" />}
 							>
 								Périnée
 							</MenuItem>

@@ -15,7 +15,7 @@ function Home() {
 					description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques de cryotérapie en corps entier, d'infrathérapie  validé scientifiquement pour votre Bien-être ."
 					canonical="https://attitudecryo.com/accueil"
 				/>
-				<HomeModal />
+				{/* <HomeModal /> */}
 				<h1 className={style.h1}>
 					<span>A</span>
 					<span>t</span>
@@ -31,6 +31,7 @@ function Home() {
 					<span>y</span>
 					<span>o</span>
 				</h1>
+				{/* <h2>La cryotérapie pour tous</h2> */}
 				<div className={style.home}>
 					<motion.div
 						initial={{ opacity: 0 }}
@@ -39,9 +40,9 @@ function Home() {
 						className={style.cryotherapie}
 					>
 						<Link to="/cryo/cryotherapie">
-							<h2 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl  text-blue hover:text-skyblue ">
+							<h3 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl  text-blue hover:text-skyblue ">
 								CRYO
-							</h2>
+							</h3>
 							<span className="absolute top-[70%] -translate-x-14 xs:text-xl sm:text-2xl text-skyblue  ">
 								Cryotherapie
 							</span>
@@ -54,9 +55,9 @@ function Home() {
 						className={style.infratherapie}
 					>
 						<Link to="/infra/infratherapie">
-							<h2 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl text-blue hover:text-skyblue">
+							<h3 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl text-blue hover:text-[transparent]">
 								INFRA
-							</h2>
+							</h3>
 							<span className="absolute top-[70%] -translate-x-14 xs:text-xl sm:text-2xl text-skyblue">
 								Infrathérapie
 							</span>
@@ -69,9 +70,9 @@ function Home() {
 						className={style.tesla}
 					>
 						<Link to="/tesla/teslaFormer">
-							<h2 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl text-blue hover:text-skyblue">
+							<h3 className=" relative xs:top-1/4 sm:top-1/3 xs:text-2xl sm:text-3xl lg:text-4xl text-blue hover:text-skyblue">
 								TESLA
-							</h2>
+							</h3>
 							<span className="absolute top-[70%] -translate-x-14 xs:text-xl sm:text-2xl mb-40  text-skyblue">
 								TeslaFormer
 							</span>

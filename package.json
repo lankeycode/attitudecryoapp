@@ -15,7 +15,6 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^1.7.4",
-    "@pankod/refine-core": "^3.88.2",
     "animate.css": "^4.1.1",
     "framer-motion": "^7.6.4",
     "leaflet": "^1.9.2",
