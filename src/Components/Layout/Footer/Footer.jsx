@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+	faFacebook,
 	faInstagram,
 	faLinkedin,
 	faTwitter,
@@ -69,11 +70,28 @@ function Footer({
 							icon={faTwitter}
 						></FontAwesomeIcon>
 					</a>
-
-					<FontAwesomeIcon
-						className={Styles.instagram}
-						icon={faInstagram}
-					></FontAwesomeIcon>
+					<a
+						href={
+							"https://www.instagram.com/invites/contact/?i=1m17kijb7vii&utm_content=puomnj0"
+						}
+						target="_blank"
+					>
+						<FontAwesomeIcon
+							className={Styles.instagram}
+							icon={faInstagram}
+						></FontAwesomeIcon>
+					</a>
+					<a
+						href={
+							"https://www.facebook.com/profile.php?id=100087658802779"
+						}
+						target="_blank"
+					>
+						<FontAwesomeIcon
+							className={Styles.facebook}
+							icon={faFacebook}
+						></FontAwesomeIcon>
+					</a>
 				</div>
 			</div>
 			<div className="relative top-20 flex w-screen items-center mb-4">

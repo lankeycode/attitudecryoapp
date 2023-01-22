@@ -15,7 +15,8 @@
 
 .twitter,
 .linkedin,
-.instagram {
+.instagram,
+.facebook {
 	font-size: 1.8rem;
 	margin: 0 0.7rem;
 	cursor: pointer;
@@ -43,6 +44,10 @@
 		);
 		border-radius: 10px;
 	}
+
+	.facebook {
+		color: #3b5998;
+	}
 }
 
 /************* RESPONSIVE ************/
@@ -50,7 +55,8 @@
 @media screen and (min-width: 1280px) {
 	.twitter:hover,
 	.linkedin:hover,
-	.instagram:hover {
+	.instagram:hover,
+	.facebook:hover {
 		transform: translateY(-30%);
 	}
 
@@ -74,5 +80,8 @@
 			#ffdc80 100%
 		);
 		border-radius: 10px;
+	}
+	.facebook:hover {
+		color: #3b5998;
 	}
 }

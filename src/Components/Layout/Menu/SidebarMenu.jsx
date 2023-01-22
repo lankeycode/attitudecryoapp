@@ -16,7 +16,9 @@ import {
 	faEnvelope,
 	faBell,
 	faBriefcase,
-	faTemperatureLow,
+	faCalendarTimes,
+	faBuildingUser,
+	faList,
 } from "@fortawesome/free-solid-svg-icons";
 
 function SidebarMenu() {
@@ -25,7 +27,7 @@ function SidebarMenu() {
 
 	return (
 		// <div className="top-0  fixed w-[400px] z-[1000] border-2 border-blue ">
-		<div className="fixed w-0 top-0 z-50">
+		<div className="fixed w-0 top-0 z-50 ">
 			<button
 				onClick={() => setOpenSidebar(!openSidebar)}
 				className="fixed k float right-5 w-10 h-10 text-slate-light xs:top-6 sm:top-12 z-[500]  "
@@ -36,11 +38,11 @@ function SidebarMenu() {
 				/>
 			</button>
 			<Sidebar
-				backgroundColor="var(--skyblue)"
+				backgroundColor="#fff"
 				overlayColor="rgb(0, 0, 0, 0.9)"
-				className={` fixed mr-10  h-screen text-blue font-bold z-[1000] transition-all  ease-in ${
+				className={` fixed mr-10    h-screen text-blue font-bold z-[1000] transition-all  ease-in ${
 					openSidebar
-						? " fixed bg-blue h-[10vh] xs:left-[0]  "
+						? " fixed bg-blue h-[10vh] xs:left-[0]   "
 						: " xs:h-screen fixed  xs:left-[-35rem]  "
 				}`}
 				// style={{
@@ -58,7 +60,7 @@ function SidebarMenu() {
 					height={150}
 					alt="logo"
 				/> */}
-				<Menu className="relative top-32">
+				<Menu className="relative top-32  ">
 					<MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/" />}
@@ -69,6 +71,7 @@ function SidebarMenu() {
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/le_centre" />}
 					>
+						<FontAwesomeIcon icon={faBuildingUser} className="mr-1" />
 						{/* <img
 							className=" absolute -top-[1.4rem] right-14"
 							src="/attitudeLogo.svg"
@@ -78,7 +81,13 @@ function SidebarMenu() {
 						/> */}
 						Le centre
 					</MenuItem>
-					<SubMenu label="nos services">
+
+					<SubMenu
+						label=<span>
+							<FontAwesomeIcon icon={faList} className="mr-1" /> nos
+							services
+						</span>
+					>
 						<SubMenu
 							className=" text-skyblue bg-blue"
 							label="cryothérapie"
@@ -207,7 +216,6 @@ function SidebarMenu() {
 							</MenuItem>
 						</SubMenu>
 					</SubMenu>
-
 					<MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/entreprise" />}
@@ -221,6 +229,16 @@ function SidebarMenu() {
 					>
 						<FontAwesomeIcon icon={faEuro} className="mr-2" />
 						tarifs
+					</MenuItem>
+					<MenuItem
+						onClick={() => setOpenSidebar(!openSidebar)}
+						routerLink={<Link to="/booking" />}
+					>
+						<FontAwesomeIcon
+							icon={faCalendarTimes}
+							className="mr-2"
+						/>
+						réserver
 					</MenuItem>
 					<MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}

@@ -42,6 +42,11 @@ html {
 	--bgFooter: #4cc9f0;
 }
 
+/* SIDEBAR */
+.bHeOrn {
+	border-right: 2px solid var(--skyblue);
+}
+
 /* BUTTON TO UP */
 .top-to-btn {
 	position: relative;
