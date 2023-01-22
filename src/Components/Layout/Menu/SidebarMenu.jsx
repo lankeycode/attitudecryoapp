@@ -26,8 +26,7 @@ function SidebarMenu() {
 	const { open, defaultOpen, active, disabled } = useProSidebar();
 
 	return (
-		// <div className="top-0  fixed w-[400px] z-[1000] border-2 border-blue ">
-		<div className="fixed w-0 top-0 z-50 ">
+		<div className="fixed w-0 top-0 z-50  ">
 			<button
 				onClick={() => setOpenSidebar(!openSidebar)}
 				className="fixed k float right-5 w-10 h-10 text-slate-light xs:top-6 sm:top-12 z-[500]  "
@@ -45,21 +44,9 @@ function SidebarMenu() {
 						? " fixed bg-blue h-[10vh] xs:left-[0]   "
 						: " xs:h-screen fixed  xs:left-[-35rem]  "
 				}`}
-				// style={{
-				// 	height: "100vh",
-				// 	backgroundColor: "var(--skyblue)",
-				// 	position: "fixed",
-				// 	zIndex: 1000,
-				// 	color: "var(--blue)",
-				// }}
 			>
-				{/* <img
-					className="pt-2 mb-5 ml-5"
-					src="/attitudeLogo.svg"
-					width={150}
-					height={150}
-					alt="logo"
-				/> */}
+				<div className=" w-[233.5px] h-20 bg-[#fff] fixed z-50  top-0 "></div>
+
 				<Menu className="relative top-32  ">
 					<MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}
@@ -72,13 +59,6 @@ function SidebarMenu() {
 						routerLink={<Link to="/le_centre" />}
 					>
 						<FontAwesomeIcon icon={faBuildingUser} className="mr-1" />
-						{/* <img
-							className=" absolute -top-[1.4rem] right-14"
-							src="/attitudeLogo.svg"
-							width={"5rem"}
-							height={"5rem"}
-							alt="logo"
-						/> */}
 						Le centre
 					</MenuItem>
 

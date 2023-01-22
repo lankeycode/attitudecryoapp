@@ -1,4 +1,8 @@
 @tailwind base;
+
+body {
+	overflow-x: hidden;
+}
 /* Firefox */
 * {
 	scrollbar-width: thin;
