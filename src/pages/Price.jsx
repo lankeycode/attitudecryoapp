@@ -78,7 +78,10 @@ function Price() {
 					canonical="https://attitudecryo.com/tarifs"
 				/>
 				<main className="relative min-h-min w-full  pb-10 bg-[url('/images/bois7.jpg')]  bg-cover bg-no-repeat bg-fixed  ">
-					<h1 className="relative lg:sticky text-center top-40 text-6xl font-taviraj font-extrabold text-[#6c584c] pb-60">
+					<button className=" sticky left-[85%] top-36  w-32 md:w-44 h-10 md:h-16 text-[#dda15e] bg-[#6c584c] rounded-lg hover:bg-[#dda15e] hover:text-[#6c584c] hover:border-2 hover:border-[#6c584c]  ">
+						<Link to={"/booking"}>RESERVER</Link>
+					</button>
+					<h1 className="relative  text-center top-40 text-6xl font-taviraj font-extrabold text-[#6c584c] pb-60">
 						Nos Tarifs
 					</h1>
 					<p className="w-[85vw] md:w-[60vw] mdl:w-[40vw] ml-5 mdl:mx-auto mb-20 mt-5 p-5 text-lg font-taviraj font-bold bg-[#dda15e]  rounded-lg shadow-lg shadow-black">
@@ -167,10 +170,6 @@ function Price() {
 					<p className="text-lg md:text-xl text-center text-[#6c584c] w-[90vw] md:w-[45%] md:h-[4.5rem] mx-auto md:ml-40 pt-2 rounded-lg border-2 border-[#6c584c] mb-10 bg-[#faedcd] md:rounded-tr-3xl md:rounded-tl-md md:rounded-bl-3xl md:hover:translate-x-5 md:hover:text-[#dda15e] md:hover:border-2 md:hover:border-[#dda15e]  transition">
 						Me contacter directement via le formulaire contact
 					</p>
-
-					<button className="mdl:sticky md:fixed  md:bottom-32  relative left-1/2 md:left-[83%] lg:left-1/2  -translate-x-1/2 sm:top-2 md:top-[60%] w-32 md:w-44 h-10 md:h-16 text-[#dda15e] bg-[#6c584c] rounded-lg hover:bg-[#dda15e] hover:text-[#6c584c] hover:border-2 hover:border-[#6c584c]  ">
-						<Link to={"/booking"}>RESERVER</Link>
-					</button>
 				</main>
 				{/* <Footer
 				width="100%"
