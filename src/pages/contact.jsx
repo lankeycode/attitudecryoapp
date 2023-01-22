@@ -13,6 +13,7 @@ import {
 	faInstagram,
 	faLinkedin,
 	faTwitter,
+	faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import AnimatedPage from "../Components/Animation/AnimatedPage";
@@ -70,10 +71,28 @@ export default function Contact() {
 							icon={faTwitter}
 						></FontAwesomeIcon>
 					</a>
-					<FontAwesomeIcon
-						className={Styles.instagram}
-						icon={faInstagram}
-					></FontAwesomeIcon>
+					<a
+						href={
+							"https://www.instagram.com/invites/contact/?i=1m17kijb7vii&utm_content=puomnj0"
+						}
+						target="_blank"
+					>
+						<FontAwesomeIcon
+							className={Styles.instagram}
+							icon={faInstagram}
+						></FontAwesomeIcon>
+					</a>
+					<a
+						href={
+							"https://www.facebook.com/profile.php?id=100087658802779"
+						}
+						target="_blank"
+					>
+						<FontAwesomeIcon
+							className={Styles.facebook}
+							icon={faFacebook}
+						></FontAwesomeIcon>
+					</a>
 				</div>
 
 				<div className="relative  flex flex-col justify-center items-center pt-[10rem] mb-20 font-taviraj   ">
