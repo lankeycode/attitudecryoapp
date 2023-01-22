@@ -79,6 +79,9 @@ function Home() {
 						</Link>
 					</motion.div>
 				</div>
+				<button className="btnBooking relative -top-16 left-1/2  -translate-x-1/2  w-44 h-12 md:h-16 mb-10  text-bgfooter  rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue  ">
+					<Link to={"/booking"}>Réserver une séance</Link>
+				</button>
 			</div>
 		</AnimatedPage>
 	);

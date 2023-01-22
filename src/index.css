@@ -101,6 +101,12 @@ html {
 	box-shadow: inset 4px -4px 8px #d3fbff, inset -4px 4px 8px #a3c1da;
 }
 
+/* Button booking home page */
+.btnBooking {
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 1px solid var(--skyblue);
+}
+
 .wordH1 {
 	color: #bbdefb;
 	font-size: 0;
