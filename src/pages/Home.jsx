@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HomeModal from "../Components/Modal/HomeModal";
 import { Link } from "react-router-dom";
 import style from "./home.module.css";
 import { motion } from "framer-motion";
 import SEO from "../Components/SEO/SEO";
 import AnimatedPage from "../Components/Animation/AnimatedPage";
+import Header from "../Components/Layout/Header/Header";
 
 function Home() {
+	//STATE
+	const [colorLogo, setColorLogo] = useState(false);
+
+	//BEHAVIORS
+	//Change color logo on scroll
+	const changeLogoColor = () => {
+		if (window.scrollY >= 50) {
+			setColorLogo(true);
+		} else {
+			setColorLogo(false);
+		}
+	};
+	useEffect(() => {
+		document.addEventListener("scroll", changeLogoColor);
+		return () => {
+			window.removeEventListener("scroll", changeLogoColor);
+		};
+	}, []);
+
 	return (
 		<AnimatedPage>
 			<div className={style.container}>
@@ -15,7 +35,14 @@ function Home() {
 					description="Attitude Cryo est un lieu unique en Isère ! Doté des dernières innovations technologiques de cryotérapie en corps entier, d'infrathérapie  validé scientifiquement pour votre Bien-être ."
 					canonical="https://attitudecryo.com/accueil"
 				/>
-				{/* <HomeModal /> */}
+				<Header
+					src={
+						colorLogo
+							? "/images/attitudeLogo.svg"
+							: "/attitudeLogo.svg"
+					}
+				/>
+
 				<h1 className={style.h1}>
 					<span>A</span>
 					<span>t</span>
