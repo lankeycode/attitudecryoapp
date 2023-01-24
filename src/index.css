@@ -116,7 +116,7 @@ html {
 .wordH1 span {
 	font-size: 5rem;
 	display: inline-block;
-	animation: move 6.5s ease-in-out infinite;
+	animation: move 6.5s ease-in-out forwards;
 }
 @media (max-width: 768px) {
 	.wordH1 span {
@@ -141,5 +141,6 @@ html {
 	}
 	100% {
 		transform: translateY(30%, 0);
+		text-shadow: -3px -3px 6px #3c4750, 3px 3px 6px #ffffff;
 	}
 }

@@ -36,7 +36,7 @@ const listRelative = [
 	{ text: "Insuffisance valvulaire" },
 	{ text: "Rétrécissement valvulaire" },
 	{ text: "Artériopathie stade 1 et 2" },
-	{ text: "Syndrome de Raymond prononcé" },
+	{ text: "Syndrome de Raynaud prononcé" },
 	{ text: "Cardiopathie ischémique" },
 	{ text: "Polyneuropathies" },
 ];
@@ -246,7 +246,7 @@ function Cryotherapie() {
 							return (
 								<p
 									key={index}
-									className="flex  items-center justify-center bg-bgfooter h-20 text-base md:text-xl shadow-md shadow-skyblue  hover:bg-blue hover:text-skyblue"
+									className="flex  items-center justify-center bg-bgfooter h-20 text-base md:text-xl shadow-md shadow-skyblue "
 								>
 									{item.text}
 								</p>
@@ -265,7 +265,7 @@ function Cryotherapie() {
 							return (
 								<p
 									key={index}
-									className="flex  items-center justify-center bg-bgfooter h-20 text-base md:text-xl shadow-md shadow-skyblue  hover:bg-blue hover:text-skyblue"
+									className="flex  items-center justify-center bg-bgfooter h-20 text-base md:text-xl shadow-md shadow-skyblue  "
 								>
 									{item.text}
 								</p>

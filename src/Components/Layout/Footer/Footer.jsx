@@ -36,7 +36,7 @@ function Footer({
 		>
 			<img
 				className="ml-5 relative top-2"
-				src="/attitudeLogo.svg"
+				src="/images/attitudeLogo.svg"
 				width="120"
 				height="120"
 				z="50"
