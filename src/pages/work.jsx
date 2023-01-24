@@ -8,7 +8,7 @@ import AnimatedPage from "../Components/Animation/AnimatedPage";
 function work() {
 	return (
 		<AnimatedPage>
-			<div className=" bg-blue1 w-screen pb-20  font-taviraj ">
+			<div className=" bg-blue1 w-screen pb-20 text-xl  font-taviraj ">
 				<SEO
 					title="Espace entreprise"
 					description="Attitude Cryo accompagne les entreprises sur le sujet de QVCT « Qualité de Vie et des Conditions de Travail » à travers le levier de bien-être."
@@ -43,7 +43,7 @@ function work() {
 						travers le levier de bien-être.
 					</h1>
 				</div>
-				<h2 className="w-[80vw] md:w-[45vw] mx-auto py-5 text-center text-blue font-bold shadow-button mt-10 mb-5 ">
+				<h2 className="w-[80vw] md:w-[45vw] mx-auto py-5 text-center text-3xl mdl:text-4xl text-blue font-bold shadow-button mt-10 mb-5 ">
 					Attitude Cryo & les entreprises
 				</h2>
 				<div className="px-3">
@@ -76,7 +76,7 @@ function work() {
 					</button>
 				</div>
 
-				<h2 className="w-[80vw] md:w-[45vw] mx-auto py-5 text-center text-blue font-bold  shadow-button mt-10 mb-5">
+				<h2 className="w-[80vw] md:w-[45vw] mx-auto py-5 text-center text-3xl mdl:text-4xl text-blue font-bold  shadow-button mt-10 mb-5">
 					Quel est le lien entre performance au travail et bien-être ?
 				</h2>
 				<div className="px-3">
