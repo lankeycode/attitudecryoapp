@@ -19,6 +19,7 @@ import {
 	faCalendarTimes,
 	faBuildingUser,
 	faList,
+	faGift,
 } from "@fortawesome/free-solid-svg-icons";
 
 function SidebarMenu() {
@@ -209,6 +210,13 @@ function SidebarMenu() {
 					>
 						<FontAwesomeIcon icon={faEuro} className="mr-2" />
 						tarifs
+					</MenuItem>
+					<MenuItem
+						onClick={() => setOpenSidebar(!openSidebar)}
+						routerLink={<Link to="/decouverte" />}
+					>
+						<FontAwesomeIcon icon={faGift} className="mr-2" />
+						offre découverte
 					</MenuItem>
 					<MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}

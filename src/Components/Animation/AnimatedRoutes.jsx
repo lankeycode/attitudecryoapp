@@ -27,6 +27,7 @@ import Perineum from "../../pages/tesla/Perineum";
 import TalkingAboutTesla from "../../pages/tesla/TalkingAboutTesla";
 import Work from "../../pages/Work";
 import Price from "../../pages/Price";
+import Discovery from "../../pages/Discovery";
 import Contact from "../../pages/Contact";
 import Event from "../../pages/Event";
 import Booking from "../../pages/Booking";
@@ -74,6 +75,7 @@ function AnimatedRoutes() {
 				/>
 				<Route path="/entreprise" element={<Work />} />
 				<Route path="/tarifs" element={<Price />} />
+				<Route path="/decouverte" element={<Discovery />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/evenement" element={<Event />} />
 				<Route path="/booking" element={<Booking />} />

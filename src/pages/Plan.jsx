@@ -154,6 +154,14 @@ function plan() {
 						Tarifs
 					</Link>
 					<br />
+					<Link to="/decouverte" className="text-3xl  ">
+						<FontAwesomeIcon
+							icon={faGenderless}
+							className="h-5 text-blue mr-2"
+						/>
+						Offre découverte
+					</Link>
+					<br />
 					<Link to="/entreprise" className="text-3xl  ">
 						<FontAwesomeIcon
 							icon={faGenderless}
