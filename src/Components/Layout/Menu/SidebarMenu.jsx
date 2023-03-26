@@ -235,13 +235,13 @@ function SidebarMenu() {
 						<FontAwesomeIcon icon={faEnvelope} className="mr-2" />
 						contact
 					</MenuItem>
-					<MenuItem
+					{/* <MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/evenement" />}
 					>
 						<FontAwesomeIcon icon={faBell} className="mr-2" />
 						évènements
-					</MenuItem>
+					</MenuItem> */}
 				</Menu>
 			</Sidebar>
 		</div>

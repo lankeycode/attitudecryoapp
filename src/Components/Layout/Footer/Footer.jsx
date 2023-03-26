@@ -108,6 +108,7 @@ function Footer({
 			</div>
 			<p className="relative -bottom-20 text-center text-black ">
 				Copyright &copy; {new Date().getFullYear()} Attitude Cryo
+				GRENOBLE
 			</p>
 		</footer>
 	);

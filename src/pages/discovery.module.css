@@ -9,6 +9,15 @@
 	display: inline-block;
 	animation: move 6.5s ease-in-out forwards;
 }
+.oldPrice {
+	text-decoration: line-through;
+	text-decoration-color: #bbdefb;
+}
+.oldPriceOne {
+	margin-right: 1.5rem;
+	text-decoration: line-through;
+	text-decoration-color: rgb(43 115 179);
+}
 
 /***********RESPONSIVE ***********/
 @media screen and (max-width: 450px) {

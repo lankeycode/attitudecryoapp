@@ -68,14 +68,58 @@ function Discovery() {
 						<span>E</span>
 					</div>
 				</div>
-				<h3 className="text-3xl mdl:text-4xl text-blue">
-					{" "}
-					Séance à l'unité
-				</h3>
-				<p>Cryothérapie corps entier</p> <span>39€</span>{" "}
-				<span>29€</span>
-				<p>Infrathérapie</p> <span>49€</span> <span>39€</span>
-				<p>Teslathérapie</p> <span>89€</span> <span>79€</span>
+				<div className=" bg-blue w-[95vw] md:w-[90vw] mx-auto py-5 rounded-md  shadow-lg shadow-skyblue">
+					{PriceList.map((item, index) => {
+						return (
+							<div>
+								<h3
+									className="text-3xl text-skyblue font-bold my-3 pl-32"
+									key={index}
+								>
+									{item.title}
+								</h3>
+								<div className="flex">
+									<div className=" w-20 h-16 flex flex-col text-center content-center ml-3 mr-14  border-2  border-skyblue rounded-tr-3xl rounded-tl-md rounded-bl-3xl">
+										<p className={Styles.oldPrice}>{item.priceOld}</p>
+										<p className=" text-blue1">{item.priceNew}</p>
+									</div>
+									<div>
+										<p>{item.detail1}</p>
+										<p>{item.detail2}</p>
+										<p>{item.detail3}</p>
+									</div>
+								</div>
+							</div>
+						);
+					})}
+				</div>
+				<div className="w-[95vw] md:w-[90vw] mx-auto mt-16 mb-10 p-5   border-blue rounded-md  shadow-lg shadow-blue">
+					<h3 className="mb-4 text-2xl mdl:text-3xl font-semibold text-blue">
+						{" "}
+						Séance à l'unité
+					</h3>
+					<div className="flex my-2 ">
+						<p className="w-[35%] mr-5 ">Cryothérapie corps entier</p>{" "}
+						<div className="">
+							<span className={Styles.oldPriceOne}>39€</span>{" "}
+							<span className=" text-blue font-bold">29€</span>
+						</div>
+					</div>
+					<div className="flex ">
+						<p className="w-[35%] mr-5">Infrathérapie</p>{" "}
+						<div className="">
+							<span className={Styles.oldPriceOne}>49€</span>{" "}
+							<span className=" text-blue font-bold">39€</span>
+						</div>
+					</div>
+					<div className="flex my-2">
+						<p className="w-[35%] mr-5">Teslathérapie</p>{" "}
+						<div>
+							<span className={Styles.oldPriceOne}>89€</span>{" "}
+							<span className=" text-blue font-bold">79€</span>
+						</div>
+					</div>
+				</div>
 				<div className="flex flex-col text-skyblue font-bold items-center text-2xl  ">
 					<p>Contactez moi au </p>
 					<p> 07 66 54 46 13</p>
