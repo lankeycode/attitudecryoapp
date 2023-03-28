@@ -7,30 +7,30 @@ import Styles from "./discovery.module.css";
 const PriceList = [
 	{
 		title: "HYGGE",
-		detail1: " 1 séance cryothérapie corps entier",
-		detail2: "1 séance d'Infrathérpie",
+		detail1: ".1 séance cryothérapie corps entier",
+		detail2: ".1 séance d'Infrathérpie",
 		priceOld: "79€",
 		priceNew: "59€",
 	},
 	{
 		title: "SISÜ",
-		detail1: " 1 séance cryothérapie corps entier",
-		detail2: "1 séance de Teslathérapie",
+		detail1: ".1 séance cryothérapie corps entier",
+		detail2: ".1 séance de Teslathérapie",
 		priceOld: "119€",
 		priceNew: "99€",
 	},
 	{
 		title: "FIKA",
-		detail1: " 1 séance cryothérapie corps entier",
-		detail2: "1 séance de Teslathérapie",
+		detail1: ".1 séance cryothérapie corps entier",
+		detail2: ".1 séance de Teslathérapie",
 		priceOld: "79€",
 		priceNew: "59€",
 	},
 	{
 		title: "SCANDINAVE",
-		detail1: " 1 séance d'Infrathérpie",
-		detail2: "1 séance de Teslathérapie",
-		detail3: "1 séance d'Infrathérpie",
+		detail1: ".1 séance d'Infrathérpie",
+		detail2: ".1 séance de Teslathérapie",
+		detail3: ".1 séance d'Infrathérpie",
 		priceOld: "159€",
 		priceNew: "139€",
 	},
@@ -79,7 +79,7 @@ function Discovery() {
 									{item.title}
 								</h3>
 								<div className="flex">
-									<div className=" w-20 h-16 flex flex-col text-center content-center ml-3 mr-14  border-2  border-skyblue rounded-tr-3xl rounded-tl-md rounded-bl-3xl">
+									<div className=" w-20 h-16 flex flex-col text-center content-center ml-3 mr-14 p-1  border-2  border-skyblue rounded-tr-3xl rounded-tl-md rounded-bl-3xl">
 										<p className={Styles.oldPrice}>{item.priceOld}</p>
 										<p className=" text-blue1">{item.priceNew}</p>
 									</div>
@@ -99,21 +99,23 @@ function Discovery() {
 						Séance à l'unité
 					</h3>
 					<div className="flex my-2 ">
-						<p className="w-[35%] mr-5 ">Cryothérapie corps entier</p>{" "}
+						<p className="w-[35%] mr-10 ">
+							Cryothérapie corps entier
+						</p>{" "}
 						<div className="">
 							<span className={Styles.oldPriceOne}>39€</span>{" "}
 							<span className=" text-blue font-bold">29€</span>
 						</div>
 					</div>
 					<div className="flex ">
-						<p className="w-[35%] mr-5">Infrathérapie</p>{" "}
+						<p className="w-[35%] mr-10">Infrathérapie</p>{" "}
 						<div className="">
 							<span className={Styles.oldPriceOne}>49€</span>{" "}
 							<span className=" text-blue font-bold">39€</span>
 						</div>
 					</div>
 					<div className="flex my-2">
-						<p className="w-[35%] mr-5">Teslathérapie</p>{" "}
+						<p className="w-[35%] mr-10">Teslathérapie</p>{" "}
 						<div>
 							<span className={Styles.oldPriceOne}>89€</span>{" "}
 							<span className=" text-blue font-bold">79€</span>

@@ -22,7 +22,7 @@
 /***********RESPONSIVE ***********/
 @media screen and (max-width: 450px) {
 	.words span {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 }
 /*********** ANIMATION ***********/

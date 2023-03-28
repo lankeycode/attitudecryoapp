@@ -217,17 +217,17 @@ function TeslaFormer() {
 						return (
 							<p
 								key={index}
-								className="flex  items-center justify-center text-center bg-bgfooter h-24 text-base md:text-xl shadow-md shadow-skyblue  hover:bg-blue hover:text-skyblue"
+								className="flex  items-center justify-center text-center bg-bgfooter h-24 text-base md:text-xl shadow-md shadow-skyblue"
 							>
 								{item.text}
 							</p>
 						);
 					})}
-					<p className=" relative xs:hidden md:flex md:w-[30vw] mdl:w-[29vw] mb-1 mx-auto items-center justify-center text-center bg-bgfooter h-24 text-base md:text-xl shadow-md shadow-skyblue  hover:bg-blue hover:text-skyblue">
+					<p className=" relative xs:hidden md:flex md:w-[30vw] mdl:w-[29vw] mb-1 mx-auto items-center justify-center text-center bg-bgfooter h-24 text-base md:text-xl shadow-md shadow-skyblue">
 						Déchirure musculaire complète au niveau ou à proximité du
 						site de stimulation
 					</p>
-					<p className=" relative xs:hidden md:flex md:w-[59.6vw] mb-1 mx-auto items-center justify-center text-center bg-bgfooter h-24 text-base md:text-xl shadow-md shadow-skyblue  hover:bg-blue hover:text-skyblue">
+					<p className=" relative xs:hidden md:flex md:w-[59.6vw] mb-1 mx-auto items-center justify-center text-center bg-bgfooter h-24 text-base md:text-xl shadow-md shadow-skyblue">
 						Implants en métal ferromagnétique sur le site de
 						stimulation ou à proximité
 					</p>

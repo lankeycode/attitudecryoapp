@@ -10,13 +10,9 @@ import AnimatedPage from "../../Components/Animation/AnimatedPage";
 
 function Infratherapie() {
 	const listForbiden = [
-		{ text: "Pacemaker" },
-		{ text: "Epileptique" },
 		{ text: "Femmes enceintes" },
-		{
-			text: "Personnes ayant subit une greffe  ",
-		},
-		{ text: "Personnes ayant subit une transplantation" },
+
+		{ text: "Personnes souffrant de thrombose sans traitement" },
 	];
 	return (
 		<AnimatedPage>
@@ -153,7 +149,7 @@ function Infratherapie() {
 							return (
 								<p
 									key={index}
-									className="flex items-center text-center justify-center  bg-bgfooter h-20 text-base md:text-xl shadow-md shadow-skyblue  hover:bg-blue hover:text-skyblue"
+									className="flex items-center text-center justify-center  bg-bgfooter h-20 text-base md:text-xl shadow-md shadow-skyblue"
 								>
 									{item.text}
 								</p>
