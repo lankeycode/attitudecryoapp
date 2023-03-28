@@ -99,7 +99,7 @@ function App() {
 					/>
 					<Route path="/entreprise" element={<Work />} />
 					{/* <Route path="/tarifs" element={<Price />} /> */}
-					<Route path="/decouverte" element={<Discovery />} />
+					{/* <Route path="/decouverte" element={<Discovery />} /> */}
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/evenement" element={<Event />} />
 					<Route path="/booking" element={<Booking />} />
