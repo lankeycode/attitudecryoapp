@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "./tesla.module.css";
-// import ButtonDownloadTesla from "../../Components/Button/ButtonDownloadTesla";
 import SEO from "../../Components/SEO/SEO";
 import AnimatedPage from "../../Components/Animation/AnimatedPage";
 
@@ -233,10 +232,9 @@ function TeslaFormer() {
 					</p>
 				</div>
 
-				<button className="relative left-1/2 -translate-x-1/2  w-32 h-10 mb-5 mt-20  text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
-					<Link to="/booking">RESERVER</Link>
+				<button className="relative left-1/2 -translate-x-1/2  w-44 h-12 mb-5 mt-20  text-bgfooter bg-blue rounded-lg hover:bg-bgfooter hover:text-blue hover:border-2 hover:border-blue ">
+					<Link to="/booking">Réserver une séance</Link>
 				</button>
-				{/* <ButtonDownloadTesla /> */}
 			</div>
 		</AnimatedPage>
 	);

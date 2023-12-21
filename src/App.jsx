@@ -98,7 +98,7 @@ function App() {
 						element={<TalkingAboutTesla />}
 					/>
 					<Route path="/entreprise" element={<Work />} />
-					{/* <Route path="/tarifs" element={<Price />} /> */}
+					<Route path="/tarifs" element={<Price />} />
 					{/* <Route path="/decouverte" element={<Discovery />} /> */}
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/evenement" element={<Event />} />

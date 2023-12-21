@@ -88,7 +88,7 @@ function Price() {
 						couvre les frais de cryothérapie.
 					</p>
 					<button className=" relative left-[50%] -translate-x-1/2  w-32 md:w-44 h-10 md:h-16 mb-5 text-[#dda15e] bg-[#6c584c] rounded-lg hover:bg-[#dda15e] hover:text-[#6c584c] hover:border-2 hover:border-[#6c584c]  ">
-						<Link to={"/booking"}>RESERVER</Link>
+						<Link to={"/booking"}>Réserver une séance</Link>
 					</button>
 					{/* <ButtonToUp /> */}
 					<h2 className="relative ml-5  text-4xl text-[#6c584c] font-taviraj font-bold lg:pb-10 ">
@@ -171,7 +171,7 @@ function Price() {
 						Me contacter directement via le formulaire contact
 					</p>
 					<button className=" relative left-[50%] -translate-x-1/2   w-32 md:w-44 h-10 md:h-16 text-[#dda15e] bg-[#6c584c] rounded-lg hover:bg-[#dda15e] hover:text-[#6c584c] hover:border-2 hover:border-[#6c584c]  ">
-						<Link to={"/booking"}>RESERVER</Link>
+						<Link to={"/booking"}>Réserver une séance</Link>
 					</button>
 				</main>
 				{/* <Footer

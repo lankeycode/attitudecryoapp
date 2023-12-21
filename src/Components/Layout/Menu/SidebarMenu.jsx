@@ -204,13 +204,13 @@ function SidebarMenu() {
 						<FontAwesomeIcon icon={faBriefcase} className="mr-2" />
 						entreprises
 					</MenuItem>
-					{/* <MenuItem
+					<MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/tarifs" />}
 					>
 						<FontAwesomeIcon icon={faEuro} className="mr-2" />
 						tarifs
-					</MenuItem> */}
+					</MenuItem>
 					{/* <MenuItem
 						onClick={() => setOpenSidebar(!openSidebar)}
 						routerLink={<Link to="/decouverte" />}
